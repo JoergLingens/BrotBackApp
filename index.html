@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BrotBack – Brot-Backplan-App</title>
-  <meta name="description" content="Finde Brotrezepte von brotdoc.com, plane deinen Backprozess und erhalte Erinnerungen für jeden Schritt.">
+  <meta name="description"
+    content="Finde Brotrezepte von brotdoc.com, plane deinen Backprozess und erhalte Erinnerungen für jeden Schritt.">
   <link rel="stylesheet" href="style.css">
   <!-- Favicon via emoji -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍞</text></svg>">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍞</text></svg>">
 </head>
+
 <body>
 
   <!-- ─── HEADER ──────────────────────────── -->
@@ -24,15 +28,11 @@
 
       <div class="search-wrapper">
         <span class="search-icon">🔍</span>
-        <input
-          type="text"
-          id="search-input"
-          placeholder="Rezept suchen… z.B. Baguette, Roggen, Sauerteig"
-          autocomplete="off"
-          spellcheck="false"
-        >
+        <input type="text" id="search-input" placeholder="Rezept suchen… z.B. Baguette, Roggen, Sauerteig"
+          autocomplete="off" spellcheck="false">
         <ul id="search-results"></ul>
       </div>
+      <button id="reset-btn" onclick="resetApp()" title="Zurücksetzen">✕ Zurücksetzen</button>
     </div>
   </header>
 
@@ -60,6 +60,8 @@
     <div id="loading" class="span-2">
       <div class="spinner"></div>
       <span>Rezept wird geladen von brotdoc.com…</span>
+      <button onclick="resetApp()"
+        style="margin-left:12px;background:none;border:1px solid var(--border);color:var(--text-muted);border-radius:50px;padding:4px 12px;cursor:pointer;font-size:0.8rem;">Abbrechen</button>
     </div>
 
     <!-- Welcome screen -->
@@ -132,8 +134,10 @@
   </main>
 
   <!-- ─── FOOTER ─────────────────────────── -->
-  <footer style="text-align:center; padding:32px 24px; color:var(--text-muted); font-size:0.78rem; position:relative; z-index:1;">
-    Rezepte von <a href="https://brotdoc.com" target="_blank">brotdoc.com</a> (Dr. med. Björn Hollensteiner) · Alle Rechte beim Autor.
+  <footer
+    style="text-align:center; padding:32px 24px; color:var(--text-muted); font-size:0.78rem; position:relative; z-index:1;">
+    Rezepte von <a href="https://brotdoc.com" target="_blank">brotdoc.com</a> (Dr. med. Björn Hollensteiner) · Alle
+    Rechte beim Autor.
   </footer>
 
   <!-- ─── SCRIPTS ────────────────────────── -->
@@ -141,4 +145,5 @@
   <script src="app.js"></script>
 
 </body>
+
 </html>

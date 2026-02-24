@@ -29,6 +29,28 @@ const PROXIES = [
 
 let currentRecipe = null;
 let scheduledTimers = [];
+let fetchAbortController = null;
+
+// ─── RESET APP ───────────────────────────────
+function resetApp() {
+    // Abort any in-progress fetch
+    if (fetchAbortController) { fetchAbortController.abort(); fetchAbortController = null; }
+    // Cancel timers
+    cancelAllTimers();
+    // Reset state
+    currentRecipe = null;
+    searchInput.value = '';
+    searchInput.focus();
+    // Reset UI
+    detailPanel.classList.add('hidden');
+    schedulerEl.classList.add('hidden');
+    nextStepEl.classList.add('hidden');
+    loadingEl.style.display = 'none';
+    timelineEl.innerHTML = '';
+    ingredientsEl.innerHTML = '';
+    stepsEl.innerHTML = '';
+    welcomeEl.style.display = 'block';
+}
 
 // ─── DOM refs ───────────────────────────────
 const searchInput = document.getElementById('search-input');
@@ -109,6 +131,11 @@ document.addEventListener('click', e => {
 
 // ─── RECIPE LOADER ──────────────────────────
 async function selectRecipe(recipe) {
+    // Abort any previous in-flight fetch
+    if (fetchAbortController) fetchAbortController.abort();
+    fetchAbortController = new AbortController();
+    const signal = fetchAbortController.signal;
+
     searchResults.classList.remove('active');
     searchInput.value = recipe.name;
     welcomeEl.style.display = 'none';
@@ -118,6 +145,7 @@ async function selectRecipe(recipe) {
     stepsEl.innerHTML = '';
     schedulerEl.classList.add('hidden');
     timelineEl.innerHTML = '';
+    nextStepEl.classList.add('hidden');
     cancelAllTimers();
 
     recipeTitle.textContent = recipe.name;
