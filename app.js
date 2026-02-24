@@ -29,28 +29,6 @@ const PROXIES = [
 
 let currentRecipe = null;
 let scheduledTimers = [];
-let fetchAbortController = null;
-
-// ─── RESET APP ───────────────────────────────
-function resetApp() {
-    // Abort any in-progress fetch
-    if (fetchAbortController) { fetchAbortController.abort(); fetchAbortController = null; }
-    // Cancel timers
-    cancelAllTimers();
-    // Reset state
-    currentRecipe = null;
-    searchInput.value = '';
-    searchInput.focus();
-    // Reset UI
-    detailPanel.classList.add('hidden');
-    schedulerEl.classList.add('hidden');
-    nextStepEl.classList.add('hidden');
-    loadingEl.style.display = 'none';
-    timelineEl.innerHTML = '';
-    ingredientsEl.innerHTML = '';
-    stepsEl.innerHTML = '';
-    welcomeEl.style.display = 'block';
-}
 
 // ─── DOM refs ───────────────────────────────
 const searchInput = document.getElementById('search-input');
@@ -130,11 +108,7 @@ document.addEventListener('click', e => {
 });
 
 // ─── RECIPE LOADER ──────────────────────────
-let selectRecipeId = 0; // incremented on every call; stale fetches bail out
-
 async function selectRecipe(recipe) {
-    const myId = ++selectRecipeId; // this call's unique ID
-
     searchResults.classList.remove('active');
     searchInput.value = recipe.name;
     welcomeEl.style.display = 'none';
@@ -144,7 +118,6 @@ async function selectRecipe(recipe) {
     stepsEl.innerHTML = '';
     schedulerEl.classList.add('hidden');
     timelineEl.innerHTML = '';
-    nextStepEl.classList.add('hidden');
     cancelAllTimers();
 
     recipeTitle.textContent = recipe.name;
@@ -152,39 +125,34 @@ async function selectRecipe(recipe) {
 
     try {
         const html = await fetchWithFallback(recipe.url);
-
-        // Bail out if a newer recipe was selected while we were fetching
-        if (myId !== selectRecipeId) return;
-
         const parsed = parseRecipe(html);
         currentRecipe = { ...recipe, ...parsed };
         renderRecipe(parsed);
         schedulerEl.classList.remove('hidden');
+        // prefill start time to now
         const now = new Date();
         now.setMinutes(Math.ceil(now.getMinutes() / 15) * 15, 0, 0);
         startTimeEl.value = toLocalDatetimeInput(now);
     } catch (err) {
-        // Bail out if stale
-        if (myId !== selectRecipeId) return;
-
-        // Don't show error for AbortError (user switched recipe mid-load)
-        if (err && err.name === 'AbortError') return;
-
         console.error('All proxies failed:', err);
         ingredientsEl.innerHTML = `
           <div class="error-box">
             <p>⚠️ <strong>Rezept konnte nicht geladen werden.</strong></p>
-            <p>Bitte versuche es erneut oder <a href="${recipe.url}" target="_blank">öffne das Rezept auf brotdoc.com →</a></p>
+            <p>Das passiert meist, wenn die App über <code>file://</code> geöffnet wird. Lösung:</p>
+            <ol>
+              <li>Öffne <strong>Terminal</strong> (Programme → Dienstprogramme)</li>
+              <li>Füge diesen Befehl ein und drücke Enter:<br>
+                <code class="cmd">cd ~/'Library/CloudStorage/GoogleDrive-familielingens@gmail.com/Meine Ablage/Privat/BrotBackApp' && python3 -m http.server 8080</code>
+              </li>
+              <li>Öffne dann im Browser: <a href="http://localhost:8080" target="_blank">http://localhost:8080</a></li>
+            </ol>
+            <p style="margin-top:10px">Oder: <a href="${recipe.url}" target="_blank">Rezept direkt auf brotdoc.com öffnen →</a></p>
           </div>`;
         stepsEl.innerHTML = '';
     } finally {
-        // Only hide spinner if we are still the active request
-        if (myId === selectRecipeId) {
-            loadingEl.style.display = 'none';
-        }
+        loadingEl.style.display = 'none';
     }
 }
-
 
 async function fetchWithFallback(url) {
     // On Netlify: server-side proxy via _redirects rule (no CORS at all)
