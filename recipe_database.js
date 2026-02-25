@@ -1,12 +1,5 @@
 const RECIPE_DATABASE = [
   {
-    "id": 0,
-    "name": "Alpenroggenbrot I",
-    "url": "https://brotdoc.com/2015/05/26/alpenroggenbrot-i/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 1,
     "name": "Alpenroggenbrot II",
     "url": "https://brotdoc.com/2015/06/11/alpenroggenbrot-ii/",
@@ -42,15 +35,6 @@ const RECIPE_DATABASE = [
       "Teigbearbeitungs-Video [youtube https://www.youtube.com/watch?v=uNxgl78EPiw&amp;w=560&amp;h=315]",
       "Nachfolgend den Teig auf gut bemehlter Arbeitsfläche in gleich schwere Teile teilen (ca. 1200 g pro Teil). Die Teile grob rechteckig ziehen, etwas entgasen und zu einem Zylinder einrollen. Mit dem Abstecher in 4 gleiche Teile teilen. Diese um 90 Grad versetzt nebeneinander in die gefettete Form setzen. Den ebenfalls leicht gefetteten Deckel aufsetzen und eine Stückgare von 70-90 Minuten geben. Die Teiglinge haben danach fast den Rand der Form erreicht. Gebacken wird bei 200°C mit aufgesetztem Deckel für maximal 40 Minuten ohne Schwaden, bei einem Brot ggf. nur 35 Minuten, denn es ist nur eine dünne und nicht zu stark gefärbte Kruste erwünscht. Um zu verhindern, daß in der Ofentriebphase sich die Deckel abheben, stelle ich immer meine Schwaden-Edelstahlwanne auf die Brotformen.",
       "Eine fluffig-weiche und gut verzehrbare aromatische Krume"
-    ]
-  },
-  {
-    "id": 4,
-    "name": "Altöttinger Mühlenbrot",
-    "url": "https://brotdoc.com/2014/11/26/altottinger-muhlenbrot/",
-    "ingredients": [],
-    "steps": [
-      "Der erste Backversuch, hier hatte das Brot schon Übergare und wurde zu flach, auch war die Teigausbeute noch geringer."
     ]
   },
   {
@@ -262,20 +246,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 13,
-    "name": "Backtreffen in Südtirol",
-    "url": "https://brotdoc.com/2015/06/24/backtreffen-in-sudtirol/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 14,
-    "name": "Backwoche „Heimatbrote“",
-    "url": "https://brotdoc.com/2021/06/06/backwoche-heimatbrote/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 15,
     "name": "Bagels",
     "url": "https://brotdoc.com/2025/10/05/bagels/",
@@ -368,49 +338,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 17,
-    "name": "Baguettes mit kalter Stückgare",
-    "url": "https://brotdoc.com/2014/05/06/baguettes-mit-kalter-stuckgare/",
-    "ingredients": [],
-    "steps": [
-      "________________________________________________________________________________________________________________________________________ ENGLISH RECIPE “Baguettes with long cold proofing”",
-      "Long cold proofing of shaped breads or rolls makes it so easy to have fresh and crispy goods for breakfast without having to get up very early for the preparation. This is a baguette-recipe that does give a good result with this method.",
-      "Main dough 68 % hydration: 500 g high-gluten-flour T65 100 g lievito madre (directly from the fridge) 350 g water 12 g salt 5 g fresh yeast"
-    ]
-  },
-  {
-    "id": 18,
-    "name": "Baguettes mit Poolish und langer kalter Führung",
-    "url": "https://brotdoc.com/2014/12/02/baguettes-mit-poolish-und-langer-kalter-fuhrung/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 19,
-    "name": "Baguettes mit Poolish – neues Rezept",
-    "url": "https://brotdoc.com/2014/04/01/baguettes-mit-poolish-neues-rezept/",
-    "ingredients": [],
-    "steps": [
-      "MENGE FÜR 6 BAGUETTES",
-      "Poolish TA 200: 125 g Weizenmehl T65 125 g Wasser 0,3 g Hefe (etwa erbsgroß) Gut vermengen und 12 Stunden bei Raumtemperatur reifen lassen.",
-      "Hauptteig TA 175: 875 g Weizenmehl T65 625 g Wasser 22 g Salz 6 g Frischhefe",
-      "Bilder von den 72-Stunden-Baguettes:",
-      "Der Teig nach 72 Stunden:",
-      "Die fertigen Baguettes &#8211; leider mit wenig Ausbund weil nach 30 Minuten schon in der Übergare:",
-      "________________________________________________________________________________________________________________________________________ ENGLISH RECIPE &#8222;Baguettes with Poolish &#8211; new recipe&#8220;",
-      "Now another baguette-recipe &#8211; I am constantly on the search for the perfect baguette of my holiday-memories from the Normandy. This one is without sourdough and has a quite high hydration. It takes some experience to shape baguettes like these, but it is worth every minute learning it. Great mild taste and a very open crumb, simply wonderful bread. My very favourite recipe at the moment! The dough was divided in two parts, the first one being made directly and the second one being stored in the fridge for 72 hours. The outer appearance is better with the direct ones, while the long cold fermentation improves crumb-flavour enormously.",
-      "Poolish 100 % hydration 125 g high-gluten-flour T65 125 g water 0,3 g fresh yeast Mix properly and let mature for 12 hours at room temperature.",
-      "Main dough 75 % hydration 875 g high-gluten-flour T65 625 g water 22 g salt 6 g fresh yeast"
-    ]
-  },
-  {
-    "id": 20,
-    "name": "Baguettes nach Sébastien Mauvieux – Frankreichs Baguette-Bäcker 2012",
-    "url": "https://brotdoc.com/2013/01/20/baguettes-nach-sebastien-mauvieux-frankreichs-baguette-backer-2012/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 21,
     "name": "Baguette au pâtes solides",
     "url": "https://brotdoc.com/2016/09/04/baguette-au-pates-solides/",
@@ -419,36 +346,6 @@ const RECIPE_DATABASE = [
       "Sauerteig: 100 g Dinkelmehl 1050 50 g Wasser (50-55°C) 10 g Anstellgut (Weizen oder Dinkel, wer hat) Die Zutaten mit einem Löffel grob verrühren, dann auf die Arbeitsfläche geben und 3-4 Minuten von Hand zu einer glatten Kugel kneten. Diese für 12 Stunden bei Raumtemperatur abgedeckt in einer Schüssel reifen lassen.",
       "Vorteig: 200 g Weizenmehl T80 (oder 1050) 100 g Wasser (handwarm) 0.2 g Frischhefe Die Hefe im Wasser auflösen. Dann das Mehl zugeben und grob mit dem Löffel verrühren. Auf die Arbeitsfläche geben und 3-4 Minuten von Hand zu einer glatten Kugel verkneten. Diese für 12 Stunden bei Raumtemperatur abgedeckt in einer Schüssel reifen lassen.",
       "Hauptteig: Vorteig, Sauerteig 520 g Wasser kalt (+ 30-70 ml) 700 g Weizenmehl T65 (oder 550) 22 g Salz 8 g Frischhefe"
-    ]
-  },
-  {
-    "id": 22,
-    "name": "Baguette Française",
-    "url": "https://brotdoc.com/2013/10/13/baguette-francaise/",
-    "ingredients": [],
-    "steps": [
-      "Die Porung ist so, wie sie sein soll",
-      "Die Einschneidetechnik muß ich noch gleichmäßiger hinbekommen, sonst stimmt für mich alles.",
-      "ENGLISH RECIPE",
-      "&#8222;Baguette Française&#8220;",
-      "I have been longing to bake with a high-quality french flour T65 again for a long time. It isn&#8217;t easy to come by here in germany. Manfred has made it possible to import the flour and on Thursday 20 kg of it arrived in Haltern. I set to work on Friday and baked this recipe already twice this weekend. I am so happy and so thankful to be able to bake with this flour now. The baguette are tasting so authentic, just like I remember them from my trips to Paris, the Bretagne and the channel-coast. I am filled with awe again, how so much flavour can be achieved with just flour, water, salt and yeast.",
-      "Poolish 100 % hydration: 100 grams of high-gluten-flour (equal to french T65) 100 grams of water (28-30°) 1 tiny bit of fresh-yeast Mix for 1-2 minutes until dissolved. Let mature for 12 hours at room temperature.",
-      "Main dough 69 % hydration: Poolish 600 grams of high-gluten-flour (equal to french T65) 383 grams of water (hand-warm) 13 grams of salt 7 grams of fresh yeast"
-    ]
-  },
-  {
-    "id": 23,
-    "name": "Baguette mit Lievito madre",
-    "url": "https://brotdoc.com/2014/03/24/baguette-mit-lievito-madre/",
-    "ingredients": [],
-    "steps": [
-      "Die Baguettes mit direkter Führung",
-      "Die Krume bei direkter Führung &#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;- Die Kruste bei langer kalter Führung:",
-      "Der Ausbund bei langer kalter Führung (48 h).",
-      "Die Krume bei langer kalter Führung (48 h) &#8211; noch etwas grobporiger. _______________________________________________________________________________________________________________________________________ ENGLISH RECIPE One of my tries with lievito madre was baguette dough. This recipe has only lievito madre as a preferment and a very low yeast-ammount (0.6 %) to give it sufficient time for fermentation. Again, mixing is reduced to the absolute minimum in this recipe. I divided the dough into two parts, the first one being made directly and the second one matured in the fridge at 5°C for 48 hours. Both baguette turned out outstandingly. I liked the direct ones more because of the milder crumb-flavour, whereas my wife was more fond of the cold-proofed ones.",
-      "The crust of the cold-proofed-baguettes",
-      "main dough 75 % hydration: 900 g high gluten flour (french type 65) 150 g lievito madre (directly from the fridge) 700 g water 20 g salt 6 g fresh yeast",
-      "The crumb of the direct-ones"
     ]
   },
   {
@@ -515,25 +412,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 25,
-    "name": "Baguette Rustique",
-    "url": "https://brotdoc.com/2013/07/02/baguette-rustique/",
-    "ingredients": [],
-    "steps": [
-      "Menge für 6 Baguettes Sauerteig TA 200: 50 g Weizenmehl 550 50 g Wasser lauwarm 5 g Weizenanstellgut Gut vermengen und 12 Stunden reifen lassen.",
-      "Hauptteig TA 168: 105 g Sauerteig 150 g Manitoba-Mehl 800 g Weizenmehl 550 630 g Wasser (lauwarm) 18 g Salz 6 g Frischhefe"
-    ]
-  },
-  {
-    "id": 26,
-    "name": "Baguette-Brötchen",
-    "url": "https://brotdoc.com/2012/04/03/baguette-brotchen/",
-    "ingredients": [],
-    "steps": [
-      "Die Krume, feinporig aber sehr fluffig und aromatisch"
-    ]
-  },
-  {
     "id": 27,
     "name": "Baguette-Brötchen mit Biga und langer kalter Führung",
     "url": "https://brotdoc.com/2012/07/21/baguette-brotchen-mit-biga-und-langer-kalter-fuhrung/",
@@ -572,13 +450,6 @@ const RECIPE_DATABASE = [
       "Diese Bilder sprechen wohl für sich.",
       "Krönender Abschluß war für alle ein geschmacklicher Vergleich der verschiedenen Baguette-Rezepte. Hierbei schnitten die Baguette, die einer langen Teigreifung unterzogen wurden, weit vor den direkt geführten Baguettes ab. Gegen 15.30 Uhr endete dann in großer Zufriedenheit der Kurs und alle machten sich auf den Heimweg."
     ]
-  },
-  {
-    "id": 29,
-    "name": "Baltischer Himmel…",
-    "url": "https://brotdoc.com/2018/08/11/baltischer-himmel/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 30,
@@ -1032,13 +903,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 41,
-    "name": "Bio-Baguettes",
-    "url": "https://brotdoc.com/2014/06/03/bio-baguettes/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 42,
     "name": "Bio-Bauernbrot",
     "url": "https://brotdoc.com/2019/03/10/bio-bauernbrot/",
@@ -1105,13 +969,6 @@ const RECIPE_DATABASE = [
       "Entlang der Blütenblätter längs einschneiden und sofort mit Schwaden einschießen. Die Backzeit beträgt abfallend auf 210°C etwa 40 Minuten.",
       "Feinporig und super-aromatisch &#8211; das Blütenbrot"
     ]
-  },
-  {
-    "id": 44,
-    "name": "Blütenbrötchen – Frühstücksbrötchen mit langer kalter Führung",
-    "url": "https://brotdoc.com/2012/08/18/blutenbrotchen-fruhstucksbrotchen-mit-langer-kalter-fuhrung/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 45,
@@ -1251,42 +1108,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 49,
-    "name": "Brezel / Pretzel",
-    "url": "https://brotdoc.com/2018/11/02/brezel-pretzel/",
-    "ingredients": [],
-    "steps": [
-      "Vorteig: 110 g Wasser 110 g Weizenmehl 550 0,5 g Frischhefe (zwei erbsgroße Stücke) Alles gut verrühren und 12 Stunden bei Raumtemperatur abgedeckt reifen lassen.",
-      "Hauptteig: 220 g Vorteig 365 g Weizenmehl 550 165 g Milch 10 g Salz 5 g Frischhefe 33 g Schweineschmalz",
-      "Alle Zutaten in der Knetmaschine für 2 Minuten langsam kneten, dann für 6 bis 7 Minuten auf zweiter Stufe bis der Teig glatt und elastisch ist.",
-      "Eine Stunde Teigruhe.",
-      "Den Teig auf die Arbeitsfläche geben und flach drücken. 8 rechteckige Teiglinge von ca. 100 g Gewicht abstechen. Einzeln zu einem Zylinder einrollen und etwas länglich zu einem Strang rollen (ca. 20 cm).",
-      "Die Stränge 15 Minuten ruhen lassen. Dann einzeln mit beiden Händen dünn auf eine Länge von ca. 50 – 60 cm ausrollen, dabei die Spitzen etwas dünner ausrollen als die Mitte.",
-      "Zu einer Brezel formen wie auf den Bildern gezeigt und auf ein Backblech mit Backfolie legen. Die Ärmchen sollten dabei unten zu liegen kommen. 15 bis 20 Minuten bei Raumtemperatur aufgehen lassen, dann 30 Minuten das Blech ohne Abdeckung in den Kühlschrank stellen.",
-      "Lauge: 750 g Wasser 30°C 30 g Laugenperlen (Natriumhydroxid, NaOH)",
-      "Wasser in eine Edelstahl- oder Kunststoffschüssel geben. Die Laugenperlen in das Wasser streuen und vorsichtig umrühren, bis sie ganz aufgelöst sind. Entstehende Dämpfe nicht einatmen!",
-      "VORSICHT: Die entstandene vierprozentige Natronlauge ist gefährlich! Bitte immer Schutzhandschuhe, eine Schutzbrille und eine Schürze tragen! Die Lauge kann ungeeignete Materialien angreifen und kann zudem zu Hautverletzungen führen!",
-      "Die Arbeitsfläche mit einer Kunststofffolie abdecken. Die vorbereitete Lauge auf die Folie stellen. Blech mit den Brezeln aus dem Kühlschrank nehmen. Durch die Kühlung sind die Brezel ganz fest geworden („abgesteift“).",
-      "Einzeln die Brezel mit beiden behandschuhten Händen nehmen und für 3-5 Sekunden in die Lauge tauchen. Auf das Blech legen (Ärmchen oben) und mit Hagelsalz bestreuen. Den Bauch der Brezel mit einem raschen Schnitt längs einschneiden.",
-      "Das Blech in den gut vorgeheizten Ofen bei 220 °C (Umluft/Heißluft) geben und etwa 15-18 Minuten abbacken. Auf Sicht backen, damit die Brezel nicht zu dunkel werden. Nach dem Backen mit Wasser besprühen damit sie schön glänzen.",
-      "ENGLISH RECIPE",
-      "Quantities for 8 pretzels",
-      "Preferment: 110 g water 110 g bread flour 0.5 g fresh yeast (pea sized bit) or 0.2 g dry yeast Stir well and let mature for 12 hours at room temperature.",
-      "Main dough: 220 g preferment 365 g bread flour 165 g milk 10 g salt 5 g fresh yeast (or 2 g of dry yeast) 33 g lard",
-      "Knead all ingredients slowly in the kneading machine for 2 minutes, then increase kneading speed and mix for 6 to 7 minutes until the dough is smooth and elastic.",
-      "One hour of dough rest.",
-      "Put the dough on the work surface and press it flat. Cut off 8 rectangular dough pieces of approx. 100 g in weight. Individually roll into a cylinder and roll each of them to short strands (about 20 cm).",
-      "Let the strands rest for 15 minutes. Then roll out individually with both hands to a length of approx. 50 &#8211; 60 cm, roll out the tips slightly thinner than the middle.",
-      "Form a pretzel out of them as shown in the pictures and put them on a baking sheet covered with baking foil. Let rise for 15 to 20 minutes at room temperature, then place the sheet without cover in the refrigerator for 30 minutes.",
-      "Lye: 750 g of water at 30 ° C 30 g lye beads (sodium hydroxide, NaOH)",
-      "Put water in a stainless steel or plastic bowl. Sprinkle the lye beads into the water and stir gently until completely dissolved. Do not inhale the resulting vapors!",
-      "CAUTION: The resulting 4 % &#8211; caustic soda solution is dangerous! Always wear protective gloves, goggles and an apron! The lye can attack unsuitable materials and can also lead to skin injuries!",
-      "Cover the work surface with a plastic film. Put the prepared lye-bowl on the foil. Remove the sheet with the pretzels from the fridge. Due to the cooling, the pretzels have become very firm (&#8222;stiffened&#8220;).",
-      "Individually take the pretzels with both gloved hands and immerse for 3-5 seconds in the lye. Place on the sheet and sprinkle with coarse salt. Cut the belly of the pretzel lengthwise with a quick cut.",
-      "Place the sheet in the well preheated oven at 220 °C (circulating air / hot air) and bake for about 15-18 minutes. Bake on sight, so that the pretzels are not getting too dark. After baking spray them with water so that they shine beautifully."
-    ]
-  },
-  {
     "id": 50,
     "name": "Brioche Burger-Buns",
     "url": "https://brotdoc.com/2017/09/03/brioche-burger-buns/",
@@ -1328,48 +1149,6 @@ const RECIPE_DATABASE = [
       "Die Teiglinge für 80-90 Minuten bei Raumtemperatur abgedeckt garen lassen. Den Ofen aufheizen auf 200°. Vor dem Backen mit einer Eistreiche (1 Eigelb, 50 ml Milch, eine Prise Zucker) abstreichen und ohne Schwaden im Ofen für 20-25 Minuten backen. Die Brioche sollten eine volle Bräune haben, sonst sind sie nach dem Backen instabil und fallen in sich zusammen.",
       "Eine enorm lockere und wattige Krume, genau so sollte sie sein."
     ]
-  },
-  {
-    "id": 52,
-    "name": "Brotbackbuch Nr. 2 – Das Backtagebuch Teil 1",
-    "url": "https://brotdoc.com/2015/03/04/brotbackbuch-nr-2-das-backtagebuch-teil-1/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 53,
-    "name": "Brotbackbuch Nr. 2 – Das Backtagebuch Teil 2",
-    "url": "https://brotdoc.com/2015/03/11/brotbackbuch-nr-2-das-backtagebuch-tag-2/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 54,
-    "name": "Brotbackbuch Nr. 2 – Das Backtagebuch Teil 3",
-    "url": "https://brotdoc.com/2015/03/18/brotbackbuch-nr-2-das-backtagebuch-teil-3/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 55,
-    "name": "Brotbackbuch Nr. 2 – Das Backtagebuch Teil 5",
-    "url": "https://brotdoc.com/2015/04/01/brotbackbuch-nr-2-das-backtagebuch-teil-5/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 56,
-    "name": "Brotback-Planer",
-    "url": "https://brotdoc.com/2020/10/14/brotback-planer/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 57,
-    "name": "Brötchen formen",
-    "url": "https://brotdoc.com/2012/12/15/brotchen-formen/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 58,
@@ -1419,27 +1198,6 @@ const RECIPE_DATABASE = [
       "In einem Behälter mit dem Zauberstab gut zu einer homogenen Masse pürieren und abschmecken.",
       "ZUBEREITUNG: Die Zwiebelmasse gleichmäßig auf dem gegangenen Teig verteilen. Die Ei-Käsemasse darauf gleichmäßig aufgießen. In den auf 240 ° aufgeheizten Ofen einschießen und schwaden. Nach 10 Minuten den Schwaden ablassen und bei 200° für weitere 25-35 Minuten zuende ausbacken, bis der Zwiebelkuchen eine gute, kräftige Bräune bekommen hat. Noch warm genießen."
     ]
-  },
-  {
-    "id": 62,
-    "name": "Brotexkursion: Bio-Mühle Eiling",
-    "url": "https://brotdoc.com/2019/02/23/brotexkursion-bio-muehle-eiling/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 63,
-    "name": "Brotheld: neue Backplaner-App",
-    "url": "https://brotdoc.com/2017/11/03/brotheld-neue-backplaner-app/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 64,
-    "name": "Brot auf einem Kreuzfahrtschiff…",
-    "url": "https://brotdoc.com/2018/08/14/brot-auf-einem-kreuzfahrtschiff/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 65,
@@ -1690,13 +1448,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 75,
-    "name": "Ciabatta",
-    "url": "https://brotdoc.com/2014/05/20/ciabatta/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 76,
     "name": "Ciabatta Grande",
     "url": "https://brotdoc.com/2015/01/30/ciabatta-grande/",
@@ -1803,57 +1554,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 80,
-    "name": "Dans d’excellentes boulangeries parisiennes",
-    "url": "https://brotdoc.com/2014/11/04/dans-dexcellentes-boulangeries-parisiennes/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 81,
-    "name": "Das Aroma-Stück – The aroma-stueck",
-    "url": "https://brotdoc.com/2013/12/15/das-aroma-stuck-the-aroma-stueck/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 82,
-    "name": "Das Dinkelroggen",
-    "url": "https://brotdoc.com/2012/09/05/das-dinkelroggen/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 83,
-    "name": "Das Dürrnbachhorner",
-    "url": "https://brotdoc.com/2014/08/13/das-durrnbachhorner/",
-    "ingredients": [],
-    "steps": [
-      "Menge für 2 Brote (in Klammern für 1 Brot)",
-      "Roggen-Poolish 300 (150) g Roggenvollkornmehl 300 (150) g Wasser 0,2 (0,1) g Frischhefe Gut verrühren und 12-16 Stunden bei Raumtemperatur reifen lassen.",
-      "Altbrot 120 (60) g fein gemahlenes geröstetes Altbrot 180 (90) g Wasser Das Wasser über das Altbrot gießen und gut verrühren",
-      "Hauptteig Altbrot, Poolish 900 (450) g Weizenmehl 1050 280 (140) g Wasser (kalt) 260 (130) g Buttermilch (kühlschrankkalt) 24 (12) g Salz 24 (12) g Roggenmalz 12 (6) g Frischhefe 4 (2) g Brotgewürz gemahlen (Fenchel, Anis, Kümmel)",
-      "Wenn die Vollgare erreicht ist, den Teigling auf den Einschießer wenden und mit der Stipprolle darüberfahren. Man kann auch quer einschneiden, das entspricht aber nicht dem Originial. Bei 250° Ober/Unterhitze mit sofortigem Schwaden anbacken, die Temperatur auf 210° reduzieren und für 60 Minuten dunkel ausbacken. Das Brot gut auskühlen lassen.",
-      "Man beachte den Eindruck meines Zeigefingers im rechten Bild, der nicht zurückfedert und damit die Vollgare anzeigt",
-      "________________________________________________________________________________________________________________________________________ ENGLISH TRANSLATION",
-      "With this bread-recipe I am trying to recreate a bread that I liked very much while hiking in the alps. It is a typical bread from austria or the german south with an aromatic seasoned crumb, very juicy and savoury. I just can&#8217;t stop eating it.",
-      "yield 2 breads (in brackets 1 bread)",
-      "Rye-Poolish 300 (150) g whole rye meal 300 (150) g water 0,2 (0,1) g fresh yeast Mix properly and let ripen for 12-16 hours at room temperature",
-      "Old Bread 120 (60) g fine ground roasted old bread 180 (90) g water Mix old-bread-crumbs with water and let soak thoroughly",
-      "main dough Old bread, Poolish 900 (450) g dark rye high-extraction wheat flour or medium wheat flour 280 (140) g water (cold) 260 (130) g buttermilk (directly from the fridge) 24 (12) g salt 24 (12) g rye-malt 12 (6) g fresh yeast 4 (2) g bread seasoning (fennel, anise, caraway)",
-      "Put all ingredients into the mixer and mix at slow speed for 3 minutes. Increase speed and mix for 5 Minutes until good gluten-development. Desired dough-temperature 25°C. Let rest for 1 hour. Divide into 2 equal pieces. First shape round and then oblong. Flour the surface and let mature until fully matured for a minimum of 90-100 minutes at 22°C. You can either score it as shown or bake it without scoring. Check maturity carefully if you&#8217;re going to bake it without scoring, otherwise it will spring open on the sides and look terrible. Baking starts at 250°C with steam for 8 minutes, reducing to 210°C for another 50-60 minutes."
-    ]
-  },
-  {
-    "id": 84,
-    "name": "Das Kasseler – ein Klassiker",
-    "url": "https://brotdoc.com/2012/02/11/das-kasseler-ein-klassiker/",
-    "ingredients": [],
-    "steps": [
-      "Die gut gelockerte Krume, saftig und durch den 40 prozentigen Roggenanteil sehr aromatisch"
-    ]
-  },
-  {
     "id": 85,
     "name": "Das 65er",
     "url": "https://brotdoc.com/2017/11/16/das-65er/",
@@ -1866,54 +1566,6 @@ const RECIPE_DATABASE = [
       "Video von der Teigformung:",
       "[youtube https://www.youtube.com/watch?v=t2WEKJayS1c&amp;w=560&amp;h=315]",
       "Mit dem Schluß unten für 50 Minuten im bemehlten Körbchen reifen lassen. Derweil den Ofen mit Stein oder Backstahl richtig gut vorheizen auf 250°C. Den Teigling auf den Einschießer kippen (Schluß oben) und den Schluß etwas aufreißen lassen. Dann sofort mit viel Dampf einschießen und auf Ober/Unterhitze abfallend auf 215°C für 60 Minuten abbacken. Eine kräftige Farbe intensiviert den Brotgeschmack."
-    ]
-  },
-  {
-    "id": 86,
-    "name": "Das 812er",
-    "url": "https://brotdoc.com/2014/10/16/das-812er/",
-    "ingredients": [],
-    "steps": [
-      "Hauptteig: 650 g Weizenmehl 812 100 g Roggen-Anstellgut TA 150 (alternativ: 33 g Wasser, 66 g Roggenmehl 1150, 6 g Anstellgut, 28°, Reifezeit 12 Stunden) 442 g Wasser 13 g Salz 9 g Frischhefe",
-      "Alle Zutaten außer Salz und Hefe 1-2 Minuten ankneten. 20 Minuten ruhen lassen. Salz und Hefe zufügen und 3 Minuten langsam, 7-8 Minuten schnell auskneten, bis der Teig sich sauber und komplett von der Schüssel löst. 90 Minuten Teigruhe. Nach 45 Minuten einmalig strecken und falten. Den Teig erst locker rund und dann sofort straff lang wirken. Mit dem Schluß nach oben im länglichen Körbchen für 60 Minuten bei Raumtemperatur reifen lassen. Auf den Einschießer stürzen und einschneiden. In den vorgeheizten Ofen bei 260° auf den Backstein geben, gut schwaden. Die Temperatur auf 210° reduzieren und das Brot insgesamt 60-65 Minuten ausbacken. Es sollte dunkelbraun werden."
-    ]
-  },
-  {
-    "id": 87,
-    "name": "Deluxe-Sesambrötchen",
-    "url": "https://brotdoc.com/2014/06/17/deluxe-sesambrotchen/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 88,
-    "name": "Der Kartoffellaib",
-    "url": "https://brotdoc.com/2012/05/24/der-kartoffellaib/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 89,
-    "name": "Deutscher Kochbuchpreis „Bronze“ für „Der Brotdoc“",
-    "url": "https://brotdoc.com/2020/12/09/deutscher-kochbuchpreis-bronze-fuer-der-brotdoc/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 90,
-    "name": "Die Drax-Mühle…",
-    "url": "https://brotdoc.com/2016/08/05/die-drax-muehle/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 91,
-    "name": "Dinkelbrot für Eva",
-    "url": "https://brotdoc.com/2015/04/15/dinkelbrot-fur-eva/",
-    "ingredients": [],
-    "steps": [
-      "Hauptteig: Sauerteig 710 (355) g Dinkelmehl 630 110 (55) g Dinkelschrot fein 420 (210) g Wasser kalt 20 (10) g Salz 11 (6) g Hefe",
-      "später zufügen: Dinkelkörner-Kochstück abgetropft Saaten-Brühstück"
     ]
   },
   {
@@ -2066,48 +1718,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 95,
-    "name": "Dinkelvollkornbrot – Whole Spelt Bread",
-    "url": "https://brotdoc.com/2014/01/10/dinkelvollkornbrot-whole-spelt-bread/",
-    "ingredients": [],
-    "steps": [
-      "Sauerteig: 136 g Dinkelvollkornmehl 136 g Wasser 30 g Anstellgut Gut vermengen und 12 Stunden reifen lassen. Aroma-Stück 80 g grobes Dinkelschrot 160 g Wasser 4 g enzymaktives Malz Vorsichtig auf 60 °C erhitzen, dann 2 Stunden bei gleichbleibender Temperatur quellen lassen, dabei immer wieder umrühren. Gut abkühlen lassen.",
-      "Hauptteig: Aromastück Sauerteig 584 g Dinkelvollkornmehl 384 g Wasser 17 g Salz 8 g Frischhefe",
-      "Die Zutaten vermengen und für 4 Minuten bei langsamer Geschwindigkeit kneten. 15 Minuten Teigruhe geben. Nochmals 1 Minute langsam kneten. 15 Minuten Teigruhe geben. Nochmals 1 Minute kneten. Wie bei Michaela hat sich danach der Teig von der Schüsselrand gelöst bei mir. Da er jedoch sehr weich ist, kann man ihn kaum wirken. Ich gab ihn daher in die gefettete Kastenform und zog ihn mit einem Silikonschaber glatt. Dann mit Dinkelvollkornmehl großzügig bestäuben. Die Endgare bei Raumtemperatur beträgt ca. 80 Minuten, währenddessen den Ofen auf 240° aufheizen. Das Brot einschießen und schwaden. Die Temperatur nach 10 Minuten auf 210° herunterregeln und das Brot mindestens weitere 60, besser 70 Minuten ausbacken. 1 Tag auskühlen und ruhen lassen vor dem Anschneiden.",
-      "ENGLISH RECIPE",
-      "During our vacation in Austria we met Elena, a single mother from London. Her little son Max has a wheat-intolerance but can eat spelt bread. I promised Elena to post some recipes with spelt for her to bake, as pure spelt breads are hard to come by in London. Most interesting is the kneading-technique that I used in this recipe. It was described by Michaela in her astonishing and beautiful blog &#8222;Grain de Sel&#8220; . It comes from Günther Weber , an organic-master-baker from Swabia (southern Germany), who recently released a book with some of his proved recipes.",
-      "Scale 800 g of Spelt, then crush 80 g of it in your mill. Grind the rest (720 g) of it as fine as possible.",
-      "Sourdough 136 g fine ground whole spelt meal 136 g water 30 g Sourdough Starter Mix properly and let mature for 12 hours.",
-      "Aroma-stueck 80 g coarse spelt meal 160 g water 4 g diastatic malt Heat up to 60°C in a pot and let simmer at this temperature covered for 2 hours, stirring repeatedly. Let it cool to room temperature and refrigerate until baking.",
-      "Main dough Aromas-stueck sourdough 584 g fine ground spelt meal 384 g water 17 g salt 8 g fresh yeast",
-      "Mix all ingredients for 4 minutes at slow speed. Let rest for 15 minutes. Mix again for 1 minute at slow speed. Let again rest for 15 minutes. Then again knead for 1 minute at slow speed. The dough should have released itself from the bowl then, nevertheless being a quite wet dough. One should put it into the baking pan at once and flatten it with a silicone dough scraper. The it should be sprinkled with whole spelt flour generously. Proofing time is min. 80 minutes. Put it into the preheated oven at 240°C, steaming once. Reduce to 210°C after 10 minutes and bake for a minimum of another 60-70 minutes to achieve a dark and aromatic crust."
-    ]
-  },
-  {
-    "id": 96,
-    "name": "Dinkel-Croissants – Spelt-Croissants",
-    "url": "https://brotdoc.com/2014/01/16/dinkel-croissants-spelt-croissants/",
-    "ingredients": [],
-    "steps": [
-      "Vorteig: 140 g Dinkelmehl 1050 140 g Wasser 1,5 g Hefe 2 Stunden anspringen lassen und dann für 10 Stunden im Kühlschrank reifen lassen",
-      "Hauptteig: Vorteig 460 g Dinkelmehl 1050 210 g kalte Milch 8 g Frischhefe 35 g Zucker 40 g Butter 12 g Salz Vorteig, Dinkelmehl und Milch 2 Minuten ankneten und dann 30 Minuten ruhen lassen. Dann Butter, Hefe und Zucker zufügen und für 5-6 Minuten zu einem glatten Teig auskneten. Dann den Teig in einem Behältnis für 60-90 Minuten im Kühlschrank kalt stellen. Butterplatte: 330 g Butter (optimalerweise Tourierbutter)",
-      "Bei der Metro habe ich diese original französische Tourierbutter gefunden, die sich recht gut tourieren läßt.",
-      "Die Krume &#8211; etwas kompakter als bei den Weizen-Croissants aber schön laminiert und sehr delikat.",
-      "ENGLISH RECIPE",
-      "Making Viennoiserie with 100 % Spelt-meal is quite demanding. As the spelt-gluten tends to be much more extensible and prone to ripping it can be tricky to laminate the dough correctly. After a couple of tries I was successful with medium spelt flour, which is not as sensible as white spelt flour. One must nevertheless follow the basic rules of making laminated doughs: keep the bench and the room cool (not above 18-20°C), especially when using butter. Never ever be rude while rolling out the dough as it will rip the dough-butter-layers and prevent a nice lamination. And: hey Elena, here they are, finally I made it 🙂",
-      "Poolish: 140 grams of medium spelt flour 140 grams of water 2,5 grams of fresh yeast Mix properly and let ripen for 2 hours at room temperature. Store it then in the fridge for another 10 hours.",
-      "Main dough: Poolish 460 grams of medium spelt flour 210 grams of cold milk 8 grams of fresh yeast 35 grams of sugar 40 grams of butter 12 grams of salt",
-      "330 grams of butter for the lamination (roll flat to a rectangle of 15 x 30 cm between two plastic films) and refrigerate until needed."
-    ]
-  },
-  {
-    "id": 97,
-    "name": "Dinkel-Fladen",
-    "url": "https://brotdoc.com/2013/05/06/dinkel-fladen/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 98,
     "name": "Dinkel-Hartweizenbaguette",
     "url": "https://brotdoc.com/2023/12/17/dinkel-hartweizenbaguette/",
@@ -2169,13 +1779,6 @@ const RECIPE_DATABASE = [
       "Einmal längs zusammenfalten und den Schluß zudrücken. Etwas länglich rollen. Dann entweder bemehlen oder befeuchten und in Saaten wälzen. Mit dem Schluß oben in ein Bäckerleinen, welches auf einem Blech liegt, einziehen. Geschickt angestellt passen alle 18 Teiglinge so auf ein Blech (6 Reihen a 3 Teiglinge). Eine Kunststofftüte über das Blech ziehen und so für 12 Stunden in den Kühlschrank bei 5°C stellen.",
       "Am Backtag direkt aus dem Kühlschrank auf ein Lochblech legen, Schluß unten, und einmal längs nicht zu tief einschneiden. Sofort in den gründlich vorgeheizten Ofen (240°) geben und kräftig schwaden. Konstant bei 240° für ca. 20 Minuten abbacken."
     ]
-  },
-  {
-    "id": 100,
-    "name": "Dinkel-Laugengebäck",
-    "url": "https://brotdoc.com/2011/12/26/dinkel-laugengeback/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 101,
@@ -2259,39 +1862,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 103,
-    "name": "Dinkel-Sauerteigbrot – Spelt-Sourdough",
-    "url": "https://brotdoc.com/2014/03/08/dinkel-sauerteigbrot-spelt-sourdough/",
-    "ingredients": [],
-    "steps": [
-      "Sauerteig: 168 g Dinkelmehl 630 100 g Wasser 16 g Anstellgut (kann vom Weizensauerteig sein) Vermischen und 12-16 Stunden reifen lassen.",
-      "Hauptteig TA 160: Sauerteig 432 g Dinkelmehl 630 260 g Wasser 12 g Salz",
-      "Alle Zutaten vermischen und 30 Minuten ruhen lassen. Dann etwa 2 Minuten auf niedriger Stufe mit dem Handkneter oder von Hand durchkneten. In eine leicht eingeölte Teigwanne geben und 120 Minuten ruhen lassen, dabei nach 45 und 90 Minuten strecken und falten. Den Teigling erst leicht rund wirken und dann sofort straff lang wirken. In das Gärkörbchen geben mit dem Schluß nach oben und etwa 80-90 Minuten bei Raumtemperatur gehen lassen. Je nach Triebkraft des Sauerteigs kann diese Zeit länger oder kürzer sein. Das Brot sollte 3/4 bis knappe Gare haben. Auf einen Einschießer geben, einschneiden und in den auf 240°C vorgeheizten Ofen geben. Mit Dampf anbacken und nach 10 Minuten auf 210° reduzieren. Weitere 50 Minuten ausbacken.",
-      "ENGLISH RECIPE",
-      "This is a plain and simple recipe for spelt sourdough bread. With no commercial yeast added you will get a lightly sour and highly aromatic spelt-bread. Kneading by machine is reduced to the absolute minimum. It is worth a try.",
-      "sourdough: 168 g white spelt flour 100 g water 16 g starter (wheat starter possible) Mix and let mature for 12-16 hours.",
-      "main dough 60 % hydration: sourdough 432 g white spelt flour 260 g water 12 g salt",
-      "Mix all ingredients for 1-2 minutes and let rest for 30 minutes (autolyse). Then mix for 1-2 minutes with the mixer or by hand. Put the dough into a oiled canister and let it rest for 120 minutes. Do one stretch and fold after 45 and another after 90 minutes. Form a long loaf and proof it in a banneton for 80-90 minutes, seam up. This time can vary depending on the activity of the sourdough. The goal is a 3/4 proofed bread. Put it on the peel, seam down and score. Then put it into the preheated oven at 240°C and steam properly. After 10 minutes reduce to 210°C and bake for another 50 minutes."
-    ]
-  },
-  {
-    "id": 104,
-    "name": "Dinkel-Toastbrot – Spelt Sandwich Bread",
-    "url": "https://brotdoc.com/2014/01/21/dinkel-toastbrot-spelt-sandwich-bread/",
-    "ingredients": [],
-    "steps": [
-      "Dinkel-Kochstück: 45 (23) g Dinkelmehl 630 225 (113) g Milch In einem Topf unter beständigem Rühren erhitzen bis die Masse gut eingedickt ist, sie muß cremig wie Pudding sein. Abkühlen lassen.",
-      "Hauptteig: Vorteig, Dinkel-Kochstück 835 (418) g DM 630 273 (137) g Wasser 66 (33) g Butter 22 (11) g Zucker 22 (11) g Hefe 22 (11) g Malzextrakt 20 (10) g Salz",
-      "ENGLISH RECIPE",
-      "This is my third &#8222;pure spelt&#8220; recipe &#8211; sandwich bread made out of spelt-flour with no baking agents. The dough contains a quick preferment and a water-roux with milk, which greatly improves taste and freshkeeping. The fairly high ammount of yeast is necessary to achieve the fluffy crumb. Nevertheless one gets a delicious taste &#8211; our kids cannot stop eating slice after slice&#8230; This is my current favourite recipe for sandwich bread.",
-      "Yields 2 loaf-pans of sandwich bread (in brackets 1 loaf)",
-      "preferment (Hebel): 220 (110) g medium spelt flour (if not available use light spelt) 220 (110) g water 2 (1) g fresh yeast Let ferment for 2 hours at room temperature, then use it. It is possible to refrigerate the poolish for another 10-12 hours.",
-      "water roux: 45 (23) g light spelt flour 225 (113) g milk Heat in a pot while continuously stirring until the mass has become creamy and firm. Let cool down.",
-      "main dough: preferment, water roux 835 (418) g light spelt flour 273 (137) g water 66 (33) g butter 22 (11) g sugar 22 (11) g fresh yeast 22 (11) g malt 20 (10) g salt",
-      "Put all ingredients into the mixer. Mix for 1-2 minutes then let the dough rest for 15 minutes. This is very helpful for spelt-doughs which are prone to overkneading. Then mix for 2 minutes at slow speed, 4 minutes at second speed until the dough is nicely developed. Let the dough rest for 45 minutes. Divide in 2 pieces of equal weight. Form a cylinder out of each piece and divide the cylinder into 4 equal pieces. The process (4-pieces-technique) is shown here or here . Put the pieces turned by 90° into a pullman loaf pan and close the lid. Let proof for 45-50 minutes until the dough has reached 1 cm below the rim of the pan. Put it into the oven at 200°C and bake for 42-45 minutes. Press down the lid 2-3 times during the first 15 minutes of the bake to achieve a nice even crust."
-    ]
-  },
-  {
     "id": 105,
     "name": "Dinkel-Weizen-Baguettes",
     "url": "https://brotdoc.com/2013/05/20/dinkel-weizen-baguettes/",
@@ -2328,13 +1898,6 @@ const RECIPE_DATABASE = [
       "[youtube https://www.youtube.com/watch?v=aHbF7t37yGI&#038;w=560&#038;h=315]",
       "Mit Wasser besprühen und in einer Schüssel mit Haferflocken wälzen. Mit dem Schluß unten zusammen auf den Einschießer setzen, so daß sich die Teiglinge berühren. 5-10 Minuten ruhen lassen, einschneiden und dann sofort einschießen. Gut schwaden und die Temperatur auf 210°C reduzieren. Gesamte Backzeit etwa 60 Minuten."
     ]
-  },
-  {
-    "id": 108,
-    "name": "Doppelte Weizenbrötchen mit Vollkornanteil",
-    "url": "https://brotdoc.com/2012/05/04/doppelte-weizenbrotchen-mit-vollkornanteil/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 109,
@@ -2450,44 +2013,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 112,
-    "name": "Dunkles Hafer-Baguette",
-    "url": "https://brotdoc.com/2015/11/15/dunkles-hafer-baguette/",
-    "ingredients": [],
-    "steps": [
-      "Vorteig: 150 (75) g Haferflocken fein 200 (100) g Wasser 0,1 (0,1) g Hefe (etwa reiskorngroß) Die Hefe im Wasser auflösen und die Haferflocken einrühren. Abdecken und 12 Stunden bei Raumtemperatur reifen lassen. Hauptteig: 680 (340) g Wasser (kalt) Vorteig 75 (37) g Weizensauerteig (Anstellgut aus dem Kühlschrank) 850 (425) g Weizenmehl T80 (oder Typ 1050) 20 (10) g Salz 9 (3,5) g Hefe"
-    ]
-  },
-  {
-    "id": 113,
-    "name": "Dunkles Landbrot",
-    "url": "https://brotdoc.com/2013/10/28/dunkles-landbrot/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 114,
-    "name": "Dunkles Roggenbrot",
-    "url": "https://brotdoc.com/2014/03/31/dunkles-roggenbrot/",
-    "ingredients": [],
-    "steps": [
-      "Die Zutaten in einer Knetschüssel für 7-9 Minuten verkneten. 45 Minuten ruhen lassen. Auf die gut mit Roggenvollkornmehl bemehlte Arbeitsfläche geben und in die gewünschte Form bringen, dabei darauf achten, daß die Oberfläche nicht rissig wird. Mit Vollkornmehl einreiben und mit dem Schluß nach Oben im Gärkörbchen gehen lassen. Gare 90 Minuten bei Raumtemperatur. Backen abfallend von 250° auf 210° für etwa 60-70 Minuten bis es schön dunkelbraun ist, Anfangs nur leicht schwaden.",
-      "________________________________________________________________________________________________________________________________________",
-      "ENGLISH RECIPE",
-      "&#8222;Dark-rye-bread&#8220; &#8211; this is a 100 % rye bread baked without a loaf-pan. It wasnt easy to find a hydration, which made it possible to bake it without a pan and allow for a not too firm crumb. Cut not too thick and with a tangy spread this bread is irresistible.",
-      "sourdough: 228 g whole rye flour 228 g water 22 g starter 3 g salt Mix properly and let mature for 12-16 hours, dough temperature 30°C at the beginning.",
-      "Hauptteig TA 175: Sauerteig 372 g dark rye flour 222 g water 9 g salt 20 g rye malt 10 g honey 4 g fresh yeast",
-      "Mix all ingredients for 7-9 minutes in the mixer. Let rest for 45 minutes. Put on the well floured bench and shape roughly into the desired shape. Proof in a well floured banneton seam up for 90 minutes at room temperature. Bake for 60 minutes beginning with 250°C, reducing to 210°C after 10 minutes. The crust should be dark brown."
-    ]
-  },
-  {
-    "id": 115,
-    "name": "Dunkles Weizenmischbrot als Pain Fendu",
-    "url": "https://brotdoc.com/2012/01/12/dunkles-weizenmischbrot-als-pain-fendu/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 116,
     "name": "Dunkle Baguettes",
     "url": "https://brotdoc.com/2015/02/16/dunkle-baguettes/",
@@ -2497,23 +2022,6 @@ const RECIPE_DATABASE = [
       "Vorteig: 350 g Weizenvollkornmehl 350 g Wasser 0,3 g Hefe Gut verrühren und 12 Stunden bei Raumtemperatur reifen lassen.",
       "Weizensauerteig: 23 g Weizenmehl 1050 23 g Wasser (40-45°C) 3 g Anstellgut Vermischen und 12 Stunden möglichst in warmer Umgebung (28°C) reifen lassen. Alternativ kann auf vorhandenes Weizenanstellgut zurückgegriffen werden.",
       "Hauptteig: Vorteig Sauerteig 750 g Weizenmehl T110 496 g Wasser (kalt) + 120 g zum Ende des Knetens 24 g Salz 10 g Hefe (8 g bei langer kalter Führung)"
-    ]
-  },
-  {
-    "id": 117,
-    "name": "Dunkle Baguette-Brötchen",
-    "url": "https://brotdoc.com/2014/10/01/dunkle-baguette-brotchen/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 118,
-    "name": "Dunkle Weizenkruste",
-    "url": "https://brotdoc.com/2017/11/12/dunkle-weizenkruste/",
-    "ingredients": [],
-    "steps": [
-      "Hauptteig (Menge für ein Brot aus der 1 kg Kastenform)",
-      "534 g Weizenmehl 1050 374 g Wasser 150 g Lievito Madre (aus dem Kühlschrank) 13 g Salz 6 g Frischhefe (13 g inaktives Malz)"
     ]
   },
   {
@@ -2527,30 +2035,6 @@ const RECIPE_DATABASE = [
       "Hauptteig: Vorteig, Altbrot 363 g Weizenmehl 550 115 g Buttermilch 97 g Wasser 7 g Frischhefe 10 g Salz 2 g Brotgewürz (Fenchel, Anis, Kümmel) 15 g Roggenmalz 65 g Leinsaat (geröstet) Sesam/Leinsaat zum wälzen",
       "Eine hocharomatische fein bis mittelporige und kernige Krume"
     ]
-  },
-  {
-    "id": 120,
-    "name": "Einkorn-Rustikus",
-    "url": "https://brotdoc.com/2017/02/19/einkorn-rustikus/",
-    "ingredients": [],
-    "steps": [
-      "Menge für 2 Laibe",
-      "360 g Lievito Madre aus dem Kühlschrank (bestehend aus 240 g Weizenmehl 550 und 120 g Wasser) 846 g Wasser (30°C), später noch 100 g Wasser (kalt) einkneten 636 g Hartweizenmehl 424 g Einkorn-Vollkornmehl 28 g Salz 9 g Frischhefe"
-    ]
-  },
-  {
-    "id": 121,
-    "name": "Ein Besuch bei Dietmar Kappl / Reichl-Brot",
-    "url": "https://brotdoc.com/2014/07/19/ein-besuch-bei-dietmar-kappl-reichl-brot/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 122,
-    "name": "Ein Brief aus Australien / Teigtemperatur",
-    "url": "https://brotdoc.com/2014/09/05/ein-brief-aus-australien-teigtemperatur/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 123,
@@ -2853,15 +2337,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 131,
-    "name": "Ferment-Brot",
-    "url": "https://brotdoc.com/2016/10/04/ferment-brot/",
-    "ingredients": [],
-    "steps": [
-      "Hauptteig: 600 g Fermentsauerteig / Madre (vorsicht: der Rest des Sauerteigs (400 g) geht wieder in den Kühli) 800 g Weizenmehl Typ 110 (oder 1050/Vollkorn) 26 g Salz 640 g Wasser (40°C)"
-    ]
-  },
-  {
     "id": 132,
     "name": "Ferment-Kürbiskernbrot",
     "url": "https://brotdoc.com/2016/10/22/ferment-kuerbiskernbrot/",
@@ -2876,16 +2351,6 @@ const RECIPE_DATABASE = [
       "Das Brot auf den Einschießer wenden, einschneiden und mit Dampf einschießen. Die Backtemperatur auf 210°C reduzieren und für etwa 60 Minuten abbacken.",
       "Auch ohne Hefe gut gelockert und aromatisch lecker: Kürbiskernbrot mit Lievito Madre",
       "Hatte nach 90 Minuten schon volle Gare, deswegen kaum noch aufgerissene Schnitte. Ich war überrascht über die Triebfähigkeit des LM."
-    ]
-  },
-  {
-    "id": 133,
-    "name": "Ferment-Roggenbrot",
-    "url": "https://brotdoc.com/2016/10/10/ferment-roggenbrot/",
-    "ingredients": [],
-    "steps": [
-      "Hauptteig: 330 g Lievito Madre 90 g Poolish 339 g Wasser (40°C) 385 g Roggenmehl 1370 14 g Salz",
-      "Alle Zutaten im Kneter 6-7 Minuten langsam vermischen, darauf achten, daß keine Mehlnester am Schüsselrand anhaften bleiben. Den Teig etwa 1 Stunden ruhen lassen, am besten im leicht vorgeheizten Ofen mit angeschalteter Lampe (ca. 30°C). Auf die gut bemehlte Arbeitsfläche geben und rund wirken. Den Teigling und das Gärkörbchen gut bemehlen. Mit dem Schluß unten ins Gärkörbchen legen. Dieses offen für 2 Stunden zur Gare stellen. Der Teigling sollte sich sichtbar vergrößert haben und auf der Oberfläche rissig geworden sein. Den Ofen auf 260° gut vorheizen. Teigling aus dem Körbchen auf den Einschießer lupfen, so daß der Schluß unten bleibt. Einschießen und 2 Minuten warten. Dann leicht schwaden. Die Temperatur auf 210°C abfallen lassen und insgesamt 60 Minuten backen."
     ]
   },
   {
@@ -2932,13 +2397,6 @@ const RECIPE_DATABASE = [
       "Mit Schluß oben in das bemehlte Gärkörbchen legen. Nur 40 Minuten reifen lassen (Absicht, es soll stark aufreißen!). Auf den Einschießer kippen, tief einschneiden und sofort in den auf 250° aufgeheizten Ofen geben. Gut schwaden.",
       "Temperatur auf 210° reduzieren und mindestens 1 Stunde kräftig abbacken."
     ]
-  },
-  {
-    "id": 137,
-    "name": "Fluffi",
-    "url": "https://brotdoc.com/2017/06/23/fluffi/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 138,
@@ -2991,27 +2449,6 @@ const RECIPE_DATABASE = [
       "Auch hier mit schöner Fensterung.",
       "Nochmals eine Nahaufnahme der fein bis mittelporigen sehr aromatischen und fein säuerlichen Krume."
     ]
-  },
-  {
-    "id": 141,
-    "name": "Französische Baguettes mit Poolish",
-    "url": "https://brotdoc.com/2012/02/02/franzosische-baguettes-mit-poolish/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 142,
-    "name": "Frische Frühstücksbrötchen aus Bio-Gelbweizenmehl 550",
-    "url": "https://brotdoc.com/2012/01/07/frische-fruhstucksbrotchen-aus-bio-gelbweizenmehl-550/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 143,
-    "name": "Frischhefe haltbarer machen",
-    "url": "https://brotdoc.com/2020/04/17/frischhefe-haltbarer-machen/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 144,
@@ -3074,13 +2511,6 @@ const RECIPE_DATABASE = [
       "Das Brot auf den Einschießer wenden und einschneiden.",
       "Mit kräftigem Schwaden einschießen und die Backtemperatur auf 210 °C reduzieren. Das Brot 50 bis 55 Minuten abbacken."
     ]
-  },
-  {
-    "id": 145,
-    "name": "Früh-Stückchen",
-    "url": "https://brotdoc.com/2013/10/06/fruh-stuckchen/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 146,
@@ -3173,19 +2603,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 148,
-    "name": "Gallisches Landbrot",
-    "url": "https://brotdoc.com/2014/03/28/gallisches-landbrot/",
-    "ingredients": [],
-    "steps": [
-      "________________________________________________________________________________________________________________________________________",
-      "ENGLISH RECIPE",
-      "This is another experiment with lievito madre . I used french flours T80, T65 and whole-wheat-meal to create a high-hydration country-loaf with a mild acidity and good freshkeeping qualities. A very good bread for everydays consumption, suitable for every spread you prefer.",
-      "main dough 79 % hydration: 300 g stone ground wheat flour (french type 80) 200 g whole wheat flour 200 g high gluten flour (french type 65) 75 g lievito madre (directly from the fridge) 567 g water 4 g fresh yeast 15 g salt",
-      "Mix everything but for the salt and the yeast until all flour is dissolved. Let rest for 45 minutes (autolyse). Add salt and yeast and mix for 2 minutes until medium gluten development. Let rest in a dough canister for 2 hours, doing one stretch-and-fold after 45 and 90 minutes. If your dough is not developed enough after this, do another stretch and fold and let it rest for a further 20-30 minutes. Shape into a boule on the well floured bench and proof in a banneton for 60 minutes at room temperature. Put onto the peel, score as you like and insert into the oven, which should be preheated to 240°C. Steam properly and let out the steam after 10 minutes. Bake at 210°C for another 60 minutes."
-    ]
-  },
-  {
     "id": 149,
     "name": "Gelbweizenkruste",
     "url": "https://brotdoc.com/2017/09/23/gelbweizenkruste/",
@@ -3245,13 +2662,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 151,
-    "name": "Gewürzbrot",
-    "url": "https://brotdoc.com/2014/10/28/gewurzbrot/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 152,
     "name": "Gewürzbrot II / Test: Soehnle Page Aqua Proof",
     "url": "https://brotdoc.com/2018/06/25/gewuerzbrot-ii-test-soehnle-page-aqua-proof/",
@@ -3271,13 +2681,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 153,
-    "name": "Götz-von-Berlichingen Brot",
-    "url": "https://brotdoc.com/2014/08/09/gotz-von-berlichingen-brot/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 154,
     "name": "Grill-Brot",
     "url": "https://brotdoc.com/2018/04/08/grill-brot/",
@@ -3291,23 +2694,6 @@ const RECIPE_DATABASE = [
       "Den Teig in einer Teigwanne für 4-5 Stunden bei Raumtemperatur reifen lassen. Zwei mal während dieser Zeit dehnen und falten. Er sollte sich mindestens verdreifacht haben, bevor er geformt wird.",
       "Auf die bemehlte Arbeitsfläche kippen und möglichst keine Luft aus dem Teig herausdrücken. Den Teig an zwei Rändern fassen und zur Mitte übereinanderklappen, etwas zusammenzwicken. Dies noch einmal wiederholen an den anderen Rändern, so daß sich eine Art Täschchen bildet. Den Teig auf den Schluß drehen und noch etwas rund schieben. Dann mit Schluß unten in das bemehlte Körbchen legen.",
       "45-55 Minuten reifen lassen. Den Ofen gut auf 250 °C vorheizen. Auf den Einschießer kippen (Schluß oben) und sofort in den heißen Ofen geben. Gut schwaden und die Temperatur auf 215 °C abfallen lassen. Für 50-60 Minuten abbacken."
-    ]
-  },
-  {
-    "id": 155,
-    "name": "Grubenbrot – Miners Bread",
-    "url": "https://brotdoc.com/2013/11/06/grubenbrot-miners-bread/",
-    "ingredients": [],
-    "steps": [
-      "Hauptteig: Brühstück Sauerteig Kochstück 256 g Wasser 150 g Purpur-Weizen-Vollkornmehl 370 g Roggen-Vollkornmehl 75 g Haferflocken 8 g Frischhefe 18 g Salz",
-      "ENGLISH RECIPE",
-      "&#8222;Miners Bread&#8220;",
-      "My home-town is situated in the southern part of the &#8222;Münsterland&#8220;, in a mostly rural area. But the great industrial-area, the &#8222;Ruhr&#8220; is just 20-30 kilometres south of my town. The coal mines that once were typical in the &#8222;Ruhr&#8220; have long since vanished, having moved north, the mining now taking place at my home-town more than 1100 meters below the surface. This bread is dedicated to the miners, who should love this juicy and nourishing whole-grain-bread.",
-      "Sourdough 200 % hydration 250 g stone-ground purple-wheat-meal 250 g water (28°C) 25 g sourdough-starter Mix properly and let mature for 12 hours.",
-      "Water roux 30 g Whole-Rye-Meal 150 g Water Heat up in a pot, stirring continuously until it gets firm. Let then cool down to room temperature.",
-      "Soaker 35 g sesame 35 g sunflower-seeds 35 g pumpkin-seeds Roast the seeds in a pot, pour hot water on them and let them soak for 4 hours. Rinse the water and let the seeds dry a little bit.",
-      "Main dough Sourdough Water roux Soaker 256 g water 150 g stone ground purple-wheat 370 g whole-rye-meal 75 g oat flakes 8 g Frischhefe 18 g Salz",
-      "Mix the all ingredients without the soaker and the oat-flakes for 7-9 minutes. Then add the soaker and the oat-flakes and mix for another 1-2 minutes. Let rest for 30 Minutes. Then put the dough with a silicone-scraper into the loaf pan, which has been buttered and layered with oat-flakes. Wet the surface of the dough and sprinkle oat-flakes on it. Let proof for 70 minutes covered. Meanwhile preheat the oven to 240°C. Put the loaf pan into the oven and steam. Let out the steam after 10 minutes and bake the loaf at 210°C for another 60 minutes. Let it cool down and rest for a minimum of 24 hours before cutting it for the first time."
     ]
   },
   {
@@ -3469,33 +2855,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 161,
-    "name": "Haltern trauert…",
-    "url": "https://brotdoc.com/2015/03/27/haltern-trauert/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 162,
-    "name": "Hamburger Franzbrötchen",
-    "url": "https://brotdoc.com/2013/09/29/hamburger-franzbrotchen/",
-    "ingredients": [],
-    "steps": [
-      "Sauerteig: 50 g Weizenmehl 550 30 g Wasser 5 g Weizen-Anstellgut Gut vermengen und bei Raumtemperatur 12 Stunden reifen lassen. Man kann die 85 g Sauerteig auch vom fest geführten Anstellgut nehmen.",
-      "Hauptteig: Vorteig Sauerteig 160 g Weizenmehl 550 170 g Dinkelmehl 630 160 g Milch (kalt) 10 g Frischhefe 8 g Zucker 10 g Salz 30 g Butter",
-      "250 g Butter für die Butterplatte",
-      "Zimtzucker zum Bestreuen",
-      "ENGLISH RECIPE",
-      "Franzbrötchen &#8211; Sweet Cinnamon-Rolls",
-      "Years ago I found and tried Ketex&#8216; recipe for a traditional sweet Roll from Hamburg called &#8222;Franzbrötchen&#8220;. This was a quite nice recipe and the kids loved them. A short time ago Lutz presented another approach to this Hamburg Speciality. By combining the cinnamon-sugar-layer with a kind of viennoiserie-style dough he achieved a more juicy crumb, than with the original recipe. After admiring his stunning pictures i had to give it a try, too. In my opinion the result is very convincing. The rolls are simply overwhelmingly crispy, sweet, full of flavor. One should enjoy them while they are still slighly warm.",
-      "Poolish: 125 grams of bread flour 125 grams of water 1 tiny bit of fresh yeast (rice-grain) Mix properly and let mature for 12 hours at room temperature.",
-      "Sourdough: 50 grams of bread flour 30 grams of water 5 grams of stiff starter Mix properly and let mature for 12 hours at room temperature. You can also simply take 80 grams of the stiff starter as sourdough, if this ammount is available.",
-      "Main dough Poolish Sourdough 160 grams of bread flour 170 grams of white spelt flour 160 grams of milk 10 grams of fresh yeast 8 grams of sugar 30 grams of butter 10 grams of salt",
-      "250 grams of butter for the lamination",
-      "Cinnamon-sugar for the sugar-layer"
-    ]
-  },
-  {
     "id": 163,
     "name": "Hamburger-Brötchen („Buns“)",
     "url": "https://brotdoc.com/2015/10/17/hamburger-broetchen-buns/",
@@ -3635,24 +2994,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 166,
-    "name": "Hartweizen-Bâtards",
-    "url": "https://brotdoc.com/2016/11/23/hartweizen-batards/",
-    "ingredients": [],
-    "steps": [
-      "Menge für zwei mittelgroße Laibe Hauptteig: 360 g Lievito Madre TA 150 direkt aus dem Kühlschrank 560 g H artweizenmehl 200 g Roggenmehl Typ 1370 530 g Wasser (25°C) + 70 g 22 g Salz 22 g Olivenöl 5 g Frischhefe 3 g Gerstenmalz aktiv"
-    ]
-  },
-  {
-    "id": 167,
-    "name": "Heidebrot",
-    "url": "https://brotdoc.com/2013/04/07/heidebrot/",
-    "ingredients": [],
-    "steps": [
-      "Menge für 2 Brote Hauptteig TA 165: 150 g Weizenvollkornmehl 250 g Roggenmehl 1370 700 g Weizenmehl 550 100 g Weizensauerteig (altes Anstellgut) 704 g Wasser (lauwarm) 11 g Frischhefe 50 g flüssiges Backmalz 22 g Salz"
-    ]
-  },
-  {
     "id": 168,
     "name": "Heimkehrer-Brot",
     "url": "https://brotdoc.com/2018/01/06/heimkehrer-brot/",
@@ -3662,13 +3003,6 @@ const RECIPE_DATABASE = [
       "Vorteig: 150 g Weizenvollkornmehl 150 g Wasser 0.2 g Frischhefe (ein erbsgroßes Stück) Die Zutaten gut verrühren und 12 Stunden abgedeckt reifen lassen.",
       "Hauptteig: 300 g Vorteig 150 g Lievito Madre / fester Weizensauerteig TA 150 direkt aus dem Kühlschrank 300 g Weizenvollkornmehl 150 g Weizenmehl 550 340 g Wasser (40°C), weitere 42 g Wasser für später abwiegen 14 g Salz 7 g Rohrohrzucker 1 g Frischhefe"
     ]
-  },
-  {
-    "id": 169,
-    "name": "Helle Brötchen",
-    "url": "https://brotdoc.com/2011/12/24/helle-brotchen/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 170,
@@ -3809,13 +3143,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 171,
-    "name": "Herbst im westlichen Münsterland",
-    "url": "https://brotdoc.com/2018/11/08/herbst-im-westlichen-muensterland/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 172,
     "name": "Herstellung: Rosinen-Hefewasser",
     "url": "https://brotdoc.com/2017/02/19/herstellung-rosinen-hefewasser/",
@@ -3899,13 +3226,6 @@ const RECIPE_DATABASE = [
       "Die Backtemperatur auf 230 °C herunterstellen und die Brote insgesamt 22 bis 24 Minuten backen. Den Schwaden nach etwa 10 Minuten ablassen.",
       "Nach dem Backen mit Wasser besprühen."
     ]
-  },
-  {
-    "id": 174,
-    "name": "Honig-Joghurt-Stuten",
-    "url": "https://brotdoc.com/2013/10/24/honig-joghurt-stuten/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 175,
@@ -4103,19 +3423,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 179,
-    "name": "Joghurt-Hafer-Brötchen",
-    "url": "https://brotdoc.com/2014/04/28/joghurt-hafer-brotchen/",
-    "ingredients": [],
-    "steps": [
-      "Hauptteig: 850 g Weizenmehl 550 150 g Haferflocken 400 g Wasser 300 g Joghurt 75 g Lievito madre (direkt aus dem Kühlschrank nehmen) 20 g Honig 20 g Backmalz (inaktiv) 19 g Salz 14 g Hefe",
-      "________________________________________________________________________________________________________________________________________ ENGLISH RECIPE &#8222;Oat-yoghurt-rolls&#8220;",
-      "The combination of oat-flakes, yoghurt and honey is quite delicious in my opinion. In this recipe I tried to add these ingredients to a roll dough. Oat isn&#8217;t easy to bake with because it contains something that hampers gluten-development, so the crumb turned out more dense than usual.",
-      "Main dough: 850 g bread flour 150 g oat flakes 400 g water 300 g yoghurt 75 g lievito madre (directly from the fridge) 20 g honey 20 g malt (non-diastatic) 19 g salt 14 g fresh yeast",
-      "Mix everything but for the honey, the salt and the yeast for 2 minutes. Autolyse for 60 minutes. Add salt, yeast and honey and mix for another 5-6 minutes until the dough ist smooth. Let rest for 60 minutes. Divide into 20 pieces of 80-85 g each and shape to rolls. Wet them and sprinkle with oat-flakes. Put it with the flakes down in an bakers-linen and let rise for 20 minutes at room temperature. Cover properly, then retard them for 12 hours in the fridge at 5°C. Preheat the oven to 240°C and put the rolls on a baking sheet, seeds up. Score deeply onced and insert into the oven, steaming properly. Bake at 240°C for 20 minutes."
-    ]
-  },
-  {
     "id": 180,
     "name": "Kaisersemmeln – ein Versuch",
     "url": "https://brotdoc.com/2012/04/21/kaisersemmeln-ein-versuch/",
@@ -4145,35 +3452,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 181,
-    "name": "Kamutbrot",
-    "url": "https://brotdoc.com/2014/04/20/kamutbrot/",
-    "ingredients": [],
-    "steps": [
-      "Roggensauerteig: 84 g Roggenmehl 610 84 g Wasser 8 g Roggen-Anstellgut Gut verrühren und in warmer Umgebung (Ofen mit angeschalteter Lampe, ca. 28-30°C) 12 Stunden gehen lassen.",
-      "Hauptteig TA 163: Roggensauerteig 560 g Kamutmehl hell 56 g Roggenmehl 610 357 g Wasser 7 g Hefe 14 g Salz",
-      "Alle Zutaten bis auf Salz und Hefe verkneten für 1-2 Minuten. 60 Minuten ruhen lassen (Autolyse). Salz und Hefe zufügen und maximal 2 Minuten maschinell verkneten bei langsamer Knetgeschwindigkeit. Teigruhe für 90 Minuten, nach 45 Minuten den Teig vorsichtig strecken und falten (der Kleber ist nicht sehr dehnbar und reißt etwas). Den Teig auf der gut bemehlten Arbeitsfläche möglichst straff lang wirken und dann für 50 Minuten im Bäckerleinen mit dem Schluß nach oben gehen lassen. Auf den Einschießer wenden, seitlich einmal längs einschneiden und dann direkt auf den Backstein in den vorgeheizten Ofen (240°C) einschießen. Dampf geben und den Dampf nach 10 Minuten ablassen. Dann auf 210° reduzieren und für weitere 50 Minuten ausbacken.",
-      "________________________________________________________________________________________________________________________________________ ENGLISH RECIPE &#8222;Kamut Bread&#8220;",
-      "Kamut, an ancient form of wheat formerly only seldomly known, is becoming more and more popular here in germany. Its taste is more pronounced than wheat, more nutty and intensely. Usually it is combined with modern wheat flour to cope with the inferior baking qualities of Kamut. The gluten is much less extensible than wheat-gluten and it binds less water. In this recipe I nevertheless used just white Kamut flour with a little bit of white rye flour (part of it as sourdough) and it turned out well. It helped to reduce kneading with the machine to the absolute minimum and use a low hydration (63 %).",
-      "rye sourdough: 84 g white rye flour (Type 610 in Germany) 84 g water 8 g starter Mix properly and let mature at warm temperature (28-30°C) for 12 hours.",
-      "main dough 63 % hydration: rye sourdough 560 g white kamut flour 56 g white rye flour (Type 610 in Germany) 357 g water 7 g fresh yeast 14 g salt",
-      "Mix all ingredients but for the salt and yeast for 1-2 minutes. Autolyse for 60 minutes. Add salt and yeast and mix for a maximum of 2 minutes until all yeast is incorporated. Let rest for 90 minutes, doing one stretch and fold after 45 minutes. Be gentle with the stretch, the dough can tear easily. Shape to a cylinder and let proof seam up for 50 minutes at room temperature in a bakers linen. Put on a peel, score once at one side of the dough and put it into the well preheated oven at 240°C. Bake with steam for 10 minutes, remove steam and bake for another 50 minutes at 210°C."
-    ]
-  },
-  {
-    "id": 182,
-    "name": "Kamut-Brötchen mit Lievito madre",
-    "url": "https://brotdoc.com/2014/04/15/kamut-brotchen-mit-lievito-madre/",
-    "ingredients": [],
-    "steps": [
-      "Hauptteig: Vorteig 450 g Weizenmehl 550 400 g Kamutmehl (hell) 505 g Wasser 75 g Lievito madre (direkt aus dem Kühlschrank nehmen) 20 g Butter 20 g Backmalz (inaktiv) 20 g Salz 12 g Hefe",
-      "________________________________________________________________________________________________________________________________________ ENGLISH RECIPE &#8222;Kamut-Rolls with lievito madre&#8220;",
-      "Some time ago I tried baking with an ancient grain called &#8222;Kamut&#8220; or &#8222;Khorasan Wheat&#8220;. When being made aware of Drax-Mühle by Lutz Geissler I found organic white Kamut-flour under offer there. Having liked the taste of Kamut very much I had to try this, too. The following recipe does combine 50 % bread flour with 50 % white kamut flour.",
-      "Poolish: 100 g white kamut flour 100 g water 1 g fresh yeast Mix, let rise for 2 hours at room temperature and then let mature for 10 hours in the fridge. Main dough: Poolish 450 g bread flour 400 g white kamut flour 505 g water 75 g lievito madre (directly from the fridge) 20 g butter 20 g malt (non-diastatic) 20 g salt 12 g fresh yeast",
-      "Mix everything but for the butter, the salt and the yeast for 2 minutes. Autolyse for 45 minutes. Add salt, yeast and butter and mix for another 3-4 minutes until the dough ist smooth. Let rest for 60 minutes. Divide into 20 pieces of 80-85 g each and shape to rolls. With the roll-pusher (if available) push a nice pattern into the rolls, wet them and sprinkle with seeds. Put it with the seeds down in an bakers-linen and let rise for 20 minutes at room temperature. Then retard them for 12 hours in the fridge at 5°C. Preheat the oven to 240°C and put the rolls on a baking sheet, seeds up. Insert into the oven and steam properly. Bake at 240°C for 20 minutes."
-    ]
-  },
-  {
     "id": 183,
     "name": "Kamut-Emmerbrötchen",
     "url": "https://brotdoc.com/2015/08/30/kamut-emmerbroetchen/",
@@ -4183,13 +3461,6 @@ const RECIPE_DATABASE = [
       "Vorteig: 170 g Emmervollkornmehl 170 g Wasser 0,2 g Frischhefe (erbsgroßes Stück) Gut verrühren und 12 Stunden bei Raumtemperatur reifen lassen.",
       "Hauptteig: Vorteig 130 g Emmervollkornmehl 450 g Kamutmehl hell 325 g Wasser 30 g Olivenöl 15 g Salz 15 g Honig 10 g Frischhefe"
     ]
-  },
-  {
-    "id": 184,
-    "name": "Kamut-Kraftbrot",
-    "url": "https://brotdoc.com/2013/02/15/kamut-kraftbrot/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 185,
@@ -4249,15 +3520,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 186,
-    "name": "Kartoffel-Baguettes",
-    "url": "https://brotdoc.com/2014/11/07/kartoffel-baguettes/",
-    "ingredients": [],
-    "steps": [
-      "Menge für 4 Baguettes Vorteig: 125 g Weizenmehl T65 125 g Wasser 0,2 g Frischhefe Gut vermischen und 12 Stunden reifen lassen. Der Vorteig sollte von vielen feinen Blasen durchzogen sein und aromatisch riechen."
-    ]
-  },
-  {
     "id": 187,
     "name": "Kartoffel-Paderborner",
     "url": "https://brotdoc.com/2016/02/07/kartoffel-paderborner/",
@@ -4293,21 +3555,6 @@ const RECIPE_DATABASE = [
       "Bei 230°C in den gut vorgeheizten Ofen geben und schwaden. Nach 5 Minuten den Dampf ablassen und auf 200°C reduzieren (der Käse wird sonst zu schnell dunkel). Backzeit gesamt etwa 16-20 Minuten, am besten in den letzten Minuten auf Sicht backen.",
       "Die Krume offenbart, daß die Mehle der Bruckmayer-Mühle wesentlich dunkler ausgemahlen sind, als meine Standard-Mehle der Adler-Mühle",
       "Ich möchte mich bei Veronika Bruckmayer dafür bedanken, daß sie mir die Mehle zum Test zur Verfügung gestellt hat."
-    ]
-  },
-  {
-    "id": 190,
-    "name": "Kasseler – Kasseler bread",
-    "url": "https://brotdoc.com/2014/02/04/kasseler-kasseler-bread/",
-    "ingredients": [],
-    "steps": [
-      "Roggensauerteig: 180 g Roggenmehl 1150 117 g Wasser (30°) 18 g Anstellgut Gut vermischen und 12 Stunden reifen lassen.",
-      "Hauptteig TA 165: Sauerteig 240 g Weizenmehl 1050 180 g Roggenmehl 1150 273 g Wasser 12 g Salz 6 g Hefe",
-      "Eine schöne gleichmäßige feinporige hocharomatische Krume &#8211; lecker",
-      "Eines der fehlgeschlagenen Brote &#8211; es hatte eine zu hohe TA (168) und zu hohe Teigtemperatur. One of my failed tries for this recipe &#8211; hydration too high (68%) and too high dough-temperature.",
-      "ENGLISH RECIPE",
-      "rye-sourdough 180 g rye flour 117 g water (30°) 18 g starter Mix properly and let mature for 12 hours.",
-      "main dough 65 % hydration sourdough 240 g dark wheat flour (high-extraction) 180 g rye flour 273 g water 12 g salt 6 g fresh yeast"
     ]
   },
   {
@@ -4408,13 +3655,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 195,
-    "name": "Knusper-Brötchen – Crunchy Rolls",
-    "url": "https://brotdoc.com/2013/12/12/knusper-brotchen-crunchy-rolls/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 196,
     "name": "Kommissbrot",
     "url": "https://brotdoc.com/2012/11/01/kommissbrot/",
@@ -4432,22 +3672,6 @@ const RECIPE_DATABASE = [
       "Es schließt sich eine 70-80 minütige Teigruhe bei Raumtemperatur an. In dieser Zeit sollte der Teig den Rand der Form erreicht haben und Gärrisse ausgebildet haben. Mit dem Silikonschaber kann man nun noch vorsichtig ein schönes Rautenmuster eindrücken.",
       "Das Brot wird sodann in den vorgeheizten Ofen bei 240° (Ober-/Unterhitze) eingeschoben und abfallend auf 210° für 70-75 Minuten kräftig ausgebacken. Eine schöne dunkle Kruste trägt hier sehr zum vollen Aroma des Brotes bei. Das Brot auskühlen lassen und frühestens nach 24 Stunden anschneiden. Es hält sich bei Raumtemperatur gelagert bis zu 2 Wochen frisch und schmeckt von Tag zu Tag besser.",
       "Eine erstaunlich großporige Krume für ein Brot, das rein aus Roggenmehl besteht."
-    ]
-  },
-  {
-    "id": 197,
-    "name": "Kommissbrot2.0",
-    "url": "https://brotdoc.com/2013/12/18/kommissbrot2-0/",
-    "ingredients": [],
-    "steps": [
-      "Hauptteig: Sauerteig Vorteig Aroma-Stück 280 g Roggenmehl 1150 86 g Wasser 17 g Salz",
-      "Alle Zutaten in die Rührschüssel geben und mit dem Kneter 8-9 Minuten verrühren. Gut abdecken und 45 Minuten quellen lassen. Dann in eine gefettete Kastenform einfüllen und glatt ziehen (mit nassem Teigschaber). Mit Roggenmehl bestäuben und in der Form abgedeckt für 90-120 Minuten aufgehen lassen, bis der Rand der Form erreicht ist. Mit der Stipp-Rolle über den Teig fahren und unter leichtem Schwaden in den auf 250° aufgeheizten Ofen geben. Heiß anbacken und die Temperatur nach 10 Minuten auf 210° reduzieren. Weitere 60-70 Minuten kräftig ausbacken. Gut auskühlen lassen und frühestens nach 24 Stunden anschneiden.",
-      "ENGLISH RECIPE",
-      "This recipe is based on my &#8222;Kommissbrot&#8220; whose name is borrowed from a popular german bread. Kommissbrot was the style of bread, that used to be baked in army-bakeries during the dark times of our past. Containing a very high rye-ammount, rye-sourdough and having long freshkeeping qualities it fed the soldiers, that were sent out by madmen to occupy our neighbouring countries. In our more peaceful time this bread is nevertheless popular because of its qualities: great aroma and long freshkeeping. This is another approach to this bread. I used 3 preferments and did not add any additional yeast to the main dough. The result was convincing, a very aromatic and longlasting bread.",
-      "Sourdough 100 % hydration 360 g whole rye meal 360 g water (30°C) 36 g starter Mix properly and let mature for 12 hours.",
-      "Poolish 100 % hydration: 80 g medium wheat flour (or bread flour) 80 g water (30°C) 0,3 g fresh yeast (one tiny bit) Mix properly and let mature for 12 hours.",
-      "Aroma-stueck: 80 g whole rye meal 160 g water 4 g diastatic malt Mix the ingredients and heat up to 65°C in a pot while stirring continuously. Keep at that temperature for 2 hours, pot covered, while stirring every 20 minutes. The mass should get brown and creamy. Let cool to room temperature before adding it to the main dough.",
-      "Main dough: Sourdough Poolish Aroma-stueck 280 g rye flour 86 g water 17 g salt"
     ]
   },
   {
@@ -4521,13 +3745,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 199,
-    "name": "Krentenbolletjes – Niederländische Rosinenbrötchen",
-    "url": "https://brotdoc.com/2012/09/15/krentenbolletjes-niederlandische-rosinenbrotchen/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 200,
     "name": "Krustenbrot",
     "url": "https://brotdoc.com/2021/06/27/krustenbrot/",
@@ -4585,13 +3802,6 @@ const RECIPE_DATABASE = [
       "Die Temperatur auf 210 °C reduzieren und den Schwaden nach 3 Minuten ablassen.",
       "Das Brot 50 bis 55 Minuten abbacken. Nach dem Backen das Brot mit Wasser erneut abstreichen."
     ]
-  },
-  {
-    "id": 201,
-    "name": "Krustenbrötchen",
-    "url": "https://brotdoc.com/2013/02/24/krustenbrotchen/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 202,
@@ -4687,13 +3897,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 204,
-    "name": "Kürbis-Toastbrot",
-    "url": "https://brotdoc.com/2015/11/21/kurbis-toastbrot/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 205,
     "name": "Landbrot nach alter Art",
     "url": "https://brotdoc.com/2021/09/05/landbrot-nach-alter-art/",
@@ -4758,84 +3961,6 @@ const RECIPE_DATABASE = [
       "Vorteig: 300 (150) g Weizenmehl 550 300 (150) g Wasser 0,3 (0,2) g Frischhefe (erbsgroßes Stück) Alles gut verrühren und 12 Stunden bei Raumtemperatur reifen lassen.",
       "Lauge: 750 g Wasser 30°C 30 g Laugenperlen Die Laugenperlen in das Wasser streuen und vorsichtig umrühren, bis sie ganz aufgelöst sind. VORSICHT: Die entstandene 4-prozentige Lauge ist gefährlich! Bitte immer Schutzhandschuhe, eine Schutzbrille und eine Schürze tragen! Sie kann ungeeignete Materialien angreifen und wirkt auf der Haut koagulierend, was Verletzungen nach sich ziehen kann.",
       "Hauptteig: Vorteig 180 (90) g Frischmilch kalt 150 (75) g Sauerrahm kalt 700 (350) g Weizenmehl 550 15 (7,5) g Frischhefe 10 (5) g Honig 20 (10) g Salz"
-    ]
-  },
-  {
-    "id": 207,
-    "name": "Laugen-Snäckis",
-    "url": "https://brotdoc.com/2015/05/15/laugen-snackis/",
-    "ingredients": [],
-    "steps": [
-      "Menge für 2-3 Bleche mit Laugenkonfekten (in Klammern halbiert) Hauptteig: 1000 (500) g Weizenmehl Typ 550 560 (280) g Wasser kalt 70 (35) g Weizensauerteig aus dem Kühlschrank 23 (11) g Salz 12 (6) g Frischhefe 40 (20) g Butter",
-      "Lauge: 1000 g Wasser 30°C 40 g Laugenperlen Die Laugenperlen in das Wasser streuen und vorsichtig umrühren, bis sie ganz aufgelöst sind. VORSICHT: Die entstandene 4-prozentige Lauge ist gefährlich! Bitte immer Schutzhandschuhe, eine Schutzbrille und eine Schürze tragen! Sie kann ungeeignete Materialien angreifen und wirkt auf der Haut koagulierend, was Verletzungen nach sich ziehen kann."
-    ]
-  },
-  {
-    "id": 208,
-    "name": "Lavesumer Landbrot – Lavesum country-loaf",
-    "url": "https://brotdoc.com/2013/11/25/lavesumer-landbrot-lavesum-country-loaf/",
-    "ingredients": [],
-    "steps": [
-      "Menge für 4 Brote im Holzbackrahmen (in Klammern für 1 Brot) Sauerteig TA 200: 420 (105) g Dinkelmehl 1050 420 (105) g Wasser (30°) 42 (10,5) g Anstellgut Gut vermischen und 12 Stunden reifen lassen",
-      "Mehl-Brühstück: 30 (7,5) g Dinkelmehl 1050 150 (37,5) g Wasser Unter Rühren langsam erhitzen, bis die Masse stockt. Wieder auf Raumtemperatur abkühlen lassen.",
-      "Kürbiskern-Brühstück 150 (37,5) g geröstete Kürbiskerne 150 (37,5) g Wasser (kochend) Die Kürbiskerne überbrühen und 2-3 Stunden quellen lassen. Gut abtropfen lassen. Hauptteig: Sauerteig Water roux 420 (105) g Roggenmehl 1150 1930 (482,5) g Dinkelmehl 1050 1250 (312,5) g Wasser lauwarm 28 (7) g Frischhefe 56 (14) g Salz 74 (18,5) g Butter 150 (37,5) g geröstete Sonnenblumenkerne 200 (50) g Leinsamenschrot Kürbiskern-Brühstück",
-      "ENGLISH RECIPE",
-      "Lavesum is a small hamlet north-west of my home town directly on the border of a huge forest, the &#8222;Hohe Mark&#8220;. It lies embedded in a lovely park-like hilly landscape. Here still all&#8217;s right with the world and so is this bread. Using medium spelt and rye flours combined with roasted seeds one gets a juicy and aromatic all-day-bread. Yields 4 loaves to be baked in a wooden frame (in Brackets for 1 loaf)",
-      "Sourdough 200 % hydration: 420 (105) g medium spelt flour 420 (105) g water(30°C) 42 (10,5) g starter Mix properly and let mature for 12 hours.",
-      "Water roux: 30 (7,5) g medium spelt flour 150 (37,5) g water Heat in a pot while continuously stirring until it becomes firm. Let cool for 1-2 hours. Pumpkin-seed-soaker: 150 (37,5) g roasted pumpkin seeds 150 (37,5) g water (cooking) Let the seeds soak in the water for 2 hours, rinse properly.",
-      "Main dough: Sourdough water roux 420 (105) g medium rye flour 1930 (482,5) g medium spelt flour 1250 (312,5) g water lukewarm 28 (7) g fresh yeast 56 (14) g salt 74 (18,5) g butter 150 (37,5) g roasted sunflower-seeds 200 (50) g coarse ground flax-seeds pumpkin-seed soaker"
-    ]
-  },
-  {
-    "id": 209,
-    "name": "La Baguette Sauvage",
-    "url": "https://brotdoc.com/2014/08/20/la-baguette-sauvage/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 210,
-    "name": "La Miche – 1. Versuch",
-    "url": "https://brotdoc.com/2014/05/13/la-miche-1-versuch/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 211,
-    "name": "La Miche – 2. Versuch",
-    "url": "https://brotdoc.com/2014/06/10/la-miche-2-versuch/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 212,
-    "name": "La Tourte de Meule",
-    "url": "https://brotdoc.com/2013/10/20/la-tourte-de-meule/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 213,
-    "name": "La Tourte de Meule mit Lievito madre",
-    "url": "https://brotdoc.com/2014/03/17/la-tourte-de-meule-mit-lievito-madre/",
-    "ingredients": [],
-    "steps": [
-      "Alle Zutaten außer der Hefe und dem Salz in die Knetschüssel geben und vermischen. 60 Minuten ruhen lassen (Autolyse). Danach das Salz und die Hefe zufügen und 2-3 Minuten auf niedriger Stufe unterkneten, das reicht durch die Autolyse. Der Teig sollte glatt und elastisch sein. In eine leicht eingeölte Teigwanne geben und 120 Minuten ruhen lassen. Nach 45 und 90 Minuten strecken und falten. Den Teig auf die Arbeitsfläche geben, gut bemehlen und straff rund wirken . Im Gärkörbchen bei Raumtemperatur mit dem Schluß nach oben 60 Minuten gehen lassen. Auf den Schieber stürzen und rautenförmig einschneiden. Sofort einschießen (240°, Ober-/Unterhitze) und gut schwaden. Nach Abschluß des Ofentriebs auf 210° herunter schalten und für weitere 60-70 Minuten kräftig ausbacken.",
-      "Der Ofentrieb mit Lievito madre ist so schön, daß ich ein Zeitraffer-Video gedreht habe:",
-      "[youtube http://www.youtube.com/watch?v=OqmOBQWjTLI&amp;w=420&amp;h=315]",
-      "________________________________________________________________________________________________________________________________________ ENGLISH RECIPE",
-      "&#8222;La Tourte de Meule&#8220; is definitely my favourite bread since October. No other bread was made so frequently as this one. Now, having the lievito madre available, I tried it again with it. The oven-rise was so impressive, that I made a time-lapse-video, which is linked above in the german text. It is notably milder than the sourdough-version and very digestible.",
-      "main dough 78 % hydration: 645 g stone ground medium wheat flour (french type 80) 157 g lievito madre (105 g bread flour, 52 g water) 533 g water 15 g salt 4 g fresh yeast",
-      "Put all ingredients save the yeast and the salt into the mixer and mix for 1-2 minutes. Then let rest for 60 minutes (autolyse). Add yeast and salt and mix for 2-3 minutes at first speed. Put the dough into a lightly oiled canister and let it mature for 2 hours. Do one stretch and fold after 45 and 90 minutes. Form a boule out of the dough and let it proof at room temperature for 60 minutes, seam up, in a banneton. Put on a peel, seam down, and score like a hash key. Put into the preheated oven at 240°C steaming properly. Bake for 10 minutes until oven rise is over and reduce baking temperature to 210°C. Bake for 60-70 minutes untile dark brown."
-    ]
-  },
-  {
-    "id": 214,
-    "name": "Lehmbrakener Bauernbrot",
-    "url": "https://brotdoc.com/2012/03/10/lehmbrakener-bauernbrot/",
-    "ingredients": [],
-    "steps": [
-      "Alle Zutaten bei niedrigem Tempo vermischen, dann etwa 8-10 Minuten bei Stufe 2 das Gluten herauskneten. Sobald man eine sichtbare Glutenentwicklung hat (der Teig wird sich nicht komplett vom Schüsselrand lösen) das Kneten beenden und eine 45 minütige Teigruhe geben. Danach den Teig auf die bemehlte Arbeitsfläche geben und gut entgasen. Rund oder lang wirken, mit Roggenmehl einreiben und mit dem Schluß nach oben im Gärkörbchen 60 min (mit Hefe) oder 90-120 min. ohne Hefe gehen lassen. Die Gare kontrollieren und bei voller Gare in den 240° heißen Ofen einschießen. Kurz schwaden, dann in ruhender Hitze bei 210° insgesamt 60 Minuten kräftig ausbacken."
     ]
   },
   {
@@ -4907,36 +4032,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 217,
-    "name": "Lein-Schrotlinge – Flaxseed-Rolls",
-    "url": "https://brotdoc.com/2013/12/01/lein-schrotlinge-flaxseed-rolls/",
-    "ingredients": [],
-    "steps": [
-      "Menge für 18 Brötchen",
-      "Roggen-Sauerteig TA 200: 100 g Roggenmehl 1150 100 g Wasser (30°) 10 g Roggenanstellgut Gut verrühren und 12 Stunden bei warmer Temperatur (25-27°) reifen lassen, zum Beispiel im Ofen mit angeschalteter Lampe. Hauptteig TA 165: 500 g Dinkelmehl 1050 300 g Weizenvollkornmehl 100 g Leinsamenschrot 550 g Wasser 30 g inaktives Malz (Pulver oder Extrakt) 20 g Salz 11 g Hefe 30 g Butter",
-      "ENGLISH RECIPE",
-      "Flax-seed is a very healthy component of bread-doughs. Not only do its ingredients play important roles in a cholesterol-balanced diet, but it is also known to be cancer-protective. In addition the high fiber-content prevents constipation. And most importantly it tastes phantastic. For this recipe I used a rye-sourdough and a long cold proofing to achieve additonal aroma and tang. The result is very convincing.",
-      "Rye-sourdough 100 % hydration: 100 g medium rye flour 100 g water (30°C) 10 g rye starter Mix properly and let mature at warm temperature (26-28°) for 12 hours. In the normal kitchen one can do this in the closed oven with the oven-light turned on. Main dough 65 % hydration: 500 g medium spelt flour 300 g whole-wheat-flour 100 g coarse-ground flaxseeds 550 g water (20°C) 30 g malt (non-diastatic) 20 g salt 11 g fresh-yeast 30 g butter"
-    ]
-  },
-  {
-    "id": 218,
-    "name": "Leserwunsch: Dunkle Saaten-Baguettes",
-    "url": "https://brotdoc.com/2015/08/16/leserwunsch-dunkle-saaten-baguettes/",
-    "ingredients": [],
-    "steps": [
-      "Sauerteig: 175 g Weizenmehl T80 175 g Wasser (45°C) 17 g Anstellgut Sehr gut verrühren und 4 Stunden bei Raumtemperatur reifen lassen. Dann für 10-12 Stunden in den Kühlschank geben. Ich habe den Sauerteig Samstags nachmittags angerührt, abends in den Kühlschrank gegeben und konnte so Sonntags morgens backen. Saaten-Quellstück: 100 g geröstete Leinsaat 100 g Wasser Leinsaat anrösten und mit dem Wasser übergießen. Auf Raumtemperatur abkühlen lassen.",
-      "Hauptteig: Sauerteig (nicht akklimatisiert) 490 g Wasser (+ 125 g Wasser gegen Ende des Knetens) 825 g Weizenmehl T80 9 g Biofrischhefe 20 g Salz 40 g Blaumohn Saaten-Brühstück Sesam + Leinsaat zum Wälzen"
-    ]
-  },
-  {
-    "id": 219,
-    "name": "Le Moulin de Couargis",
-    "url": "https://brotdoc.com/2014/10/31/le-moulin-de-couargis/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 220,
     "name": "Lichtkorn-Roggenbrot",
     "url": "https://brotdoc.com/2015/05/02/lichtkorn-roggenbrot/",
@@ -4950,20 +4045,6 @@ const RECIPE_DATABASE = [
       "In zwei gleiche Teile teilen und lang wirken. Entweder in eine gefettete Kastenform einlegen oder in ein großes Gärkorbchen.",
       "Die Krume des freigeschobenen Brotes."
     ]
-  },
-  {
-    "id": 221,
-    "name": "Liebster-Award",
-    "url": "https://brotdoc.com/2014/11/10/liebster-award/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 222,
-    "name": "Lievito madre",
-    "url": "https://brotdoc.com/2014/03/11/lievito-madre/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 223,
@@ -5139,16 +4220,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 228,
-    "name": "Malzbierbrot III",
-    "url": "https://brotdoc.com/2015/10/11/malzbierbrot-iii/",
-    "ingredients": [],
-    "steps": [
-      "Sauerteig: 260 g Roggenmehl 1150 260 g Wasser (50°C) 26 g Roggenanstellgut Das recht warme Wasser mit dem Mehl etwas verrühren. Das Anstellgut zugeben und kräftig unterrühren. 12 Stunden bei Raumtemperatur reifen lassen.",
-      "Haferflocken-Quellstück: 250 g Haferflocken grob (Vollkorn) 300 g Malzbier Das Malzbier über die Flocken gießen und einmal durchrühren. 12 Stunden quellen lassen. Hauptteig: Sauerteig, Quellstück 232 g Wasser (45-50°C) 390 g Roggenmehl 1150 18 g Salz 9 g Frischhefe"
-    ]
-  },
-  {
     "id": 229,
     "name": "Malzbier-Brot",
     "url": "https://brotdoc.com/2015/09/06/malzbier-brot/",
@@ -5187,16 +4258,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 232,
-    "name": "Mediterranes Landbrot – direkte Teigführung",
-    "url": "https://brotdoc.com/2012/02/18/mediterranes-landbrot-direkte-teigfuhrung/",
-    "ingredients": [],
-    "steps": [
-      "Alle Zutaten erst 3 Minuten langsam, dann etwa 7-9 Minuten auf Stufe 2 verkneten, bis ein glatter Teig entstanden ist. Das Salz hierbei erst in den letzten 3 Minuten unterkneten. Den Teig 2 Stunden in einem Behälter zur Gare stellen, nach 45 und 90 Minuten strecken und falten. Danach auf die Arbeitsfläche geben und zur Kugel rundwirken. 15 Minuten entspannen lassen. Dann zum Batârd langwirken und mit Mehl einreiben. Im langen Gärkörbchen mit dem Schluß nach oben 60-70 Minuten gehen lassen, der Teig sollte fast volle Gare haben. Einschneiden und mit Schwaden bei 250° einschießen. Nach 10 Minuten Schwaden ablassen und 50-60 Minuten bei 215° fertigbacken. Die Brote ruhig etwas dunkler werden lassen, da das ein kräftiges Aroma verleiht.",
-      "Noch mal der Ausbund - weil er so schön ist"
-    ]
-  },
-  {
     "id": 233,
     "name": "Mediterranes Landbrot (würzig)",
     "url": "https://brotdoc.com/2012/08/23/mediterranes-landbrot-wurzig/",
@@ -5232,30 +4293,6 @@ const RECIPE_DATABASE = [
       "Meine Empfehlung wäre, dem Bayerischen Ruchmehl weniger Wasser zuzumuten (z.B. TA 175 zu Beginn), dann den Kleber zu entwickeln im Kneter um schlußendlich die Teigausbeute schluckweise zu erhöhen gegen Ende.",
       "Unten italienisches Ruchmehl, oben bayerisches Ruchmehl &#8211; beides wunderbare Ciabatta"
     ]
-  },
-  {
-    "id": 235,
-    "name": "Mein Alltagsbrot",
-    "url": "https://brotdoc.com/2012/04/03/mein-alltagsbrot/",
-    "ingredients": [],
-    "steps": [
-      "Die Zutaten gut kneten, bis ein glatter elastischer Teig entstaden ist. 60 Minuten Teigruhe, nach 30 Minuten bevorzuge ich ein Streck/Faltvorgang. Danach wie gewünscht wirken, ich bevorzuge für ein Alltagsbrot die langgewirkte Form. Mit Mehl einreiben und mit dem Schluß nach oben im Gärkörbchen für 80-90 Minuten gehen lassen (volle bis fast volle Gare). Auf das Lochblech geben und mehrfach schräg einschneiden. Mit Wassernebel besprühen. Bei 240° mit Schwaden anbacken und nach dem Ende des Ofentriebs auf 210° reduzieren. Ca. 50-60 Minuten zuende backen.",
-      "Die Krume - saftig-aromatisch und nicht zu mild"
-    ]
-  },
-  {
-    "id": 236,
-    "name": "Mein Herbstbrot",
-    "url": "https://brotdoc.com/2012/10/02/mein-herbstbrot/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 237,
-    "name": "Mein heutiger Backtag…",
-    "url": "https://brotdoc.com/2020/02/15/mein-heutiger-backtag/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 238,
@@ -5422,20 +4459,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 241,
-    "name": "Mohnbrötchen – Poppy Seed Rolls",
-    "url": "https://brotdoc.com/2014/03/01/mohnbrotchen-poppy-seed-rolls/",
-    "ingredients": [],
-    "steps": [
-      "Sauerteig: 100 g Weizenmehl 550 50 g Wasser 10 g Anstellgut Gut vermischen, etwas von Hand ankneten und 16-20 Stunden reifen lassen. Man kann auch vom fest geführten Anstellgut die entsprechende Menge nehmen, wenn so viel vorhanden ist.",
-      "Hauptteig: Sauerteig 550 g Wasser 900 g Weizenmehl 550 10 g Frischhefe 20 g Malz (inaktiv) 25 g Butter 20 g Salz 1 g Kümmel (gemahlen)",
-      "ENGLISH RECIPE",
-      "So I&#8217;ve got something new. A so called &#8222;Brötchen-Drücker&#8220; which could be translated as &#8222;Roll-Pusher&#8220;, a tool which greatly helps to create beautiful rolls in short time. Simply form them to rolls and press the pusher down on them to have a nice snail-form or a &#8222;kaiser-roll&#8220; shape. The dough in this recipe combines caraway and poppy seeds to a quite delicate aroma.",
-      "sourdough 100 g bread flour 50 g water 10 g starter Mix properly, knead the dough 1-2 minutes by hand and let it mature for 16-20 hours at room temperature. If there is enoug firm starter available in the fridge, one can take the appropiate ammout of it.",
-      "main dough: sourdough 550 g water 900 g bread flour 10 g fresh yeast 20 g malt (non diastatic) 25 g butter 20 g salt 1 g caraway (fine ground)"
-    ]
-  },
-  {
     "id": 242,
     "name": "Mohn – Sesam – Würzelchen",
     "url": "https://brotdoc.com/2021/01/31/mohn-sesam-wuerzelchen/",
@@ -5584,26 +4607,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 246,
-    "name": "Münchener Hausbrot",
-    "url": "https://brotdoc.com/2014/04/08/munchener-hausbrot/",
-    "ingredients": [],
-    "steps": [
-      "Menge für 2 große langgewirkte Brote (in Klammern für 1 Brot)",
-      "Poolish: 95 (48) g Weizenmehl 1050 95 (48) g Wasser 0,1 g Hefe (winziges Körnchen) Gut verrühren und 12 Stunden bei Raumtemperatur reifen lassen.",
-      "Roggensauerteig: 270 (135) g Roggenmehl 1370 270 (135) g Wasser (30°C) 27 (13) g Roggen-Anstellgut Gut vermischen und für 12 &#8211; 16 Stunden reifen lassen.",
-      "Hauptteig TA 167: Poolish Sauerteig 573 (286) g Wasser 500 (250) g Roggenmehl 1370 535 (267) g Weizenmehl 1050 14 (7) g Hefe 28 (14) g Salz",
-      "Alle Zutaten außer Hefe und Salz vermischen, bis keine Mehlnester mehr zu sehen sind. 30 Minuten quellen lassen. Salz und Hefe zugeben und dann 5-6 Minuten bei langsamer Geschwindigkeit zu einem homogenen Teig mit leichter Glutenentwicklung kneten. 45 Minuten ruhen lassen. Auf der Arbeitsfläche in 2 gleiche Teile teilen und lang wirken. Im Gärkörbchen, welches mit Stärke bestäubt wurde, 90 Minuten bei Raumtemperatur (ca. 21-22°C) mit Schluß nach oben reifen lassen. Auf den Einschießer oder ein Lochblech wenden und stipfeln. Mit einem Kochlöffel an beiden Seiten 4-5 x etwas senkrecht eindrücken und den Teigling mit Wasser abstreichen. Bei 240° einschießen und gut schwaden. 10 Minuten mit Dampf backen, dann den Dampf ablassen und weitere 50-60 Minuten bei 210° ausbacken.",
-      "________________________________________________________________________________________________________________________________________ ENGLISH RECIPE",
-      "&#8222;Munich house-bread&#8220; is a speciality from Bavaria, a rye-bread with an interesting form. The dough is being dented with a stick after proofing from both sides which creates an unique shape.",
-      "Yields 2 big loaves (in brackets for 1 loaf)",
-      "Poolish: 95 (48) g medium wheat flour 95 (48) g water 0,1 g yeast (just a tiny bit) Mix properly and let mature for 12 hours at room temperature.",
-      "rye sourdough: 270 (135) g dark rye flour 270 (135) g water (30°C) 27 (13) g stiff rye-sourdough-starter Mix properly and let mature for 12-16 hours at room temperature",
-      "main dough: Poolish sourdough 573 (286) g water 500 (250) g dark rye flour 535 (267) g medium wheat flour 14 (7) g fresh yeast 28 (14) g salt",
-      "Mix everything but for the salt and the yeast. Autolyse for 30 minutes. Add yeast and salt and mix at slow speed for 5-6 Minutes until light gluten development. Let rest for 45 minutes. Divide into two equal pieces and shape both into a cylinder. Dust with starch and let proof in a banneton for 90 minutes at room temperature (20-22°C). Put on a peel or a baking sheet and make little holes into the surface. Dentate with a stick 4-5 times on both sides (see pictures) and brush with water. Bake at 240° with steam for 10 minutes. Remove steam and bake for another 50-60 minutes at 210°C."
-    ]
-  },
-  {
     "id": 247,
     "name": "Münsterländer Schmalzstuten",
     "url": "https://brotdoc.com/2013/04/29/munsterlander-schmalzstuten/",
@@ -5617,13 +4620,6 @@ const RECIPE_DATABASE = [
       "Kräftig und rustikal gefensterte Kruste",
       "Und eine lockere elastische Krume"
     ]
-  },
-  {
-    "id": 248,
-    "name": "Müsli-Brot",
-    "url": "https://brotdoc.com/2013/05/26/musli-brot/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 249,
@@ -5715,20 +4711,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 252,
-    "name": "Noon Sangak – 1. Versuch",
-    "url": "https://brotdoc.com/2013/04/26/noon-sangak-1-versuch/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 253,
-    "name": "Noon Sangak – 2. Versuch",
-    "url": "https://brotdoc.com/2013/05/05/noon-sangak-2-versuch/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 254,
     "name": "Noon Taftoon",
     "url": "https://brotdoc.com/2017/01/29/noon-taftoon/",
@@ -5769,13 +4751,6 @@ const RECIPE_DATABASE = [
       "Sauerteig: 100 g Weizenmehl 812 100 g Wasser warm (ca. 28°) 15 g Weizen ASG Gut vermischen und 12 Stunden reifen lassen.",
       "Hauptteig: Vorteig Sauerteig 150 g Weizenmehl 812 200 g Roggenmehl 1150 160 g Wasser 14 g Salz 5 g Frischhefe"
     ]
-  },
-  {
-    "id": 257,
-    "name": "Nusszopf nach Dietmar Kappl",
-    "url": "https://brotdoc.com/2017/08/18/nusszopf-nach-dietmar-kappl/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 258,
@@ -5838,13 +4813,6 @@ const RECIPE_DATABASE = [
       "Allen Lesern ein frohes Osterfest!",
       "Die Krume - wattig und fluffig mit einem dezenten-Safran-Aroma. Einfach göttlich."
     ]
-  },
-  {
-    "id": 262,
-    "name": "Paderborner Landbrot",
-    "url": "https://brotdoc.com/2012/07/05/paderborner-landbrot/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 263,
@@ -5910,25 +4878,6 @@ const RECIPE_DATABASE = [
       "Den Teig nun für 60 Minuten abgedeckt in den Kühlschrank zum Entspannen stellen.",
       "Den Teig auf der bemehlten Arbeitsfläche länglich ausrollen bis auf etwa 5-7 mm Dicke. Mit einem langen Messer oder einer scharfen Teigkarte Rechtecke ausstechen. Die kurze Seite der Rechtecke sollte genau so lang sein wie die Schokostäbchen, die lange Seite etwa 1,5 mal so lang. Ein Schokostäbchen auf die kurze Seite legen und einmal einrollen. Das zweite Schokostäbchen einlegen und nun die Rolle vollständig aufrollen. Mit dem Schluß unten auf ein Backblech legen. Gut abdecken und 2 Stunden bei Raumtemperatur aufgehen lassen.",
       "Derweil den Ofen auf 200 °C vorheizen. Vor dem Backen die Croissants mit einer Eistreiche abstreichen und ohne Schwaden für 18-20 Minuten konstant bei 190 °C abbacken."
-    ]
-  },
-  {
-    "id": 264,
-    "name": "Pain au levain",
-    "url": "https://brotdoc.com/2014/11/21/pain-au-levain/",
-    "ingredients": [],
-    "steps": [
-      "Menge für 2 Pain au levain",
-      "Hauptteig Vorteig 720 g Weizenmehl T65 450 g (+ 55 g) Wasser (kalt, ca. 12-15°C) 20 g Salz (optimal grobes Meersalz ) 9 g Frischhefe",
-      "[youtube https://www.youtube.com/watch?v=I6S6_Wdhuu8&amp;w=560&amp;h=315]",
-      "Die Teiglinge reifen mit Schluß oben für 30 Minuten im Bäckerleinentuch. Vor dem Backen werden sie gewendet, rautenförmig eingeschnitten und unter kräftigem Schwaden in den gut vorgeheizten Ofen bei 250°C gegeben. Bei konstanter Temperatur beträgt die Backzeit 25-30 Minuten, ich backe sie kräftig braun aus.",
-      "Eine kräftig-aromatische und rustikale Kruste",
-      "und eine wilde Porung bei mildsäuerlichem Aroma machen dieses Brot aus",
-      "Zum Vergleich einer der ersten Backversuche mit noch etwas verwaschenen Einschnitten und dunklerer Mehlmischung",
-      "ENGLISH RECIPE &#8222;Pain au levain&#8220;",
-      "This recipe recreates a bread that we were making out of different doughs during my baking class in France four weeks ago. Our master Benoît just called it &#8222;big bread&#8220;, obviously referring to the considerably higher ammount of dough per bread compared to baguettes. During this class we used a liquid wheat-sourdough that attained its mildness by a short and warm maturation at 29°C for just 4-5 hours. As i prefer breads with low acidity, this was quite instructive for me. So this is an attempt of the method, and I like the result very much.",
-      "liquid-levain 180 g medium wheat flour (frencht Type T80) 180 g water (45-50°C) 27 g starter (for more mildness take 18 g starter) Mix flour and water to adjust the temperature. Add the starter and stir until the mass is smooth. Let mature for 4-5 hours at 30 °C. The sourdough will not attain full ripeness, but if treated correctly it should already show bubbles and have a very mild aroma, reminding me of yoghurt.",
-      "main dough liquid levain 720 g bread flour (french type T65) 450 g (+ 55 g) water (cold, ca. 12-15°C) 20 g salt 9 g fresh yeast"
     ]
   },
   {
@@ -5998,28 +4947,6 @@ const RECIPE_DATABASE = [
       "Die Krume &#8211; offen und grobporig wie beim Pane Maggiore und fast genau so saftig",
       "Und nochmal die krachend-knusprige Kruste"
     ]
-  },
-  {
-    "id": 267,
-    "name": "Pain de tradition",
-    "url": "https://brotdoc.com/2013/12/07/pain-de-tradition/",
-    "ingredients": [],
-    "steps": [
-      "Menge für 2 mittelgroße Brote",
-      "Sauerteig TA 200: 200 g Weizenmehl T65 200 g Wasser (30°) 20 g aktives Weizenanstellgut Gut verrühren und 12 Stunden reifen lassen. Hauptteig TA 174: 500 g Weizenmehl T65 500 g Weizenmehl T80 688 g Wasser (kalt) 9 g Hefe 26 g Salz",
-      "ENGLISH RECIPE",
-      "Yields two medium sized loaves",
-      "This recipe for traditional french country-bread is based on an original recipe from a french bakery. I needed four tries to achieve this result. It took me some time to determine the right hydration and the optimal kneading-time.",
-      "Sourdough 100 % hydration 200 g high-gluten flour 200 g water (30°) 20 g Sourdough Starter Mix properly and let mature for 12 hours. Main dough 74 % hydration 500 g high-gluten flour 500 g medium-wheat-flour 688 g water (cold) 9 g fresh yeast 26 g salt",
-      "Mix the flours, the water and the sourdough for 1-2 minutes and let rest for 30 minutes (autolyse). Add the yeast and the salt and mix for 3 minutes at slow speed, for 5-6 min. at second speed until the dough does no longer stick at the bowl. Put in a dough canister and let mature for 2 hours, doing a stretch and fold after 30 and 90 minutes. Divide the dough in 2 pieces and preshape to a boule. Let rest for 20 minutes. Shape into batards and proof in a linen-cloth, seam up, for 45 minutes. Meanwhile preheat the oven to 250°C. Put the loaves on a sheet, score once and insert the sheet into the oven. Steam properly. Bake for 10 minutes at 250°, then reduce to 210°C and bake for another 50-60 minutes. The breads should be baked boldly."
-    ]
-  },
-  {
-    "id": 268,
-    "name": "Pain d’épi mit altem Teig",
-    "url": "https://brotdoc.com/2012/04/13/pain-d-epi-mit-altem-teig/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 269,
@@ -6557,20 +5484,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 282,
-    "name": "Pane Tipo Altamura nach Barbara Elisi",
-    "url": "https://brotdoc.com/2013/10/16/pane-tipo-altamura-nach-barbara-elisi/",
-    "ingredients": [],
-    "steps": [
-      "Hauptteig: Sauerteig Mehlkochstück 765 g Hartweizenmehl 440 g Wasser 22 g Salz 10 g Frischhefe",
-      "Der erste Backversuch &#8211; unzureichend tief eingeschnitten aber besser gefenstert.",
-      "ENGLISH RECIPE",
-      "&#8222;Pane Tipo Altamura by Barbara Elisi&#8220;",
-      "Water-roux 35 grams of fine ground durum-flour 175 grams of water Heat in a pot while continuously stirring to a temperature of 60-70°C until the mixture becomes firm. Let cool down to room temperature.",
-      "Main dough Sourdough Water-roux 765 grams of fine ground durum-flour 440 grams of water 22 grams of salt 10 grams of fresh yeast"
-    ]
-  },
-  {
     "id": 283,
     "name": "Panino",
     "url": "https://brotdoc.com/2024/03/30/panino/",
@@ -6800,16 +5713,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 288,
-    "name": "Persische Quittenmarmelade",
-    "url": "https://brotdoc.com/2015/11/07/persische-quittenmarmelade/",
-    "ingredients": [],
-    "steps": [
-      "Zutaten im Bezug auf 1 kg Fruchtfleisch (reicht für etwa 4-5 mittlere Marmeladen-Gläser)",
-      "1 kg Quittenfruchtfleisch fein gerieben 1 kg Gelierzucker (1:1) 2 Msp. Zimt gemahlen 1 MSp. Koriander gemahlen Abrieb einer halben unbehandelten Zitrone 50-100 ml Wasser"
-    ]
-  },
-  {
     "id": 289,
     "name": "Picknick Focaccia",
     "url": "https://brotdoc.com/2024/09/22/picknick-focaccia/",
@@ -6867,31 +5770,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 290,
-    "name": "Pide / Pita",
-    "url": "https://brotdoc.com/2015/05/07/pita/",
-    "ingredients": [],
-    "steps": [
-      "Vorteig: 300 g Weizenmehl 550 (ich: Weizenmehl T65) 300 g Wasser 0,3 g Hefe Verrühren und 12 Stunden reifen lassen.",
-      "Hauptteig: 480 g Wasser (+130 g Wasser, s.u.) gesamter Vorteig 900 g Weizenmehl 550 (ich: Weizenmehl Tipo 00) 24 g Salz 9 g Hefe"
-    ]
-  },
-  {
-    "id": 291,
-    "name": "Pinzgauer Bauernbrot",
-    "url": "https://brotdoc.com/2013/09/09/pinzgauer-bauernbrot/",
-    "ingredients": [],
-    "steps": [
-      "Menge für 2 mittelgroße Brote Monheimer Salzsauerteig TA 180: 312 g Roggenmehl Typ 1150 (brotdoc: österreiches Roggenmehl Typ 960) 250 g Wasser 30 g Roggen-Anstellgut 3 g Salz Gut vermengen und bei 28-30° beginnend 12 Stunden reifen lassen",
-      "Hauptteig TA 168: Salzsauerteig 468 g Roggenmehl Typ 1150 (brotdoc: österreichisches Roggenmehl Typ 960) 520 g Weizenmehl Typ 1050 (brotdoc: österreichisches Weizenmehl Typ 1600) 634 g Wasser (handwarm) 26 g Salz 10 g Frischhefe 7 g Brotgewürz gemahlen (Fenchel, Anis, Kümmel, Koriander)",
-      "Alle Zutaten gut verkneten ca. 8 Minuten bei langsamer Knetgeschwindigkeit. Es sollte sich eine mittelfester Teig entwickeln, der eine mittlere Glutenentwicklung zeigt. Diesen Teig 45 Minuten gehen lassen. In zwei Teile teilen und auf der bemehlten Arbeitsfläche lang wirken. Mit dem Schluß nach unten im Gärkörbchen 60 Minuten gehen lassen. Auf einen Schieber stürzen und mit Roggenmehl bemehlen. In den auf 250° vorgeheizten Ofen auf den Backstein geben und 2 Minuten ohne Dampf anbacken. Dann etwas schwaden und den Dampf nach 8 Minuten ablassen. Weitere 50-60 Minuten bei 210° ausbacken, bis die Brote eine kräftige Farbe haben.",
-      "English Recipe &#8222;Pinzgau farmers bread&#8220;",
-      "There are few recipes for &#8222;Pinzgau Farmers Bead&#8220; to be found on the internet, most notably Lutz&#8216; adaption of a recipe by Roswitha Huber. Basically it is described as a loaf consisting of 60 % rye and 40 % wheat flour and spiced with &#8222;Brotgewürz&#8220;. Brotgewürz is a mixture of fine-ground caraway, anise, fennel and coriander-spices, which add a tangy taste to the bread-crumb. This is quite common in southern germany and in Austria, too.",
-      "Yields two medium sized breads Rye-Sourdough (Monheimer Salzsauerteig) 80 % hydration 312 grams of medium rye flour (brotdoc: austrian rye flour Type 960) 250 grams of water (30°C) 30 grams of stiff rye-sourdough-starter 3 grams of salt Mix properly and let mature at 28-30°C for 12 hours. Main dough 68 % hydration Rye Sourdough 468 grams of medium rye flour (brotdoc: austrian rye-flour Type 960) 520 grams of dark wheat flour (brotdoc: austrian wheat-flour Type 1600) 634 grams of water (hand-warm) 26 grams of salt 10 grams of fresh yeast 7 grams of Brotgewürz (grounded caraway, anise, fennel, coriander)",
-      "Mix all ingredients at slow speed for 8 minutes, until a medium-firm dough with medium gluten-development has formed. Let rest covered for 45 minutes. Divide in two pieces of equal weight and form into two cylindrical shaped breads. Let rest for 60 minutes with the seam down in bannetons properly covered. Transfer on a peel with the seam up and put it on the well preheated baking stone (oven at 250° C). Bake for 2 minutes without steam, then give a little steam to improve oven rise. Remove steam after 8 minutes and bake for a further 50-60 minutes at 210°C. The color of the crust should be dark-brown."
-    ]
-  },
-  {
     "id": 292,
     "name": "Pinzgauer Frühstücks-Stangerl",
     "url": "https://brotdoc.com/2014/01/05/pinzgauer-fruhstucks-stangerl/",
@@ -6921,23 +5799,6 @@ const RECIPE_DATABASE = [
       "Die Stangerl dann in den auf 240° vorgeheizten Ofen geben und gut schwaden. Den Schwaden 10 Minuten im Ofen lassen, dann herauslassen. Insgesamt für 20 Minuten dunkelbraun ausbacken.",
       "The rolls are then put into the well preheated oven at 240°C, steaming properly. Let out the steam after 10 minutes and bake for another 10 minutes.",
       "Die Krume ist feinporig, aber nichtsdestotrotz locker-elastisch und sehr würzig &#8211; the crumb-texture is fine but very aromatic."
-    ]
-  },
-  {
-    "id": 293,
-    "name": "Pizzateig",
-    "url": "https://brotdoc.com/2014/06/24/pizzateig/",
-    "ingredients": [],
-    "steps": [
-      "Menge für 2 große Pizzen ca. 38 x 38 cm Hauptteig TA 166 200 g Hartweizenmehl 300 g Weizenmehl 550 100 g Lievito madre (66 g Weizenmehl 550/ 33 g Wasser) 325 g Wasser 10 g Olivenöl 11 g Salz 5 g Frischhefe",
-      "Da eine gute Tomatensauße neben dem Teig die wichtigste Basis einer gelungenen Pizza ist, hier auch mein Saußenrezept:",
-      "Rezept Tomatensauße 4 schöne reife Roma-Tomaten 2 kleine geschälte Knoblauchzehen 1 geschälte Schalotte 2-3 EL Balsamico bianco 2 EL Wasser 2 EL Tomatenmark 1/2 &#8211; 1 EL Honig 1 MSP Chili-Pulver 1 TL Curcuma Salz, Pfeffer",
-      "Die Tomaten und die Schalotte in Würfel schneiden. Mit den restlichen Zutaten in einer Schüssel gründlich mit dem Zauberstab fein pürieren. Mit Salz und Pfeffer abschmecken, wer es schärfer mag, nehme noch etwas mehr Chili. Die Sauße kann Stunden vorher vorbereitet und gekühlt aufbewahrt werden. Sie eignet sich auch hervorragend als Dip für Brot, Chips etc. __________________________________________________________________________________________________________________________________________________________________________________________________ ENGLISH RECIPE",
-      "This recipe is my favourite one for pizza dough. It is made with lievito madre, a firm wheat sourdough 50 % hydration. However all other forms of wheat sourdough do also work.",
-      "Main dough 66 % hydration 200 g durum flour 300 g bread flour 100 g Lievito madre (66 g bread flour/ 33 g water) 325 g water 10 g olive oil 11 g salt 5 g fresh yeast (or 1,6 g dry yeast)",
-      "Mix all ingredients until incorporated and let rest for 30 minutes (autolyse), then mix at second speed for 3-4 minutes to a nicely developed dough. Let rest for 2-3 hours, maybe degas once after 1 hour. The dough can be stored in the fridge for up to 3 days. Divide in two equal pieces and roll each one out to a square of 38 cm length. Spread generously with tomato sauce (recipe below) and the toppings of your choice. Preheat the oven with stone as hot as possible (280°C or higher). Put on the stone without steam and bake for 10-15 minutes to a nice colour.",
-      "tomato sauce: 4 nice ripe Roma-tomatoes 2 small peeled garlic cloves 1 peeled schallot 2-3 tablespoons Balsamico bianco &#8211; vinegar 2 tablespoons of water 2 tablespoons of tomato paste 1/2 &#8211; 1 tablespoons of honey 1 pinch of chili powder 1 teaspoon of turmeric powder salt, pepper",
-      "Cut the tomatoes and the schallot in cubes, add the other ingredients and mix everything thoroughly with a hand-held blender. Season with salt and pepper and maybe some more chili-powder, if you like it hot."
     ]
   },
   {
@@ -7049,32 +5910,6 @@ const RECIPE_DATABASE = [
       "Auf bemehlter Arbeitsplatte entgasen und rund formen (s. Video).",
       "[youtube https://www.youtube.com/watch?v=0dpC0qRi5kE] Mit Schluß oben für 70 Minuten reifen lassen. Den Ofen mit Stein gut auf 250°C vorheizen.",
       "Einschneiden und in den Ofen einschießen. Nach 2 Minuten schwaden und die Temperatur auf 210°C reduzieren. Ausbacken für weitere 50-60 Minuten, damit eine schöne dunkle und aromatische Kruste erreicht wird."
-    ]
-  },
-  {
-    "id": 296,
-    "name": "Polenta-Brötchen – Polenta-Rolls",
-    "url": "https://brotdoc.com/2014/02/10/polenta-brotchen-polenta-rolls/",
-    "ingredients": [],
-    "steps": [
-      "Roggen-Sauerteig: 60 g Roggenmehl 1150 40 g Wasser 6 g Anstellgut Vermengen und 12 Stunden bei Raumtemperatur reifen lassen. Kalte Autolyse: 740 g Weizenmehl 550 250 g Milch 200 g Wasser Vermengen und 11 Stunden in den Kühlschrank geben. Vor dem Kneten ca. 1 Stunde akklimatisieren lassen.",
-      "Hauptteig: Polenta, Roggensauerteig, Autolyse-Teig 20 g Butter 20 g Honig 17 g Salz 13 g Hefe",
-      "Alle Zutaten in den Kneter geben und für 2 Minuten langsam, 3-4 Minuten bei 2 Stufe zu einem glatten, mittelweichen und sich von der Schüssel lösenden Teig verkneten. Den Teig 45 Minuten lang ruhen lassen. Auf die Arbeitsfläche geben und in 17 Teile von je etwa 100 g teilen.",
-      "Bildanleitung:",
-      "Nun die Teile zu einem Zylinder aufrollen.",
-      "Erst mit einer flachen Hand, dann mit beiden flachen Händen zu einer Rolle von ca. 40-50 cm ausrollen.",
-      "Die Rolle zu einem Ring zusammenlegen und die Enden zusammendrücken.",
-      "Mit beiden Händen den Ring ergreifen und gegeneinander verdrehen, so daß eine Acht entstehet. Darauf achten, daß die Verbindungsstelle des Kreises überdeckt wird.",
-      "Den Teigling befeuchten und in Maisgrieß wälzen. Mit der Grießseite nach oben in ein Bäckerleinentuch legen, zwischen den Reihen das Tuch etwas hochziehen. Das Tuch sollte auf einem Blech liegen, damit es nachher einfacher in den Kühlschrank zu geben ist.",
-      "Sobald alle Brötchen geformt sind und im Leinentuch liegen, klappt man die Überstände über die Teiglinge und zieht eine große Kunststofftüte über das Blech. Das gesamte Konstrukt wandert nun für 10-12 Stunden in den 4°C kalten Kühlschrank. Am Backtag werden die Folie wieder entfernt und die Brötchen vorsichtig auf Lochbleche gelegt.",
-      "Die Bleche kommen nun in den gut auf 240°C vorgeheizten Ofen, gut schwaden. Den Dampf nach 10 Minuten ablassen und die Brötchen insgesamt 20-22 Minuten bei gleicher Temperatur abbacken.",
-      "Eine schön gelockerte, saftige Krume",
-      "ENGLISH RECIPE",
-      "I love corn. In all its ways of preparation. Despite this fact I have only seldomly baked bread with corn. 2 weeks ago during a night suddenly a recipe spooked in my head which had polenta in a roll-dough. So I went to work and 2 tries later the following recipe was created. In the first try I had too much liquid in the dough, the rolls lost their shape during the retardation overnight. The second one was just fine. The shaping is a little bit intricate, but I showed a step-by-step picture-instruction above in the german text.",
-      "Polenta: 100 g corn gravel 200 g water (cooking) 3 g salt Mix properly and let soak in the fridge for 12 hours.",
-      "rye sourdough 60 g rye flour 40 g water (30°) 6 g starter Mix properly and let mature for 12 hours at room temperature.",
-      "cold autolyse dough: 740 g bread flour 250 g milk 200 g water Mix properly and let rest for 11 hours covered in the fridge. The dough should acclimatize to room temperature afterwards for 1 hour before being used, otherwise the main dough would be too cold.",
-      "main dough: polenta, sourdough, cold autolyse dough 20 g butter 20 g honey 17 g salt 13 g fresh yeast"
     ]
   },
   {
@@ -7268,13 +6103,6 @@ const RECIPE_DATABASE = [
       "Die Teiglinge auf den Einschießer wenden und auf den Backstein befördern. Gut schwaden.",
       "Bei konstant 240 °C für 18 bis 20 Minuten nicht zu dunkel abbacken. Das Leinsamenschrot kann schnell verbrennen und dann unangenehm schmecken."
     ]
-  },
-  {
-    "id": 300,
-    "name": "Roggenback",
-    "url": "https://brotdoc.com/2012/10/19/roggenback/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 301,
@@ -7613,15 +6441,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 312,
-    "name": "Ruchbrot II",
-    "url": "https://brotdoc.com/2018/03/04/ruchbrot-ii/",
-    "ingredients": [],
-    "steps": [
-      "Alle Zutaten außer dem Olivenöl und den 90 g Wasser in den Kneter geben und für 2 Minuten langsam, dann für 6 bis 7 Minuten schnell (Stufe 1-2) zu einem glatten Teig verkneten. Das restliche Wasser schluckweise auf Stufe 1-2 einkneten. Der Teig muß sich immer wieder von der Schüssel lösen. Wenn alles Wasser eingeknetet ist, das Olivenöl ebenfalls einkneten. Wenn sich der Teig wieder von der Schüssel löst, ist er fertig. In eine eingeölte Teigwanne geben und für 4 bis 5 Stunden an einem warmen Ort (mindestens 24-25°C, z.B. im Ofen mit angeschalteter Lampe) reifen lassen. Nach einer Stunde dehnen und falten. Der Teig muß sich mindestens verdreifachen (siehe Bilder)."
-    ]
-  },
-  {
     "id": 313,
     "name": "Ruchbrot III",
     "url": "https://brotdoc.com/2018/10/04/ruchbrot-iii/",
@@ -7642,34 +6461,6 @@ const RECIPE_DATABASE = [
       "Vorsichtig auf die bemehlte Arbeitsfläche geben und nicht entgasen. Zu einem Zylinder vorformen. 20 Minuten entspannen lassen. Vorsichtig aber straff lang wirken und mit Schluß oben für 45 Minuten in ein längliches 1,5 kg bemehltes Gärkörbchen legen.",
       "Ofen kräftig auf 250°C vorheizen. Auf den Einschießer kippen und einschneiden. Sofort mit viel Dampf einschießen und für 5-10 Minuten heiß weiterbacken. Dann die Temperatur auf 210°C reduzieren und weitere 50 Minuten ausbacken.",
       "DISCLAIMER: Dieser Artikel enthält einen Link zu einem kommerziellen Anbieter. Der Link dient lediglich der Information über die Herkunft einer Zutat, ich habe keine Zuwendungen des Anbieters, in welcher Form auch immer, dafür erhalten."
-    ]
-  },
-  {
-    "id": 314,
-    "name": "Rustikales Landbrot mit Sonnenblumenkernen",
-    "url": "https://brotdoc.com/2011/12/23/rustikales-landbrot-mit-sonnenblumenkernen/",
-    "ingredients": [],
-    "steps": [
-      "Es schmeckt durch das Roggenschrot und die gerösteten Sonnenblumenkerne sehr kernig-würzig, der Sauerteig hat auch eine prägnante Säure entwickelt, die den Grundgeschmack untermalt. Wer es weniger säuerlich möchte, nehme nur 10 % Anstellgut."
-    ]
-  },
-  {
-    "id": 315,
-    "name": "Rustikales Haselnuss-Brot",
-    "url": "https://brotdoc.com/2014/05/27/rustikales-haselnuss-brot/",
-    "ingredients": [],
-    "steps": [
-      "Die Hauptteigzutaten außer Hefe und Salz vermischen und 30 Minuten ruhen lassen. Salz und Hefe zufügen und mit dem Kneter 3 Minuten langsam und 4 Minuten auf Stufe 2 kneten. Der Teig sollte eine moderate bis gute Glutenstruktur zeigen. 2 1/2 Stunden ruhen lassen. Nach 60 und 120 Minuten strecken und falten. Den Teig in 2 Teile teilen und diese jeweils rund wirken. 10 Minuten entspannen lassen, dann lang wirken. Im Gärkörbchen mit dem Schluß nach oben für 60 Minuten gehen lassen. Auf den Einschießer wenden und nach Belieben einschneiden. In den vorgeheizten Ofen bei 240° geben und schwaden. Den Schwaden nach 10 Minuten ablassen und abfallend auf 210 Grad weitere 60 Minuten kräftig ausbacken."
-    ]
-  },
-  {
-    "id": 316,
-    "name": "Rustikale Fougasse au levain",
-    "url": "https://brotdoc.com/2012/04/13/rustikale-fougasse-au-levain/",
-    "ingredients": [],
-    "steps": [
-      "Sauerteig: 150 g Weizenmehl 1050 150 g Wasser 15 g Weizen-ASG Gut vermischen und 12-16 Stunden reifen lassen.",
-      "Hauptteig: 750 g Weizenmehl 1050 315 g Sauerteig 415 g Wasser 7 g Hefe 20 g Olivenöl 18 g Salz 10 g Weizenmalzpulver (inaktiv) Kräuter/Knoblauch-Öl (mindestens 1 Tag vorher vorbereiten, z.B. Olivenöl mit frisch gepresster Knoblauchzehe und Kräutern der Provence mischen)"
     ]
   },
   {
@@ -7789,13 +6580,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 322,
-    "name": "Saalachtaler Kaisersemmeln",
-    "url": "https://brotdoc.com/2013/08/27/saalachtaler-kaisersemmeln/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 323,
     "name": "Saatenkraftbrot",
     "url": "https://brotdoc.com/2023/07/08/saatenkraftbrot/",
@@ -7874,16 +6658,6 @@ const RECIPE_DATABASE = [
       "5 Teiglinge befeuchten und jeweils in einer der 5 Saaten wälzen so daß 5 verschiedene Teiglinge entstehen.",
       "Die Teiglinge mit dem Schluß nach unten auf die Arbeitsfläche legen und mit der Teigkarte möglichst sauber vierteln. Es entstehen 20 Viertel (jeweils vier mit gleichen Saaten). Aus fünf dieser Viertel auf einem Blech einen runden Teigling zusammenlegen, die Schnittflächen müssen jeweils zueinander zeigen. Sie verkleben während der Stückgare. Im Ergebnis entstehen so aus den fünf Teiglingen vier.",
       "#gallery-1 { margin: auto; } #gallery-1 .gallery-item { float: left; margin-top: 10px; text-align: center; width: 33%; } #gallery-1 img { border: 2px solid #cfcfcf; } #gallery-1 .gallery-caption { margin-left: 0; } /* see gallery_shortcode() in wp-includes/media.php */ Am Ende sollten 16 Brötchen entstanden sein, falls noch 80 g Teiglinge übrig sind, können diese so mitreifen und gebacken werden. Die Stückgare bei Raumtemperatur beträgt 35-40 Minuten. Die Bleche einfach in den gut auf 240°C vorgeheizten Ofen geben und kräftig schwaden. Den Dampf möglichst lange im Ofen lassen. Backzeit bei konstant 240°C beträgt 18-20 Minuten."
-    ]
-  },
-  {
-    "id": 325,
-    "name": "Saaten-Ecken",
-    "url": "https://brotdoc.com/2012/10/10/saaten-ecken/",
-    "ingredients": [],
-    "steps": [
-      "Saaten-Brühstück: 150 g Saatenmischung (Kürbiskerne, Sonnenblumenkerne, Sesam, Leinsamen) in einem Topf anrösten und danach mit 150 g heißem Wasser übergießen, für 3-4 Stunden quellen lassen. Überschüssiges Wasser abgießen.",
-      "Hauptteig TA 158 (ca.): 860 g Weizenmehl 550 100 g Weizenvollkornmehl 480 g Wasser (kühl) 100 g Milch 84 g Sauerteig 300 g Saatenbrüstück 20 g Bio-Frischhefe (bei normaler Hefe reichen 10-15 g) 20 g Salz 30 g Ahornsirup Grad C 30 g Butter (20 g Lecithin &#8211; macht die Krume lockerer)"
     ]
   },
   {
@@ -8022,13 +6796,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 332,
-    "name": "Saftiger Christstollen",
-    "url": "https://brotdoc.com/2013/01/06/saftiger-christstollen/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 333,
     "name": "Saftiges Graubrot",
     "url": "https://brotdoc.com/2023/04/16/saftiges-graubrot/",
@@ -8156,13 +6923,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 338,
-    "name": "Sandwich-Brote: Buttermilch-Brot",
-    "url": "https://brotdoc.com/2014/09/10/sandwich-brote-buttermilch-brot/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 339,
     "name": "Sandwich-Brote: Dunkles Sandwichbrot",
     "url": "https://brotdoc.com/2014/09/18/sandwich-brote-dunkles-sandwichbrot/",
@@ -8189,16 +6949,6 @@ const RECIPE_DATABASE = [
       "Menge für 2 Brote",
       "Weizensauerteig: 66 g Weizenmehl 1050 33 g Wasser (40°C) 6 g Anstellgut Gut vermengen, von Hand zu einer Kugel kneten und diese für 12 Stunden bei 30°C reifen lassen. Alternative: Die benötigte Menge (105 g) vom fest geführten Anstellgut abnehmen.",
       "Hauptteig: 105 g Sauerteig 600 g Kamutmehl hell 500 g Weizenmehl 1050 521 g Wasser (kalt) 270 g Milch (kalt) 77 g Butter 22 g Salz 27 g Rohrzucker 8 g Backmalz (enzymaktiv) 21 g Frischhefe 110 g Leinsamen geröstet und gut abgekühlt"
-    ]
-  },
-  {
-    "id": 341,
-    "name": "Sandwich-Brote: Sahnestuten",
-    "url": "https://brotdoc.com/2014/10/22/sandwich-brote-sahnestuten/",
-    "ingredients": [],
-    "steps": [
-      "Menge für 2 Brote (in Klammern für 1 Brot)",
-      "Hauptteig: 1400 (700) g Weizenmehl 812 424 (212) g Wasser (kalt) 300 (150) g Milch (kalt) 200 (100) g Sahne (32 % Fett, kalt) 90 (45) g Weizen-Anstellgut 90 (45) g Roggen-Anstellgut 28 (14) g Zucker 27 (13) g Salz 8 (4) g Malz (enzymaktiv) 105 (52) g Butter 28 (14) g Frischhefe"
     ]
   },
   {
@@ -8378,38 +7128,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 348,
-    "name": "Schmalzbrot",
-    "url": "https://brotdoc.com/2015/02/10/schmalzbrot/",
-    "ingredients": [],
-    "steps": [
-      "Sauerteig: 600 g Roggenmehl 1150 600 g Wasser (45°C) 30 g Roggen-Anstellgut (aktiv) Die Zutaten miteinander gut verrühren. Wenn das Roggenanstellgut aktiv ist, reichen hier 30 g Zugabe. Wenn nicht, empfehle ich, 40-60 g zuzugeben. An einem warmen Ort (28-30°C) für 12 Stunden reifen lassen.",
-      "Hauptteig: Sauerteig 1080 g Weizenmehl 1050 720 g Weizenvollkornmehl 1056 g Wasser 20 g Backmalz aktiv (kann auch gegen inaktives Malz ersetzt werden) 40 g Backmalz inaktiv 24 g Frischhefe 48 g Salz 96 g Schweineschmalz (alternativ: Butter)"
-    ]
-  },
-  {
-    "id": 349,
-    "name": "Schneeflesserln – 1. Plötziade",
-    "url": "https://brotdoc.com/2014/03/19/schneeflesserln-1-plotziade/",
-    "ingredients": [],
-    "steps": [
-      "Hauptteig: Water-Roux 155 g Wasser 400 g Weizenmehl 550 20 g Roggenvollkornmehl 75 g Lievito madre (25 g Wasser, 50 g Weizenmehl 550) direkt aus dem Kühlschrank 10 g Salz 7 g Frischhefe",
-      "Alle Zutaten außer Salz und Frischhefe verkneten bis keine Mehlnester mehr da sind. 45 Minuten ruhen lassen. Salz und Hefe zufügen und 2-3 Minuten zu einem glatten Teig kneten. 60 Minuten Teigruhe. Den Teig danach auf die bemehlte Arbeitsfläche geben und ausstoßen. In 9 Stücke von ca. 80-90 g teilen und diese zu Strängen ausrollen. Aus den Strängen wie unten in Bild und Video gezeigt Einstrang-Zöpfe flechten.",
-      "Die Zöpfe bei Raumtemperatur auf dem Blech abgedeckt 70 Minuten gehen lassen. In den auf 240° vorgeheizten Ofen einschießen und gut schwaden. 18-20 Minuten ausbacken.",
-      "Die Krume ist schön &#8222;flaumig&#8220;, wie gewünscht",
-      "So werden die Zöpfchen geformt:",
-      "[youtube http://www.youtube.com/watch?v=JtdYgxAwXbg]",
-      "Und noch ein Video vom Ofentrieb &#8211; nicht wundern, einige hatte ich auch mit Mohn bestreut, die lagen im Ofen dann vorne.",
-      "[youtube http://www.youtube.com/watch?v=0Zst-21imLc]",
-      "________________________________________________________________________________________________________________________________________ ENGLISH RECIPE",
-      "Lutz called for a competition on his blog . The goal is to bake a bread with fixed ingredients (450 g bread flour, 50 g whole-rye-flour, 10 g salt, sourdough/yeast, and water), publicise it and see, how every participant has solved this task. I decided for some new rolls, having been inspired by a traditional austrian braid-roll, the &#8222;Mohnflesserln&#8220;. Please have a look at the video and the pictures above to learn how to shape them.",
-      "water-roux: 30 g whole-rye-flour 150 g water Stir in a pot on the stove until the mass becomes firm, let cool down to room-temperature.",
-      "main dough: water roux 155 g water 400 g bread flour 20 g whole-rye flour 75 g lievito madre (25 g water/50 g bread flour) directly from the fridge 10 g salt 7 g fresh yeast",
-      "Mix everything but for the salt and the yeast for 1-2 minutes. Autolyse for 45 minutes. Add salt and yeast and mix for 2-3 minutes to a smooth dough. Let rest for 1 hour. Put the dough onto the floured bench and degas properly. Divide into pieces of 80-90 g each. Form one-strand-braids out of each piece as shown above in the pics and the video.",
-      "Proofing is for 70 minutes at room temperature. Bake at 240° with steam for 18-20 minutes, remove steam after 10 minutes."
-    ]
-  },
-  {
     "id": 350,
     "name": "Schneller Einback (als Zeilensemmel)",
     "url": "https://brotdoc.com/2022/03/05/schneller-einback-als-zeilensemmel/",
@@ -8548,15 +7266,6 @@ const RECIPE_DATABASE = [
       "Den Teig für 60-75 Minuten ruhen lassen. Nach 30 Minuten ein mal strecken und falten.",
       "Das Brot mindestens 70-75 Minuten bei Raumtemperatur aufgehen lassen. Sie sollten den Rand der Form etwas überschritten haben. Währenddessen den Ofen auf 250°C aufheizen.",
       "Einmal längs nicht zu tief einritzen. Das Brot einschießen und gut schwaden. Auf 210°C reduzieren und für insgesamt 55-60 Minuten abbacken."
-    ]
-  },
-  {
-    "id": 353,
-    "name": "Schwäbische Dinkel-Seelen",
-    "url": "https://brotdoc.com/2012/05/08/schwabische-dinkel-seelen/",
-    "ingredients": [],
-    "steps": [
-      "Die großporige glasige Krume, einfach lecker!"
     ]
   },
   {
@@ -9050,68 +7759,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 367,
-    "name": "Sonnenblumenbrötchen – Sunflower-Rolls",
-    "url": "https://brotdoc.com/2014/01/29/sonnenblumenbrotchen-sunflower-rolls/",
-    "ingredients": [],
-    "steps": [
-      "Sauerteig: 100 g Weizenmehl 812 100 g Wasser 10 g ASG Gut vermengen und 12 Stunden reifen lassen.",
-      "Hauptteig: 760 g Weizenmehl 812 140 g Wasser 15 g Hefe 20 g Salz 15 g Olivenöl",
-      "So kommt das Blech mit den gegangenen Brötchen aus dem Kühlschrank..",
-      "Tüte entfernt&#8230;",
-      "&#8230; und gut aufgegangen sind sie.",
-      "Man kann sie so ca. 12-14 Stunden im Kühlschrank gehen lassen. Wenn man backen möchte, heizt man den Ofen auf 240° auf. Die Brötchen werden direkt aus dem Tuch mit Schluß nach oben auf Lochbleche gegeben und mit Dampf eingeschossen. Die Backzeit beträgt bei konstant 240° 20-22 Minuten.",
-      "Eine schöne saftige und feinporige Krume.",
-      "ENGLISH RECIPE",
-      "The Aroma-Stueck is very suitable to enhance roll-doughs, too. With this recipe I tried to make Sunflower-Rolls with aroma-stueck. The taste is aromatic, lightly sweet and lightly sour at once and with a decent sunflower-seed-flavour. This rolls have excellent freshkeeping qualities.",
-      "aroma-stueck 140 g bread flour (me: german type 812 wheat flour) 70 g sunflower seeds 420 g water 7 g diastatic malt Heat to 60°C and let simmer at this temperature covered for 2 hours, stirring repeatedly. After two hours heat up until cooking and then let it cool to room temperature.",
-      "sourdough: 100 g bread flour (me: german type 812 wheat flour) 100 g Water (30°C) 10 g starter Mix properly and let mature for 12 hours",
-      "main dough: 760 g bread flour (me: german type 812 wheat flour) 140 g water 15 g yeast 20 g salt 15 g olive oil"
-    ]
-  },
-  {
-    "id": 368,
-    "name": "Sonnenblumenbrot – Sunflower-seed-bread",
-    "url": "https://brotdoc.com/2013/11/16/sonnenblumenbrot-sunflower-seed-bread/",
-    "ingredients": [],
-    "steps": [
-      "Alle Zutaten außer den Sonnenblumenkernen in die Knetschüssel geben und 3 Minuten langsam, nachfolgend 4 Minuten auf 2. Stufe kneten. Die Sonnenblumenkerne hinzugeben und 1 Minute auf langsamer Stufe unterkneten. Den Teig 2 Stunden zur Gare stellen. Nach 45 und 90 Minuten strecken und falten. Den Teig entgasen, in 2 gleiche Teile von ca. 980 g teilen und zu Bâtards formen . Die Bâtards werden auf der Oberseite befeuchtet und mit Sonnenblumenkernen bestreut. Mit dem Schluß nach oben im Bäckerleinen 50 Minuten bei 23-24° gehen lassen. Umdrehen, länglich einschneiden und mit Schwaden direkt auf den Backstein in den vorgeheizten Ofen geben (240°). 10 Minuten mit Dampf, weitere 50 ohne Dampf bei 215° ausbacken.",
-      "ENGLISH RECIPE",
-      "This is a plain and simple Sunflower-Seed-Bread. Highly aromatic nevertheless by adding a poolish, malt and butter. Poolish: 200 g medium wheat flour 200 g water (30°) 0,5 g fresh yeast Mix properly and let mature for 12 hours.",
-      "Main dough 70% hydration: 800 g medium wheat flour 500 g water (hand-warm) 10 g fresh yeast 22 g salt 40 g butter 40 g malt 200 g roasted sunflower-seeds.",
-      "Put all ingredients save the roasted seeds into the mixing bowl. Mix for 3 minutes at slow speed and for 4 minutes at second speed. Add the seeds and mix for 1 minute until they are incorporated into the dough. Let the dough rest for 2 hours, making one stretch-and-fold after 45 and 90 minutes. De-gas the dough and divide in 2 pieces of appr. 980g each. Shape into bâtards , wet the surface and put unroasted sunflower seeds on it until it is completely covered. Let proof for 50 minutes at 23-24°C with the seam up in a couche. Put directly onto the baking stone, oven preheated to 240°C. Steam properly and let out the steam after 10 minutes. Bake for another 50 minutes at 215°C, taking care, that the sunflower seeds would not get too dark."
-    ]
-  },
-  {
-    "id": 369,
-    "name": "Sonnenblumen-Kernlinge",
-    "url": "https://brotdoc.com/2015/04/03/sonnenblumen-kernlinge/",
-    "ingredients": [],
-    "steps": [
-      "Vorteig: 250 g Weizenvollkornschrot (fein) 270 g Wasser (handwarm) 2,5 g Hefe Alles gut und gründlich miteinander verrühren. 2 Stunden bei Raumtemperatur anspringen lassen, dann 10-12 Stunden im Kühlschrank reifen lassen.",
-      "Hauptteig: Vorteig 650 g Weizenmehl T110 (oder Typ 1600 / Ruchmehl) 390 g Wasser (kühl) 60 g Weizen-Anstellgut 18 g Salz 7,5 g Frischhefe 100 g Sonnenblumenkerne geröstet"
-    ]
-  },
-  {
-    "id": 370,
-    "name": "Sonnenblumen-Saatenbrot",
-    "url": "https://brotdoc.com/2013/05/09/sonnenblumen-saatenbrot/",
-    "ingredients": [],
-    "steps": [
-      "Menge für ein stattliches Brot, das eine Familie durchaus 5-7 Tage ernährt (in Klammern die Menge für ein kleineres Brot).",
-      "Roggensauerteig TA 200: 225 (148) g Roggenvollkornmehl 225 (148) g Wasser (28-30°) 23 (14) g Roggen-Anstellgut 2 (1) g Salz Die Zutaten gut verrrühren und 12 Stunden in warmer Umgebung (24-28°) reifen lassen. Saaten-Brühstück: 150 (99) g Sonnenblumen-Kerne 150 (99) g Wasser (kochend) Die Sonnenblumen-Kerne in einem Topf langsam rösten, bis sie braun sind. Nicht anbrennen lassen! Mit dem heißen Wasser übergießen, 12 Stunden im Kühlschrank quellen und danach 30 Minuten abtropfen lassen. Hauptteig TA 168: Sauerteig Saaten-Brühstück 225 (148) g Roggenmehl 1150 450 (296) g Weizenmehl 1050 14 (9) g Backmalzpulver enzymaktiv 387 (255) g Wasser lauwarm 18 (12) g Salz 36 (24) g Butter 4 (3) g Frischhefe gebröckelt 3 (2) g Brotgewürz (Fenchel, Kümmel, Anis)"
-    ]
-  },
-  {
-    "id": 371,
-    "name": "Sonnenblumen-Sesamstangen",
-    "url": "https://brotdoc.com/2013/02/10/sonnenblumen-sesamstangen/",
-    "ingredients": [],
-    "steps": [
-      "Eine lockere, feinporige Krume mit kernigem Geschmack &#8211; lecker!"
-    ]
-  },
-  {
     "id": 372,
     "name": "Sonnenblumen-Stuten",
     "url": "https://brotdoc.com/2016/09/25/sonnenblumen-stuten/",
@@ -9128,13 +7775,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 373,
-    "name": "Sonntagscroissants",
-    "url": "https://brotdoc.com/2016/02/21/sonntagscroissants/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 374,
     "name": "Sonntags-Hörnchen",
     "url": "https://brotdoc.com/2013/03/08/sonntags-hornchen/",
@@ -9145,13 +7785,6 @@ const RECIPE_DATABASE = [
       "Die Teiglinge an der Basis etwas auseinanderziehen und straff aufrollen. Die Enden wie bei Croissants zu einer Seite umbiegen.",
       "Diese Teiglinge 90-120 Minuten aufgehen lassen bis sie sich gut verdoppelt haben. Eine Eistreiche aus 1 Eigelb, 8 EL Milch und einer Prise Salz und Zucker herstellen. Damit die Teiglinge satt einpinseln. In den auf 200° vorgeheizten Ofen geben und schwaden. Die Backzeit beträgt 20-25 Minuten, bitte auf eine nicht zu starke Bräunung achten. Der Teig bräunt wegen des Zuckeranteils recht schnell."
     ]
-  },
-  {
-    "id": 375,
-    "name": "Starkbier-Mohnzopf",
-    "url": "https://brotdoc.com/2013/06/19/starkbier-mohnzopf/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 376,
@@ -9288,16 +7921,6 @@ const RECIPE_DATABASE = [
       "Auf ein Blech oder den Einschießer wenden und ggf. einschneiden, wenn gewünscht. Mit Wasser besprühen und bei 200 °C für 16 bis 19 Minuten goldbraun abbacken.",
       "Nach dem Backen mit Wasser besprühen. Abkühlen lassen.",
       "Für ein Sub wird das Brot der Länge nach aufgeschnitten und mit Cheddar oder Gouda belegt. Dann wandert es noch einmal 30 bis 40 Sekunden unter den Grill, um den Käse zu schmelzen. Danach kann es je nach Lust und Laune belegt und mit einer Sauce abgerundet werden."
-    ]
-  },
-  {
-    "id": 380,
-    "name": "Südpfälzer Landbrot",
-    "url": "https://brotdoc.com/2013/07/17/sudpfalzer-landbrot/",
-    "ingredients": [],
-    "steps": [
-      "Die Krume ist fein- bis mittelporig und sehr aromatisch.",
-      "Ein schön rustikal aufgerissener Laib."
     ]
   },
   {
@@ -9489,15 +8112,6 @@ const RECIPE_DATABASE = [
       "Eine schöne Krustenfensterung wie ich sie selten hinbekommen habe",
       "Die Krume gut gelockert aber trotzdem dicht und gut bestreichbar, aromatisch im Geschmack und ein Traum bei süßen Aufstrichen",
       "Viel Spaß beim Nachbacken!"
-    ]
-  },
-  {
-    "id": 384,
-    "name": "Sythener Landbrot",
-    "url": "https://brotdoc.com/2012/09/13/sythener-landbrot/",
-    "ingredients": [],
-    "steps": [
-      "Die Zutaten gut verkneten bis ein glatter und sich gut von der Schüsselwand lösender Teig entstanden ist. In eine eingeölte Schüssel geben und einmal strecken und falten. Eine Teigruhe von 45 Minuten einhalten. Danach den Teig rundwirken und erneut 20-30 Minuten abgedeckt gehen lassen. Danach den Teig mit guter Spannung langwirken und gut mit Roggenmehl bemehlen. Mit dem Schluß nach oben in ein längliches Gärkörbchen geben und für mindestens 70-80 Minuten bei Raumtemperatur gehen lassen. Auf den Backschieber oder ein Lochblech stürzen, 3 x quer und tief einschneiden und in den vorgeheizten Ofen bei 240° geben. Gut schwaden. Nach 10 Minuten Schwaden ablassen und auf 210° abfallend für 60 Minuten ausbacken. Die letzen 10 Minuten die Ofentür anlehen für eine schöne gefensterte Kruste."
     ]
   },
   {
@@ -10052,13 +8666,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 399,
-    "name": "Vielsaaten-Brötchen / Betrachtungen zur Entspannung",
-    "url": "https://brotdoc.com/2014/08/27/vielsaaten-brotchen-und-betrachtungen-zur-entspannung/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 400,
     "name": "Vierpfünder Dattellaib",
     "url": "https://brotdoc.com/2019/12/14/vierpfuender-dattellaib/",
@@ -10111,23 +8718,6 @@ const RECIPE_DATABASE = [
       "Auf die gut bemehlte Arbeitsfläche kippen und rund formen. Der Schluss sollte nicht fest zugewirkt werden, sondern Falten und Riefen bilden. Dies geht am Besten mit der &quot;Schiebemethode&quot;. Mit dem Schluß nach unten in ein großes bemehltes Gärkörbchen für min. 2 kg Teig legen.",
       "60 bis 80 Minuten bei Raumtemperatur reifen lassen. Das Volumen sollte sich deutlich vergrößert haben. Derweil den Ofen auf 240 °C (Ober-/Unterhitze) vorheizen.",
       "Das Brot auf den Einschießer wenden und den Schluss etwas aufreißen lassen. In den Ofen auf den Stein befördern und 1 bis 2 Minuten ohne Dampf anbacken. Dann schwaden und die Ofentemperatur auf 210 °C reduzieren. Das Brot etwa 70-80 Minuten abbacken."
-    ]
-  },
-  {
-    "id": 401,
-    "name": "Vietnam: Strand und Lagune",
-    "url": "https://brotdoc.com/2018/04/02/vietnam-strand-und-lagune/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
-    "id": 402,
-    "name": "Vinschgauer Paarl",
-    "url": "https://brotdoc.com/2016/07/10/vinschgauer-paarl/",
-    "ingredients": [],
-    "steps": [
-      "Sauerteig: 140 g Roggenmehl 1150 140 g Wasser (45°C) 14 g Roggenanstellgut Gut miteinander verrühren und 12 Stunden bei Raumtemperatur reifen lassen.",
-      "(Lievito madre (optional): 70 g Hartweizenmehl 35 g Wasser (55°C) 4 g Anstellgut (alter Lievito madre oder Weizen-ASG) Gut von Hand verkneten und eine Kugel formen, diese 12 Stunden in einer Schüssel aufgehen lassen.)"
     ]
   },
   {
@@ -10297,15 +8887,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 406,
-    "name": "Vollkorn-Dinkelbrötchen",
-    "url": "https://brotdoc.com/2011/12/23/vollkorn-dinkelbrotchen/",
-    "ingredients": [],
-    "steps": [
-      "Alle Zutaten gut verkneten je nach Maschinentyp, bei mir mit der Kenwood 3 Minuten langsam und 5 Minuten schnell. Den Teig dann in eine Schüssel geben und insgesamt 2 Stunden gehen lassen. Nach 45 und 90 Minuten jeweils einmal strecken und falten. Teig auf die Arbeitsfläche geben und gut entgasen. 18 Teigstücke von 90 g abwiegen und nach Wunsch formen. Unten sieht man sie als Baguettebrötchen und als Spitzweck. Im Bäckerleinen für 45 Minuten gehen lassen, dann abstreichen, einschneiden und bei 250° mit viel Schwaden anbacken. Nach 10-13 Minuten Schwaden ablassen und bei 215° insgesamt 12-15 Minuten zuende backen."
-    ]
-  },
-  {
     "id": 407,
     "name": "Vollkorn-Kommissbrot",
     "url": "https://brotdoc.com/2013/03/10/vollkorn-kommissbrot/",
@@ -10315,13 +8896,6 @@ const RECIPE_DATABASE = [
       "Vollkorn-Sauerteig TA 200: 360 g Waldstaudenroggenvollkornmehl 360 g Wasser 36 g Roggenanstellgut 3 g Salz Gut vermengen und von 30 Grad abfallend auf Raumtemperatur 12 Stunden reifen lassen. Hauptteig TA 180: Sauerteig 440 g Waldstaudenroggenvollkornmehl 280 g Wasser (handwarm) 8 g Frischhefe 60 g Rübenkrautextrakt 15 g Salz",
       "Hier noch ein Bild vom ersten Backversuch, sichtbar ist ein klassischer Brotfehler (klitischige Krume und Krumenriß oben)."
     ]
-  },
-  {
-    "id": 408,
-    "name": "Vollkorn-Laib mit kalter Teigführung",
-    "url": "https://brotdoc.com/2012/06/25/vollkorn-laib-mit-kalter-teigfuhrung/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 409,
@@ -10398,13 +8972,6 @@ const RECIPE_DATABASE = [
       "Die Teiglinge auf den Einschießer wenden und einschneiden. Einschießen und gut schwaden.",
       "Die Temperatur auf 210 °C reduzieren und die Brote 55 Minuten kräftig ausbacken. Nach dem Backen mit Wasser besprühen."
     ]
-  },
-  {
-    "id": 412,
-    "name": "Vollkorn-Toastbrot",
-    "url": "https://brotdoc.com/2013/01/10/vollkorn-toastbrot/",
-    "ingredients": [],
-    "steps": []
   },
   {
     "id": 413,
@@ -10536,13 +9103,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 416,
-    "name": "Weinheimer Brotforum 2020",
-    "url": "https://brotdoc.com/2020/02/11/weinheimer-brotforum-2020/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 417,
     "name": "Weiße Brötchen",
     "url": "https://brotdoc.com/2019/04/07/weisse-broetchen/",
@@ -10603,41 +9163,6 @@ const RECIPE_DATABASE = [
       "Das Blech in den Kühlschrank bei 5 °C stellen und dort 12-13 Stunden die Teiglinge reifen lassen.",
       "Den Ofen auf 230 °C (Heißluft) vorheizen. Die Brötchen aus dem Kühlschrank holen, auf einen Einschießer oder ein Lochblech wenden. Mit Wasser besprühen und länglich einschneiden.",
       "In den Ofen einschießen und gut schwaden. 5 Minuten bei 230 °C backen, dann auf 250 °C erhöhen und schön vollbraun ausbacken (ca. 17-18 Minuten Backzeit)."
-    ]
-  },
-  {
-    "id": 418,
-    "name": "Weizenmehl 812 vs. Weizenmehl T65 label rouge",
-    "url": "https://brotdoc.com/2014/02/17/weizenmehl-812-vs-weizenmehl-t65-label-rouge/",
-    "ingredients": [],
-    "steps": [
-      "Warmer Autolyse-Teig 390 g Weizenmehl (Typ 812 oder Typ 65) 240 g Wasser Vermischen, bis keine Mehlnester mehr zu sehen sind. 20 Stunden bei Raumtemperatur abgedeckt ruhen lassen.",
-      "Hauptteig Poolish Autolyse-Teig 10 g Salz 4 g Hefe",
-      "Alle Zutaten in die Knetschüssel geben und Salz und Hefe zufügen. Mit dem Kneter 1 Minute bei langsamer Geschwindigkeit und 2-3 Minuten bei 2. Stufe kneten, danach sollte sich der Teig komplett vom Schüsselrand ablösen. Den Teig in eine eingeölte Teigwanne geben und insgesamt 2 1/2 Stunden reifen lassen. Nach 30, 60 und 90 Minuten strecken und falten.",
-      "Der Teig aus deutschem Mehl 812 nach den 3 Stunden Teigruhe&#8230;",
-      "&#8230; und sein französisches Pendant!",
-      "In drei gleich große Teile teilen und jeweils zu einem Zylinder einrollen. 20 Minuten ruhen lassen. Die Zylinder zu Baguettes wirken , indem man sie straff zu Rollen formt und auf maximal 40 cm ausrollt. Mit dem Schluß nach oben in einem Bäckerleinen abgedeckt gehen lassen. Auf den Einschießer wenden und drei mal mit einem Einschneider schräg einschneiden. In den Ofen bei 240° einschießen und Dampf geben. Konstant bei 240 für 22-24 Minuten ausbacken. Den Dampf nach 10 Minuten ablassen.",
-      "Das Ergebnis mit französischem Weizenmehl Typ 65 label rouge",
-      "Links die Baguettes aus französischem Mehl, rechts ihre Pendants aus deutschem Mehl.",
-      "ENGLISH RECIPE",
-      "Poolish 110 g high-gluten wheat flour (e.g. german Type 812 oder french Type 65) 110 g water 1 g fresh yeast Mix properly and let rest for 2 hours at room temperature. Then put it into the fride and let mature for 18 hours.",
-      "warm autolyse-dough 390 g high gluten wheat flour (e.g. german type 812 oder french type 65) 240 g Wasser Mix for 1-2 Minutes until all flour is dissolved and let rest covered for 20 hours at room temperature.",
-      "main dough Poolish autolyse-dough 10 g salt 4 g fresh yeast",
-      "Mix all ingredients for 1 minute at slow speed and 2-3 minutes at second speed. The dough should develop very quickly and hence not oxidate that much. Let rest the dough in a canister for 2 1/2 hours, doing a stretch-and-fold after 30, 60 and 90 minutes. Divide the dough in 3 equal pieces. Roll in the pieces to form cylinders. Let them rest for 20 minutes. Form baguettes out of each cylinder and proof them in a couche for 30 minutes, seam up. Put them on a peel and insert them into the oven after scoring each of them three times. Bake with steam for 10 minutes at 240°C, release the steam and bake for another 12-14 minutes until they are middle to dark-brown. Enjoy!!"
-    ]
-  },
-  {
-    "id": 419,
-    "name": "Weizensauerteig-Wecken – Sourdough-Rolls",
-    "url": "https://brotdoc.com/2014/02/24/weizensauerteig-wecken-sourdough-buns/",
-    "ingredients": [],
-    "steps": [
-      "Alle Zutaten mit dem Kneter verkneten, 3 Minuten langsam und 4 Minuten schnell. Der Teig sollte glatt sein und sich vom Schüsselrand lösen. In eine Schüssel geben und 2 1/2 &#8211; 3 Stunden reifen lassen. Der Teig sollte deutlich aufgehen. Hierbei nach 60 und 120 Minuten strecken und falten. In 9 gleich schwere Teile teilen und zu kleinen Bâtards wirken, die Enden dabei schön spitz ausrollen. Mit dem Schluß nach oben im Leinentuch eine weitere Stunden aufgehen lassen. Wenden, mit Wasser besprühen und tief längs einschneiden. Direkt auf den heißen Backstein bei 240° einschießen. Gut schwaden und für insgesamt 22-24 Minuten kräftig ausbacken.",
-      "ENGLISH RECIPE",
-      "Breakfast-Buns usually need a good oven spring to get an open crumb. With sourdough as the only leavening agent this isn&#8217;t easy to achieve. I fed my starter for 3 times at warm temperatures (25-28°) to make it really active for this recipe. Combined with a long bulk fermentation one gets really superb rolls with a taste, that is unachievable by yeasted doughs.",
-      "sourdough: 125 g bread flour 75 g water (30°) 12 g starter Mix properly and let mature covered at room temperature for 12-16 hours.",
-      "main dough 60 % hydration: sourdough 375 g bread flour 225 g Water (28°) 15 g malt non-diastatic 10 g butter 10 g salt",
-      "Mix everything in the mixer for 3 minutes at slow speed, 4 minutes at second speed until the dough is smooth and not sticking to the bowl. Let mature covered in a canister for 2 1/2 &#8211; 3 hours. Stretch and fold after 60 and 120 minutes. The dough should have risen considerably and be full of little gas bubbles. Divide in 9 equal pieces and form small bâtards, rolling out the ends a little bit. Proofing is for 60 minutes, seam up in a couche. Put them on a peel, spray with water and score once. Then put them directly onto the hot stone in the oven at 240°C, steaming proplerly. Bake for 22-24 minutes to get a full colour."
     ]
   },
   {
@@ -10845,27 +9370,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 422,
-    "name": "Weizen-Schwarzbrot",
-    "url": "https://brotdoc.com/2013/09/14/urweizen-schwarzbrot/",
-    "ingredients": [],
-    "steps": [
-      "Menge für 2 Brote in der 1,5 kg Kastenform Vorbereitung des Vollkornmehls: 800 g Purpur-Weizen 700 g Gelbweizen Mit der Mühle auf feinster Einstellung langsam mahlen, die Mehle mischen und 24 Stunden ruhen lassen.",
-      "Vorteig TA 200: 375 g Vollkornmehl von der o.g. Mischung 375 g Wasser (lauwarm) 1 g Hefe Gut mischen und 12 Stunden reifen lassen.",
-      "Hauptteig TA 178: Vorteig 1125 g Vollkornmehl von der o.g. Mischung 60 g Roggen-Anstellgut 795 g Wasser lauwarm 9 g Hefe 32 g Salz 40 g Wald-Honig 4 g Brotgewürz (Fenchel, Anis, Kümmel, Koriander)",
-      "Alle Zutaten in den Kneter geben und 5 Minuten langsam kneten. 30 Minuten ruhen lassen und erneut 5 Minuten langsam kneten. Den Teig für 60 Minuten in einem Gefäß abgedeckt gehen lassen. Nach 30 Minuten einmal strecken und falten. In 2 gleiche Teile teilen und langwirken. Es besteht nur eine leicht bis mittlere Glutenentwicklung und der Teig ist recht weich. In die Form geben und für 12 Stunden abgedeckt im Kühlschrank reifen lassen. Am Backtag die Brote sofort aus dem Kühlschrank in den auf 250° vorgeheizten Ofen geben und 10 Minuten anbacken. Auf 210° reduzieren und weitere 60 Minuten ausbacken.",
-      "Eine schöne dunkle, saftige aber dennoch gut gelockerte Krume &#8212; A nice dark-brown, very juicy and aromatic crumb",
-      "English recipe:",
-      "&#8222;Dark Whole-Wheat-Loaf&#8220;",
-      "Last week I felt like baking a hearty dark whole-grain-bread. I had some organic special-wheat-grains on stock named &#8222;Purpurweizen (Purple-Wheat)&#8220; and &#8222;Gelbweizen (Yellow-Wheat)&#8220;. The former is a quite dark grain which contributes a brown color to the dough while the latter becomes a distinct yellowish flour, when milled. One usually can get these Special-Grains at Organic-shops or Mail-orders, which specialize on organic-grains. The recipe was an instant success, the bread is simply wonderful. The taste is more nutty than normal whole wheat-bread and the crumb much darker. The long cold fermentation gives the flour much time to soak the water and develop multiple aromas.",
-      "Yields 2 Breads for 1,5 kg loaf pans",
-      "Preparation of the flour: 800 grams of Purple-Wheat-grains 700 grams of Yellow-Wheat-grains Mix the grains. Finely-ground the grains slowly so that they dont heat up too much. Let the flour rest for 24 hours.",
-      "Poolish 100 % hydration: 375 grams of the mixed whole-wheat-flour 375 grams of water 1 gram of fresh yeast Mix properly and let mature for 12 hours",
-      "Main dough 78 % hydration: Poolish 1175 grams of the mixed whole-wheat-flour 60 grams of rye-sourdough-starter 795 grams of water 9 grams of fresh yeast 32 grams of salt 40 grams of wild honey 4 grams of &#8222;Brotgewürz&#8220; (finely-ground fennel, anise, coriander and cumin)",
-      "In the spiral-mixer mix slowly for 5 minutes. Let rest covered for 30 minutes. Mix again slowly for 5 minutes. Let rest for 60 minutes, after 30 minutes do one stretch-and-fold. Divide in 2 equal pieces and form two cylindrical loaves. Put into the loaf pan, seam down and cover properly (sealed plastic bag). Let the loaves mature for 12 hours in the fridge at 5°C. On the baking day preheat the oven to 250° C. Put the pans into the oven right out of the fridge. No steaming required. After 10 Minutes reduce temp. to 210°C and give the breads a bold bake for another 60 Minutes."
-    ]
-  },
-  {
     "id": 423,
     "name": "Weizen-Toasties",
     "url": "https://brotdoc.com/2022/05/04/weizen-toasties/",
@@ -10996,31 +9500,6 @@ const RECIPE_DATABASE = [
     ]
   },
   {
-    "id": 426,
-    "name": "Westfalen-Kruste – Westphalia-Crust",
-    "url": "https://brotdoc.com/2013/12/23/westfalen-kruste-westphalia-crust/",
-    "ingredients": [],
-    "steps": [
-      "Hauptteig: Sauerteig Aroma-Stück Altbrot",
-      "ggf. 40 bis 50 g Wasser 243 g Weizenmehl 1050 261 g Roggenmehl 1150 18 g Salz 9 g Hefe",
-      "Alle Zutaten 12 Minuten bei langsamer Geschwindigkeit verkneten. Den Teig abgedeckt 45 Minuten ruhen lassen. Auf die gut mit Roggenmehl bemehlte Arbeitsfläche geben und rund wirken. Dabei darauf achten, daß sich auf der Unterseite Falten bilden. Die Teigoberfläche gut bemehlen. Das Brot mit den Falten nach unten 60 Minuten im Gärkörbchen gehen lassen. In den gut auf 250° vorgeheizten Ofen (Ober-/Unterhitze) direkt auf den Backstein auskippen, so daß die Falten nach oben kommen. 2 Minuten ohne Schwaden heiß anbacken, wenn sich erste Risse geöffnet haben, dann schwaden und 10 Minuten mit Dampf backen. Danach sollte das Brot schön rustikal aufgerissen sein. Auf 210° reduzieren und insgesamt weitere 60 Minuten kräftig ausbacken. Das Brot sehr gut auskühlen lassen.",
-      "ENGLISH RECIPE",
-      "When I studied medicine in the wonderful city of Münster , I liked a special bread from the bakery &#8222;Tollkötter&#8220;. It is very aromatic and juicy with excellent freshkeeping qualities. Last year I have tried to devise a recipe to recreate this fabulous bread, but I was not successful enough. With my knowledge of this year I now tried again, using the aroma-stueck and old bread as an ingredient. The result was great, I think I have found my &#8222;Hausbrot&#8220;.",
-      "Yields one big loaf of bread",
-      "Rye sourdough 100 % hydration: 315 g rye-flour 315 g water (30°C) 31 g starter Mix properly and let mature for 12 hours.",
-      "Soaked Old bread: 90 g dry old bread, crunched and coarse ground to crumbs 180 g water Mix the bread crumbs and the water and let soak for 1 hour. Aroma-stueck: 100 g whole-rye meal 200 g water 5 g diastatic malt Mix the ingredients, heat them to 60-65°C and let simmer at that temperature for about 2 hours. Stir repeatedly until the mass is brown, creamy and sweet. Let cool to room temperature. This is best done in advance, e.g. when preparing the sourdough. One shouls store the aroma-stueck in the fridge until mixing the main dough.",
-      "Main dough: Sourdough Old-bread soaker aroma-stueck 243 g medium wheat flour (or bread-flour) 261 g rye flour 18 g salt 9 g fresh yeast",
-      "Mix all ingredients for 12 minutes and let the dough rest for 45 minutes covered. Use a silicone-scraper to transfer the dough onto the well floured bench. Shape into a boule, taking care to create a couple of seams on the bottom. The crust should be floured well, too. Then let the dough proof for 60 minutes in a banneton at room temperature seams down. Preheat the oven to 250°C. Dump the loaf directly onto the hot baking stone in the oven, so that the seams are up. Bake for 2 minutes without steam until a lot of little cracks have appeared on the surface. Then steam and bake for 10 minutes with steam. This will create the rustic crust as shown on the pictures. Reduce to 210°C and bake the bread for another 60 minutes until dark-brown."
-    ]
-  },
-  {
-    "id": 427,
-    "name": "Westruper Bauernbrot",
-    "url": "https://brotdoc.com/2013/02/06/westruper-bauernbrot/",
-    "ingredients": [],
-    "steps": []
-  },
-  {
     "id": 428,
     "name": "White-Wholewheat-Bread",
     "url": "https://brotdoc.com/2016/11/02/white-wholewheat-bread/",
@@ -11032,15 +9511,6 @@ const RECIPE_DATABASE = [
       "Den Teig 2-3 Stunden ruhen lassen. Direkt am Anfang und nach etwa der halben Zeit strecken und falten.",
       "Auf die bemehlte Arbeitsfläche geben und etwas entgasen. Zu einem Bâtard formen und mit dem Schluß nach oben 50-60 Minuten bei Raumtemperatur reifen lassen.",
       "Auf den Einschießer kippen, längs mit flach gehaltener Klinge einschneiden und mit viel Dampf in den gut vorgeheizten Ofen bei 240°C geben. Auf 210°C reduzieren und eine Stunde abbacken."
-    ]
-  },
-  {
-    "id": 429,
-    "name": "Wit Brood – Niederländischer Kastenstuten",
-    "url": "https://brotdoc.com/2012/07/26/wit-brood-niederlandischer-kastenstuten/",
-    "ingredients": [],
-    "steps": [
-      "Die schön gefensterte Kruste"
     ]
   },
   {
