@@ -2,30 +2,7 @@
 // BrotBack App – Core Logic
 // ─────────────────────────────────────────────
 
-// CORS proxies tried in order until one succeeds
-const PROXIES = [
-    async (url) => {
-        const r = await fetch('https://corsproxy.io/?' + encodeURIComponent(url));
-        if (!r.ok) throw new Error('corsproxy.io failed');
-        return r.text();
-    },
-    async (url) => {
-        const r = await fetch('https://api.allorigins.win/get?url=' + encodeURIComponent(url));
-        if (!r.ok) throw new Error('allorigins failed');
-        const j = await r.json();
-        return j.contents;
-    },
-    async (url) => {
-        const r = await fetch('https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(url));
-        if (!r.ok) throw new Error('codetabs failed');
-        return r.text();
-    },
-    async (url) => {
-        const r = await fetch('https://thingproxy.freeboard.io/fetch/' + url);
-        if (!r.ok) throw new Error('thingproxy failed');
-        return r.text();
-    },
-];
+
 
 let currentRecipe = null;
 let scheduledTimers = [];
@@ -134,11 +111,7 @@ document.addEventListener('click', e => {
 // ─── RECIPE LOADER ──────────────────────────
 let selectRecipeId = 0; // incremented on every call; stale fetches bail out
 
-async function selectRecipe(recipe) {
-    const myId = ++selectRecipeId; // this call's unique ID
-
-    searchResults.classList.remove('active');
-    searchInput.value = recipe.name;
+async function selectRecipe(recipeSearchObj) {
     welcomeEl.style.display = 'none';
     detailPanel.classList.remove('hidden');
     loadingEl.style.display = 'flex';
@@ -149,147 +122,39 @@ async function selectRecipe(recipe) {
     nextStepEl.classList.add('hidden');
     cancelAllTimers();
 
-    recipeTitle.textContent = recipe.name;
-    recipeLink.href = recipe.url;
+    recipeTitle.textContent = recipeSearchObj.name;
+    recipeLink.href = recipeSearchObj.url;
 
     try {
-        const html = await fetchWithFallback(recipe.url);
+        // Look up the parsed recipe by URL from the local database
+        const localRecipe = RECIPE_DATABASE.find(r => r.url === recipeSearchObj.url);
 
-        // Bail out if a newer recipe was selected while we were fetching
-        if (myId !== selectRecipeId) return;
+        if (!localRecipe) {
+            throw new Error('Local recipe not found in database');
+        }
 
-        const parsed = parseRecipe(html);
-        currentRecipe = { ...recipe, ...parsed };
-        renderRecipe(parsed);
+        currentRecipe = { ...recipeSearchObj, ...localRecipe };
+        renderRecipe(localRecipe);
+
         schedulerEl.classList.remove('hidden');
         const now = new Date();
         now.setMinutes(Math.ceil(now.getMinutes() / 15) * 15, 0, 0);
         startTimeEl.value = toLocalDatetimeInput(now);
     } catch (err) {
-        // Bail out if stale
-        if (myId !== selectRecipeId) return;
-
-        // Don't show error for AbortError (user switched recipe mid-load)
-        if (err && err.name === 'AbortError') return;
-
-        console.error('All proxies failed:', err);
+        console.error('Failed to load recipe:', err);
         ingredientsEl.innerHTML = `
           <div class="error-box">
             <p>⚠️ <strong>Rezept konnte nicht geladen werden.</strong></p>
-            <p>Bitte versuche es erneut oder <a href="${recipe.url}" target="_blank">öffne das Rezept auf brotdoc.com →</a></p>
+            <p>Bitte versuche es erneut oder <a href="${recipeSearchObj.url}" target="_blank">öffne das Rezept auf brotdoc.com →</a></p>
           </div>`;
         stepsEl.innerHTML = '';
     } finally {
-        // Only hide spinner if we are still the active request
-        if (myId === selectRecipeId) {
-            loadingEl.style.display = 'none';
-        }
+        loadingEl.style.display = 'none';
     }
 }
 
 
-async function fetchWithFallback(url) {
-    // On Netlify: server-side proxy via _redirects rule (no CORS at all)
-    const isLocal = location.protocol.startsWith('file') ||
-        ['localhost', '127.0.0.1'].includes(location.hostname);
 
-    if (!isLocal) {
-        // Deployed: use /brotdoc/... which Netlify proxies to brotdoc.com
-        const proxyPath = url.replace('https://brotdoc.com', '/brotdoc');
-        const r = await fetch(proxyPath);
-        if (r.ok) return r.text();
-    }
-
-    // Local fallback: try public CORS proxies in order
-    let lastErr;
-    for (const proxy of PROXIES) {
-        try {
-            const html = await Promise.race([
-                proxy(url),
-                new Promise((_, reject) => setTimeout(() => reject(new Error('timeout')), 8000))
-            ]);
-            if (html && html.length > 500) return html;
-        } catch (e) {
-            lastErr = e;
-            console.warn('Proxy failed, trying next…', e.message);
-        }
-    }
-    throw lastErr || new Error('All proxies failed');
-}
-
-// ─── RECIPE PARSER ──────────────────────────
-function parseRecipe(html) {
-    const parser = new DOMParser();
-    const doc = parser.parseFromString(html, 'text/html');
-
-    // Remove scripts, nav, footer, comments section
-    ['script', 'style', 'nav', 'footer', '.comments-area', '#comments'].forEach(sel => {
-        doc.querySelectorAll(sel).forEach(el => el.remove());
-    });
-
-    const ingredients = [];
-    const steps = [];
-
-    // Try to find structured recipe content
-    const content = doc.querySelector('.entry-content, article, main, .post-content') || doc.body;
-
-    // Find all headings and lists
-    let currentSection = null;
-    let inIngredients = false;
-    let inSteps = false;
-
-    const headingKeywords = {
-        ingredients: ['zutat', 'ingredient'],
-        steps: ['anleitung', 'zubereitung', 'instruction', 'method', 'step', 'so wird', 'durchführung']
-    };
-
-    const elements = Array.from(content.querySelectorAll('h1,h2,h3,h4,h5,ul,ol,li,p'));
-
-    elements.forEach(el => {
-        const tag = el.tagName.toLowerCase();
-        const text = el.textContent.trim().toLowerCase();
-
-        if (['h1', 'h2', 'h3', 'h4', 'h5'].includes(tag)) {
-            const isIngHead = headingKeywords.ingredients.some(k => text.includes(k));
-            const isStepHead = headingKeywords.steps.some(k => text.includes(k));
-            if (isIngHead) { inIngredients = true; inSteps = false; currentSection = el.textContent.trim(); }
-            else if (isStepHead) { inIngredients = false; inSteps = true; currentSection = null; }
-            else if (inIngredients || inSteps) {
-                // Sub-heading (e.g. "Roggensauerteig:", "Hauptteig:")
-                if (inIngredients) {
-                    const heading = el.textContent.trim();
-                    if (heading && !heading.toLowerCase().includes('navigation') && !heading.toLowerCase().includes('beitrag')) {
-                        ingredients.push({ type: 'section', name: heading });
-                    }
-                }
-            }
-            return;
-        }
-
-        if (inIngredients && (tag === 'li')) {
-            const t = el.textContent.trim();
-            if (t && t.length < 200) ingredients.push({ type: 'item', text: t });
-        }
-
-        if (inSteps && (tag === 'li' || tag === 'p')) {
-            const t = el.textContent.trim();
-            if (t && t.length > 20 && t.length < 800) {
-                const isNavigtation = ['←', '→', 'vorherig', 'nächst', 'beitragsnavigation', 'navigation'].some(w => t.toLowerCase().includes(w));
-                if (!isNavigtation) steps.push(t);
-            }
-        }
-    });
-
-    // Fallback: extract all list items if no structured content found
-    if (steps.length === 0) {
-        content.querySelectorAll('li').forEach(li => {
-            const t = li.textContent.trim();
-            if (t.length > 30 && t.length < 600) steps.push(t);
-        });
-    }
-
-    return { ingredients, steps };
-}
 
 // ─── RENDER RECIPE ──────────────────────────
 function renderRecipe({ ingredients, steps }) {
