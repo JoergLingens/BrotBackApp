@@ -30,6 +30,7 @@ const PROXIES = [
 let currentRecipe = null;
 let scheduledTimers = [];
 let fetchAbortController = null;
+let activeStepsData = null;
 
 // ─── RESET APP ───────────────────────────────
 function resetApp() {
@@ -39,6 +40,7 @@ function resetApp() {
     cancelAllTimers();
     // Reset state
     currentRecipe = null;
+    activeStepsData = null;
     searchInput.value = '';
     searchInput.focus();
     // Reset UI
@@ -402,6 +404,8 @@ function generateSchedule() {
         return { index: i + 1, text, duration, start: stepStart, end: new Date(cursor) };
     });
 
+    activeStepsData = stepsData;
+
     // Render timeline
     stepsData.forEach(s => {
         const isPast = s.start < now;
@@ -515,37 +519,45 @@ function toLocalDatetimeInput(date) {
 
 // ─── LIVE COUNTDOWN ─────────────────────────
 setInterval(() => {
-    if (!currentRecipe || !startTimeEl.value) return;
-    const startTime = new Date(startTimeEl.value);
-    const now = new Date();
-    const stepsData = currentRecipe.steps.map((text, i) => {
-        const duration = extractDuration(text) || 15;
-        return { index: i + 1, text, start: null };
-    });
-    // Find next upcoming step from timeline cards
-    const cards = document.querySelectorAll('.timeline-step:not(.past)');
-    if (cards.length > 0 && nextStepEl && !nextStepEl.classList.contains('hidden')) {
-        // Just update countdown display
-        const nextCard = Array.from(document.querySelectorAll('.timeline-step.next'))[0];
-        if (nextCard) {
-            const timeEl = nextCard.querySelector('.tl-time span');
-            if (timeEl) {
-                // find start time from the timeline display
-                const timeStr = timeEl.textContent;
-                // Reconstruct approximate start time
-                const [hh, mm] = timeStr.split(':').map(Number);
-                const stepDate = new Date();
-                stepDate.setHours(hh, mm, 0, 0);
-                if (stepDate < now) stepDate.setDate(stepDate.getDate() + 1);
-                const diff = stepDate - now;
-                if (diff > 0) {
-                    const minsLeft = Math.floor(diff / 60000);
-                    const secsLeft = Math.floor((diff % 60000) / 1000);
-                    nextStepEl.querySelector('#next-countdown').textContent =
-                        minsLeft > 0 ? `${minsLeft}m ${secsLeft}s` : `${secsLeft}s`;
-                }
-            }
+    if (!activeStepsData) {
+        if (nextStepEl && !nextStepEl.classList.contains('hidden')) {
+            nextStepEl.classList.add('hidden');
         }
+        return;
+    }
+
+    const now = new Date();
+    const nextStep = activeStepsData.find(s => s.start > now);
+
+    if (nextStep) {
+        if (nextStepEl.classList.contains('hidden')) {
+            nextStepEl.classList.remove('hidden');
+        }
+        updateNextStepBanner(nextStep, now);
+
+        // Sync timeline visual state (past vs next)
+        const allBoxes = document.querySelectorAll('.timeline-step');
+        allBoxes.forEach(b => b.classList.remove('next'));
+        allBoxes.forEach((b, i) => {
+            if (i < nextStep.index - 1) b.classList.add('past');
+        });
+        if (nextStep.index - 1 < allBoxes.length) {
+            allBoxes[nextStep.index - 1].classList.remove('past');
+            allBoxes[nextStep.index - 1].classList.add('next');
+        }
+    } else {
+        // All steps have started
+        nextStepEl.classList.remove('hidden');
+        nextStepEl.querySelector('#next-countdown').textContent = 'Fertig!';
+        nextStepEl.querySelector('#next-step-text').textContent = 'Alle Schritte haben begonnen.';
+
+        // Clean up old state
+        document.querySelectorAll('.timeline-step').forEach(b => {
+            b.classList.remove('next');
+            b.classList.add('past');
+        });
+
+        activeStepsData = null;
     }
 }, 1000);
 
