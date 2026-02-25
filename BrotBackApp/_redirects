@@ -1,4 +1,0 @@
-# Netlify server-side proxy — eliminates all CORS issues
-# When deployed on Netlify, the app fetches /brotdoc/* which Netlify
-# transparently proxies to https://brotdoc.com/* (same-origin, no CORS needed)
-/brotdoc/*  https://brotdoc.com/:splat  200
