@@ -11,29 +11,56 @@ def parse_html(html):
     
     # 1. Check for WP Recipe Maker
     if 'wprm-recipe-container' in html:
-        # extract ingredients
-        for m in re.finditer(r'<li[^>]*class="[^"]*wprm-recipe-ingredient[^"]*"[^>]*>(.*?)</li>', html, re.IGNORECASE | re.DOTALL):
-            ing_html = m.group(1)
-            # Find amount, unit, name
-            amt = re.search(r'<span class="wprm-recipe-ingredient-amount"[^>]*>(.*?)</span>', ing_html)
-            unit = re.search(r'<span class="wprm-recipe-ingredient-unit"[^>]*>(.*?)</span>', ing_html)
-            name = re.search(r'<span class="wprm-recipe-ingredient-name"[^>]*>(.*?)</span>', ing_html)
-            
-            parts = []
-            if amt: parts.append(re.sub(r'<[^>]+>', ' ', amt.group(1)).strip())
-            if unit: parts.append(re.sub(r'<[^>]+>', ' ', unit.group(1)).strip())
-            if name: parts.append(re.sub(r'<[^>]+>', ' ', name.group(1)).strip())
-            text = " ".join(parts)
-            text = " ".join(text.split())
-            if text:
-                ingredients.append({'type': 'item', 'text': text})
+        # extract ingredients by group
+        ing_groups = re.split(r'<div[^>]*class="[^"]*wprm-recipe-ingredient-group[^"]*"[^>]*>', html)
+        for g in ing_groups[1:]:
+            g_content = g.split('<div class="wprm-recipe-ingredient-group"')[0]
+            # Try to find group name
+            name_m = re.search(r'<h4[^>]*class="[^"]*wprm-recipe-[^-]*-name[^"]*"[^>]*>(.*?)</h4>', g_content[:500])
+            if name_m:
+                group_name = re.sub(r'<[^>]+>', '', name_m.group(1)).strip()
+                if group_name:
+                    ingredients.append({'type': 'section', 'name': group_name})
+                    
+            for m in re.finditer(r'<li[^>]*class="[^"]*wprm-recipe-ingredient[^"]*"[^>]*>(.*?)</li>', g_content, re.IGNORECASE | re.DOTALL):
+                ing_html = m.group(1)
+                # Find amount, unit, name
+                amt = re.search(r'<span class="wprm-recipe-ingredient-amount"[^>]*>(.*?)</span>', ing_html)
+                unit = re.search(r'<span class="wprm-recipe-ingredient-unit"[^>]*>(.*?)</span>', ing_html)
+                ing_name = re.search(r'<span class="wprm-recipe-ingredient-name"[^>]*>(.*?)</span>', ing_html)
                 
-        # extract steps
-        for m in re.finditer(r'<div[^>]*class="[^"]*wprm-recipe-instruction-text[^"]*"[^>]*>(.*?)</div>', html, re.IGNORECASE | re.DOTALL):
-            text = re.sub(r'<[^>]+>', ' ', m.group(1)).strip()
-            text = " ".join(text.split())
-            if text:
-                steps.append(text)
+                parts = []
+                if amt: parts.append(re.sub(r'<[^>]+>', ' ', amt.group(1)).strip())
+                if unit: parts.append(re.sub(r'<[^>]+>', ' ', unit.group(1)).strip())
+                if ing_name: parts.append(re.sub(r'<[^>]+>', ' ', ing_name.group(1)).strip())
+                text = " ".join(parts)
+                text = " ".join(text.split())
+                if text:
+                    ingredients.append({'type': 'item', 'text': text})
+                    
+        # extract steps by group
+        step_groups = re.split(r'<div[^>]*class="[^"]*wprm-recipe-instruction-group[^"]*"[^>]*>', html)
+        if len(step_groups) > 1:
+            for g in step_groups[1:]:
+                g_content = g.split('<div class="wprm-recipe-instruction-group"')[0]
+                name_m = re.search(r'<h4[^>]*class="[^"]*wprm-recipe-[^-]*-name[^"]*"[^>]*>(.*?)</h4>', g_content[:500])
+                if name_m:
+                    group_name = re.sub(r'<[^>]+>', '', name_m.group(1)).strip()
+                    if group_name:
+                        steps.append({'type': 'section', 'text': group_name})
+                        
+                for m in re.finditer(r'<div[^>]*class="[^"]*wprm-recipe-instruction-text[^"]*"[^>]*>(.*?)</div>', g_content, re.IGNORECASE | re.DOTALL):
+                    text = re.sub(r'<[^>]+>', ' ', m.group(1)).strip()
+                    text = " ".join(text.split())
+                    if text:
+                        steps.append(text)
+        else:
+            # Fallback if no groups are found but it's a wprm recipe
+            for m in re.finditer(r'<div[^>]*class="[^"]*wprm-recipe-instruction-text[^"]*"[^>]*>(.*?)</div>', html, re.IGNORECASE | re.DOTALL):
+                text = re.sub(r'<[^>]+>', ' ', m.group(1)).strip()
+                text = " ".join(text.split())
+                if text:
+                    steps.append(text)
                 
         if steps or ingredients:
             return ingredients, steps

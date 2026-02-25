@@ -183,17 +183,26 @@ function renderRecipe({ ingredients, steps }) {
         stepsEl.innerHTML = '<p class="hint">Keine Schritte gefunden. <a href="${recipeLink.href}" target="_blank">Rezept auf brotdoc.com →</a></p>';
     } else {
         stepsEl.innerHTML = '';
+        let stepCount = 0;
         steps.forEach((step, i) => {
-            const div = document.createElement('div');
-            div.className = 'step-item';
-            const duration = extractDuration(step);
-            div.innerHTML = `
-        <div class="step-number">${i + 1}</div>
-        <div class="step-body">
-          <p class="step-text">${step}</p>
-          ${duration ? `<span class="step-duration">⏱ ~${formatDuration(duration)}</span>` : ''}
-        </div>`;
-            stepsEl.appendChild(div);
+            if (typeof step === 'object' && step.type === 'section') {
+                const header = document.createElement('h4');
+                header.className = 'step-section-header';
+                header.textContent = step.text;
+                stepsEl.appendChild(header);
+            } else {
+                stepCount++;
+                const div = document.createElement('div');
+                div.className = 'step-item';
+                const duration = extractDuration(step);
+                div.innerHTML = `
+            <div class="step-number">${stepCount}</div>
+            <div class="step-body">
+              <p class="step-text">${step}</p>
+              ${duration ? `<span class="step-duration">⏱ ~${formatDuration(duration)}</span>` : ''}
+            </div>`;
+                stepsEl.appendChild(div);
+            }
         });
     }
 }
@@ -262,11 +271,24 @@ function generateSchedule() {
     let cursor = new Date(startTime);
     const now = new Date();
 
-    const stepsData = currentRecipe.steps.map((text, i) => {
-        const duration = extractDuration(text) || 15; // default 15 min if unknown
-        const stepStart = new Date(cursor);
-        cursor = new Date(cursor.getTime() + duration * 60 * 1000);
-        return { index: i + 1, text, duration, start: stepStart, end: new Date(cursor) };
+    const stepsData = [];
+    let stepCount = 0;
+    currentRecipe.steps.forEach((stepObj, i) => {
+        if (typeof stepObj === 'object' && stepObj.type === 'section') {
+            stepsData.push({
+                isSection: true,
+                text: stepObj.text,
+                start: new Date(cursor),
+                end: new Date(cursor)
+            });
+        } else {
+            stepCount++;
+            const text = stepObj;
+            const duration = extractDuration(text) || 15; // default 15 min if unknown
+            const stepStart = new Date(cursor);
+            cursor = new Date(cursor.getTime() + duration * 60 * 1000);
+            stepsData.push({ index: stepCount, text, duration, start: stepStart, end: new Date(cursor), isSection: false });
+        }
     });
 
     activeStepsData = stepsData;
@@ -274,24 +296,35 @@ function generateSchedule() {
     // Render timeline
     stepsData.forEach(s => {
         const isPast = s.start < now;
-        const isNext = !isPast && stepsData.find(x => !x.isPast) === s;
-        const card = document.createElement('div');
-        card.className = `timeline-step ${isPast ? 'past' : ''} ${isNext ? 'next' : ''}`;
-        card.innerHTML = `
-      <div class="tl-time">
-        <div class="tl-dot"></div>
-        <span>${formatTime(s.start)}</span>
-      </div>
-      <div class="tl-content">
-        <div class="tl-stepnum">Schritt ${s.index}</div>
-        <p class="tl-text">${s.text}</p>
-        <span class="tl-dur">⏱ ~${formatDuration(s.duration)}</span>
-      </div>`;
-        timelineEl.appendChild(card);
+        if (s.isSection) {
+            const card = document.createElement('div');
+            card.className = `timeline-step section ${isPast ? 'past' : ''}`;
+            card.innerHTML = `
+          <div class="tl-content section-header">
+            <h4>${s.text}</h4>
+          </div>`;
+            timelineEl.appendChild(card);
+        } else {
+            const isNext = !isPast && stepsData.find(x => !x.isPast && !x.isSection) === s;
+            const card = document.createElement('div');
+            card.className = `timeline-step ${isPast ? 'past' : ''} ${isNext ? 'next' : ''}`;
+            card.innerHTML = `
+          <div class="tl-time">
+            <div class="tl-dot"></div>
+            <span>${formatTime(s.start)}</span>
+          </div>
+          <div class="tl-content">
+            <div class="tl-stepnum">Schritt ${s.index}</div>
+            <p class="tl-text">${s.text}</p>
+            <span class="tl-dur">⏱ ~${formatDuration(s.duration)}</span>
+          </div>`;
+            timelineEl.appendChild(card);
+        }
     });
 
     // Schedule notifications
-    stepsData.forEach(s => {
+    stepsData.forEach((s, actIndex) => {
+        if (s.isSection) return;
         const delay = s.start.getTime() - now.getTime();
         if (delay > 0 && Notification.permission === 'granted') {
             const t = setTimeout(() => {
@@ -299,14 +332,14 @@ function generateSchedule() {
                     body: s.text.substring(0, 120) + (s.text.length > 120 ? '…' : ''),
                     icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y="0.9em" font-size="90">🍞</text></svg>',
                 });
-                flashNextStep(s);
+                flashNextStep(actIndex);
             }, delay);
             scheduledTimers.push(t);
         }
     });
 
     // Show banner for next upcoming step
-    const nextStep = stepsData.find(s => s.start > now);
+    const nextStep = stepsData.find(s => s.start > now && !s.isSection);
     if (nextStep) showNextStepBanner(nextStep, now);
 
     // Scroll to timeline
@@ -332,14 +365,14 @@ function updateNextStepBanner(step, now) {
     nextStepEl.querySelector('#next-step-text').textContent = step.text.substring(0, 80) + '…';
 }
 
-function flashNextStep(step) {
+function flashNextStep(actIndex) {
     document.querySelectorAll('.timeline-step.next').forEach(el => {
         el.classList.remove('next');
         el.classList.add('past');
     });
     const all = document.querySelectorAll('.timeline-step');
-    if (step.index < all.length) {
-        all[step.index].classList.add('next');
+    if (actIndex < all.length) {
+        all[actIndex].classList.add('next');
     }
 }
 
@@ -392,7 +425,8 @@ setInterval(() => {
     }
 
     const now = new Date();
-    const nextStep = activeStepsData.find(s => s.start > now);
+    const nextStepIndex = activeStepsData.findIndex(s => s.start > now && !s.isSection);
+    const nextStep = nextStepIndex !== -1 ? activeStepsData[nextStepIndex] : null;
 
     if (nextStep) {
         if (nextStepEl.classList.contains('hidden')) {
@@ -402,14 +436,14 @@ setInterval(() => {
 
         // Sync timeline visual state (past vs next)
         const allBoxes = document.querySelectorAll('.timeline-step');
-        allBoxes.forEach(b => b.classList.remove('next'));
+        allBoxes.forEach(b => b.classList.remove('next', 'past'));
         allBoxes.forEach((b, i) => {
-            if (i < nextStep.index - 1) b.classList.add('past');
+            if (i < nextStepIndex) {
+                b.classList.add('past');
+            } else if (i === nextStepIndex) {
+                b.classList.add('next');
+            }
         });
-        if (nextStep.index - 1 < allBoxes.length) {
-            allBoxes[nextStep.index - 1].classList.remove('past');
-            allBoxes[nextStep.index - 1].classList.add('next');
-        }
     } else {
         // All steps have started
         nextStepEl.classList.remove('hidden');
